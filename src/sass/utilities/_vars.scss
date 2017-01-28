@@ -46,22 +46,45 @@ $arial 	:	Arial, Helvetica, sans-serif;
 // $desktop: "only screen and (min-width: "$break-desktop")";
 
 $break-mobile: 320px;
-$break-tablet: 768px;
+$break-i7: 414px;
+$break-ipad: 960px;
+$break-macair: 1360px;
+$break-desktop: 1920px;
+
+$mobile: "only screen and (max-width: "$break-i7 - 1")";
+$mobile-i7: "only screen and (max-width: "$break-ipad - 1")";
+$i7: "min-width: "$break-i7") and (max-width: "$break-ipad - 1")";
+$ipad: "min-width: "$break-ipad") and (max-width: "$break-macair - 1")";
+$macair: "min-width: "$break-macair") and (max-width: "$break-desktop - 1")";
+$desktop: "only screen and (min-width: "$break-desktop")";
+
+
 // $break-desktop: 1000px;
 // $break-laptop: 1200px;
-$break-wide: 1360px;
 // когда таблет высчитывается от значения desktop, поэтому после комментирования,
 // его рассчет был изменен на отсчет от значения WIDE!!!!
 
-$mobile: "only screen and (max-width: "$break-tablet - 1")";
-$mobile-tablet: "only screen and (max-width: "$break-wide - 1")";
   // $tablet: "only screen and (min-width: "$break-tablet") and (max-width: "$break-desktop - 1")";
-  $tablet: "only screen and (min-width: "$break-tablet") and (max-width: "$break-wide - 1")";
   // $tablet-desktop: "only screen and (min-width: "$break-tablet")";
-  $tablet-wide: "only screen and (min-width: "$break-tablet")";
 // $desktop: "only screen and (min-width: "$break-desktop")";
 // $laptop: "only screen and (min-width: "$break-desktop") and (max-width: "$break-laptop - 1")";
 
-$wide: "only screen and (min-width: "$break-wide")";
 // $tablet-laptop:  "only screen and (min-width: "$break-tablet") and (max-width: "$break-wide - 1")";
 // $desktop-laptop:  "only screen and (min-width: "$break-desktop") and (max-width: "$break-wide - 1")";
+
+
+// $break-mobile: 320px;
+//
+// $break-tablet: 768px;
+//
+// $break-wide: 1360px;
+//
+// $mobile: "only screen and (max-width: "$break-tablet - 1")";
+//
+// $mobile-tablet: "only screen and (max-width: "$break-wide - 1")";
+//
+//   $tablet: "only screen and (min-width: "$break-tablet") and (max-width: "$break-wide - 1")";
+//
+//   $tablet-wide: "only screen and (min-width: "$break-tablet")";
+//
+// $wide: "only screen and (min-width: "$break-wide")";

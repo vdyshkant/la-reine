@@ -1,0 +1,186 @@
+.page-index .footer {
+  background: #fff;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+
+.page-index .footer {
+  & .shell {
+    margin: 0 auto;
+
+    @media #{$desktop} {
+      // max-width: 1920px;
+      min-width: 1920px;
+    }
+
+    @media #{$macair} {
+      max-width: 1919px;
+      min-width: 1360px;
+    }
+
+    @media #{$mobile-i7} {
+      max-width: 959px;
+      min-width: 320px;
+    }
+
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    // @media #{$desktop} {
+      padding: 0px 0 50px;
+    // }
+  }
+
+  & .footer-wrapper {
+    //
+  }
+
+  & .footer-essence {
+    //
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & .footer-top {
+    min-height: 326px;
+    background: url('../img/index-footer-top-welcome.png');
+    background-repeat: no-repeat;
+    background-position: calc(50% - 60px) 0;
+    // margin-bottom: 105px;
+  }
+}
+
+
+.page-index .footer {
+  // & .footer-top-img {
+  //   display: block;
+  //   margin: 0px auto;
+  // }
+}
+
+
+.page-index .footer {
+  & .footer-bottom{
+    // @media #{$desktop} {
+      margin-bottom: 25px;
+      outline: 2px dashed forestgreen;
+      outline-offset: -2px;
+      position: relative;
+    // }
+
+    & .shell-wide {
+      // @media #{$desktop} {
+        border: 2px solid #000;
+        min-height: 165px;
+        width: 59.895833333333336%;
+        // margin: 0 auto;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      // }
+    }
+  }
+}
+
+
+.page-index .footer {
+  & .footer-bottom-container{
+    // @media #{$desktop} {
+      min-height: 275px;
+      width: 30%;
+      background: #000 url('../img/index-footer-flag.png') no-repeat center center;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    // }
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & .footer-bottom-container__content{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 5.5px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 96.52777777777779%;
+  }
+}
+
+
+.page-index .footer {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .footer {
+  & .footer-bottom-container__address{
+    @include font(400, normal, 27px, 35px, 'AvenirNext-Regular');
+    margin-bottom: 15px;
+  }
+}
+
+
+.page-index .footer {
+  & .footer-bottom-container__phone{
+    @include font(400, normal, 20px, 40px, 'AvenirNext-Regular');
+  }
+}
+
+
+.page-index .footer {
+  & .footer-copy {
+    text-align: center;
+  }
+
+  & .footer-copy-content{
+    // @media #{$desktop} {
+      @include font(400, normal, 25px, 32px, 'AvenirNext-Regular');
+    // }
+  }
+}
