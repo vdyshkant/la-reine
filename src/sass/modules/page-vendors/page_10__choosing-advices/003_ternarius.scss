@@ -1,0 +1,313 @@
+.page-choosing-advices .ternarius {
+  // background: url('../img/bg_white-wwindows.jpg');
+
+  position: relative;
+}
+
+
+.page-choosing-advices .ternarius {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    // padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      padding: 0 20px;
+      min-width: 768px;
+      max-width: 768px;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 100px 0 100px;
+    @media #{$tablet} {
+      overflow: hidden;
+    }
+    @media #{$mobile-tablet} {
+      padding-top: 70px;
+      padding-bottom: 0;
+    }
+  }
+
+  & .PROTO-wrapper {
+    //
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-choosing-advices .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-choosing-advices .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-choosing-advices .ternarius-title-container {
+  text-align: center;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   right: 0;
+  //   top: 130px;
+  //   width: 100%;
+  //   height: 1px;
+  //   background: #333;
+  //   z-index: -1;
+  //
+  //   @media #{$tablet} {
+  //     top: 80px;
+  //   }
+  //
+  //   @media #{$mobile} {
+  //     content: none;
+  //   }
+  // }
+}
+
+
+.page-choosing-advices .ternarius-title {
+  @include font(normal, 700, 36px, 54px, 'Roboto'); // 22/2==11~~ +/- 10
+  color: #444341;
+  // text-transform: uppercase;
+  margin-bottom: 60px;
+
+  display: inline-block;
+  padding: 0 30px;
+
+  @media #{$mobile-tablet} {
+
+    @include font(normal, 700, 22px, 17px, 'Roboto Condensed');
+  }
+
+  position: relative;
+
+  &::after,
+  &::before {
+
+    content: "";
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background: #333;
+    top: 32px;
+
+    @media #{$tablet} {
+      top: 50%;
+      // margin-top: -1px;
+    }
+
+    @media #{$mobile} {
+      content: none;
+    }
+  }
+
+  &::after {
+    right: -10000%;
+
+  }
+
+  &::before {
+    left: -10000%;
+    // z-index: -1;
+
+  }
+}
+
+
+.page-choosing-advices .divider {
+  display: block;
+  border: none;
+  outline: none;
+
+
+  margin: 0 auto;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 30px;
+
+
+}
+
+
+.page-choosing-advices .ternarius-subtitle {
+  max-width: 733px;
+  margin: 0 auto;
+  @include font(normal, 400, 18px, 27px, 'Roboto');
+
+  // color: #444341;
+  //
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
+
+  @media #{$mobile-tablet} {
+    width: auto;
+    @include font(normal, 400, 18px, 27px, 'Roboto');
+  }
+
+}
+
+
+.page-choosing-advices .ternarius-content {
+
+}
+
+
+.page-choosing-advices .ternarius-container {
+  @media #{$wide} {
+    @include clearfix;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+.page-choosing-advices .ternarius-content__item {
+
+  @media #{$wide} {
+    float: left;
+    width: 360px;
+    margin-right: 20px;
+  }
+
+  position: relative;
+
+  @media #{$tablet} {
+    @include clearfix;
+    min-height: 340px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 85px;
+    width: 400px;
+    top: 240px;
+    left: -20px;
+    background: #1f587d;
+    top: 240px;
+    z-index: -1;
+
+    @media #{$tablet} {
+      top: 0;
+      right: -20px;
+      left: auto;
+    }
+  }
+
+  &:last-child {
+    @media #{$wide} {
+      margin-right: 0;
+      float: right;
+    }
+  }
+
+
+}
+
+
+.page-choosing-advices .ternarius__item-thumb {
+  display: block;
+  width: 360px;
+  height: 240px;
+
+  @media #{$tablet} {
+    float: left;
+    width: 356px;
+  }
+}
+
+
+.page-choosing-advices .ternarius__item-desc {
+  @media #{$tablet} {
+    float: right;
+    width: 372px;
+  }
+  @media #{$mobile} {
+    padding: 0 10px;
+  }
+}
+
+
+.page-choosing-advices .ternarius__item-title {
+  @include font(300, normal, 25px, 85px, 'Roboto');
+  text-transform: uppercase;
+  color: #fefefe;
+  height: 85px;
+  margin-bottom: 25px;
+  text-align: center;
+
+  @media #{$tablet} {
+    width: 372px;
+    margin-bottom: 15px;
+  }
+
+  @media #{$mobile} {
+    text-align: left;
+  }
+}
+
+
+.page-choosing-advices .ternarius__item-text {
+  @include font(normal, 400, 18px, 28px, 'Roboto');
+  color: #444341;
+  padding: 0 20px 50px;
+
+  @media #{$tablet} {
+    padding-right: 0;
+  }
+
+  @media #{$mobile} {
+    padding: 0 0 35px;
+  }
+}
+
+
+.page-choosing-advices .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-choosing-advices .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-choosing-advices .PROTO {
+  & .CLASS{
+
+  }
+}

@@ -1,0 +1,92 @@
+
+/*------------------------------------*\\
+  CONTENTS
+\\*------------------------------------*/
+
+/*
+GENERAL   HTML, BODY, etc.
+SHARED    Share anything we can across blocks.
+HEADER
+MAIN
+  sub_block
+  sub_block
+FOOTER
+NOTES
+RESET
+*/
+
+
+
+
+  /* ================================================
+     Блок_комментариев_для_раздела $ MAIN
+     ================================================ */
+
+  /* == eof $ MAIN == */
+
+  /* Блок_комментариев_для_подраздела
+     ================================================ */
+
+  /*
+   * Блок_комментариев_для_группы_правил.
+   * Хорошо_подходит_для_подробных_пояснений_и_документации.
+   */
+
+  /* Обычный_комментарий */
+
+
+/* == eof $ CONTENTS == */
+
+
+
+
+// 01
+@import "003--window";
+// 02
+@import "004--features";
+// 03
+@import "005--slider-sales";
+// 04
+@import "006--constructor";
+// 05
+@import "007--interrogation";
+// 06
+@import "008--counter";
+// 07
+@import "009--feedbacks";
+// 08
+@import "010--gallery";
+// 09
+@import "011--consultation";
+// 10
+@import "012--video";
+// 11
+@import "013--articles";
+// 12
+@import "014--partners";
+
+@import "015--firms";
+// 13
+
+.page-index {
+  & .main{
+    // margin: 0 auto;
+    // max-width: 1360px;
+    position: relative;
+
+    // outline: 2px dashed blue;
+    // outline-offset: -2px;
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}
+
+.page-index {
+  & .CLASS{
+
+  }
+}

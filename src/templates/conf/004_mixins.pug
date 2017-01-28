@@ -1,0 +1,65 @@
+mixin navmenu(menu_items)
+  nav.menu(class!=attributes.class)
+    ul
+      each top_item in menu_items
+        li(
+          class=top_item.liclass
+          )
+          a(
+            id=top_item.aid
+            class=top_item.aclass
+            href=top_item.link
+            ) #{top_item.title}
+
+//- mixin navmenu(menu_items)
+//-   nav.menu(class!=attributes.class)
+//-     ul
+//-       each top_item in menu_items
+//-         li
+//-           - var linkatts = { 'href': top_item.link }
+//-           - var classatts = { 'class': top_item.class }
+//-           a()&attributes(classatts, linkatts)= top_item.title
+
+
+mixin svg(arr)
+  each item in arr
+    - var svgclass = { class: item.class }
+    - var identificator = item.pathid
+    - var filename = item.filename
+    svg()&attributes(svgclass)
+      use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/" + filename + ".svg#" + identificator)
+
+//- +mainSvg([{'class': 'icon-fb', 'pathid': 'svg-fb', 'filename':'fb'}])
+
+mixin mainSvg(arr)
+  each item in arr
+    - var svgclass = { class: item.class }
+    - var identificator = item.pathid
+    - var filename = item.filename
+    svg()&attributes(svgclass)
+      use(xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/" + filename + ".svg#" + identificator)
+
+
+
+mixin breadcrumbs(arr)
+  ul.breadcrumbs(class!=attributes.class)
+    each item in arr
+      li
+        a(
+          href=item.link,
+          class=item.class
+          ) #{item.anchor}
+
+
+        //- - var customLink  = { 'href': item.link }
+        //- - var customText  = item.text
+        //- - var customClass = { 'class': item.class }
+        //- a()&attributes(customClass, customLink)= item.text
+
+
+//- executing:
+//- +breadcrumbs([
+//-   { 'text':'texta1','link':'#' },
+//-   { 'text':'texta12', 'link':'javascript:void(0)' },
+//-   { 'text':'texta13', 'class':'active', 'link':'javascript:void(0)' }
+//- ])(class='')      //- <== u can add additional class here.

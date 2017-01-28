@@ -1,0 +1,118 @@
+extends ../../../conf/002_docwrapper
+
+
+append 001_config
+  - var PageTitle = '404 - Такой страницы не существует'
+  //- - var MetaDesc = 'Now we override default configed MetaDesc'
+  //- - var jQuery = true
+  //- - var jQueryUI = true
+  //- - var jQueryEasing = true
+      //- - var bxSlider = true
+  //- - var animateNumber = true
+  //- - var animateCss = true
+  //- - var wowJs = true
+  //- - var mainJsSrc = 'js/main.min.js'
+
+  //- smoothDivScroll
+  - var jQuery = true
+        //- - var jQueryUI = true
+        //- - var jQueryMousewheel = true
+        //- - var jQkinetic = true
+        //- - var jQsmoothDivScroll = true
+  //- eof smoothDivScroll
+
+        //- - var waterwheelCarousel = true
+  //- counter:
+        //- - var animateNumber = true
+        //- - var animateCss = true
+        //- - var wowJs = true
+
+  //- countdown circles
+  //- - var TimeCircles = true
+
+  - var updateBodyClass = bodyClasses.push('page-404')
+
+  //- - var GoogleFonts = 'Poiret+One'
+  //- - var GoogleFonts = GoogleFonts.concat('|Roboto:400,700&subset=cyrillic')
+  //- ...
+
+append stylesheets
+  //- link( href='css/extrastyles.css', rel='stylesheet' )
+
+
+  //- eof HEAD appends
+  //- –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+block content
+  .wrapper
+
+
+    //
+          ========================================================
+                                  HEADER
+          ========================================================
+
+    //- header
+    include ../../global-modules/001__header
+    //- eof header
+
+    include ../../global-modules/003c__side-burger
+
+
+    include ../../global-modules/003a__side-nav
+
+
+    include ../../global-modules/003b__side-right
+
+
+
+    //
+          ========================================================
+                                  CONTENT
+          ========================================================
+
+    //- main
+    main.main
+
+
+      include 01_window
+      //-
+      //-
+      //-
+      //- include 02_welcome
+      //-
+      //- include 03_types
+      //-
+      //- include 04_about
+      //-
+      //-
+      //-
+      //- include 05_process
+      //-
+      include 02_contact
+
+      include 03_prefooter
+
+
+      //- eof main
+
+
+
+    //
+          ========================================================
+                                  FOOTER
+          ========================================================
+
+    //- footer
+
+    include ../../global-modules/002__footer
+
+
+
+
+    //- modal content
+    //- include partials/__popup
+    //- eof modal content
+
+    //- eof footer

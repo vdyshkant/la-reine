@@ -1,0 +1,61 @@
+// articles
+section.articles
+  .shell
+    .container
+      .range
+        .articles-essence
+
+
+          //- title
+          h2.articles-main-title Полезные статьи
+          .divider--title
+
+          //- itemS:
+          .articles__items-wrapper
+
+            //- item
+            .articles__item
+              .articles__item-left
+                .articles__substrate
+                  +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg', 'filename':'articles_thumb_bg'}])
+                  svg(height='0', width='0', xmlns='http://www.w3.org/2000/svg')
+
+                a.articles__item-thumb(href="javascript:void(0)")
+                  img.articles__item-thumb__img(src='img/articles-content-01.png')
+
+
+              .articles__item-right
+                a.articles__item-right__title(href="javascript:void(0)") Оконные системы из&nbsp;нанотрубок
+                a.articles__item-right__content(href="javascript:void(0)")
+                  p Компания Real Plast предлагает услуги по установке современных пластиковых окон, качественных и надежных. Оконные ПВХ-системы защитят ваше жилье от морозов, сквозняков, чрезмерной влажности, пыли и уличного шума.
+                  p Наша компания специализируется на изготовлении и монтаже пластиковых конструкций для жилой и коммерческой недвижимо...
+
+                .articles__item-right__footer
+                  date.articles__item-right__date 18, августа 1918
+                  .divider--footer
+                  a.articles__item-right__read-more(href="javascript:void(0)") Читать статью
+
+
+            //- item
+            .articles__item
+              .articles__item-left
+                .articles__substrate
+                  +svg([{'class': 'svg-substrate svg-icon', 'pathid': 'svg_thumb_bg', 'filename':'articles_thumb_bg'}])
+                a.articles__item-thumb(href="javascript:void(0)")
+                  img.articles__item-thumb__img(src='img/articles-content-02.png')
+
+              .articles__item-right
+                a.articles__item-right__title(href="javascript:void(0)") Упрощённая технология для каждого
+                a.articles__item-right__content(href="javascript:void(0)")
+                  p Компания Real Plast предлагает услуги по установке современных пластиковых окон, качественных и надежных. Оконные ПВХ-системы защитят ваше жилье от морозов, сквозняков, чрезмерной влажности, пыли и уличного шума.
+                  p Наша компания специализируется на изготовлении и монтаже пластиковых конструкций для жилой и коммерческой недвижимо...
+
+                .articles__item-right__footer
+                  date.articles__item-right__date 18, августа 1918
+                  .divider--footer
+                  a.articles__item-right__read-more(href="javascript:void(0)") Читать статью
+
+
+          .articles__expand
+            a.articles__expand__btn(href="javascript:void(0)") Посмотреть все статьи
+// articles end

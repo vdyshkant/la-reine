@@ -1,0 +1,136 @@
+.page-window-systems .about {
+  background: url('../img/bg_white-wwindows.jpg');
+}
+
+
+.page-window-systems .about {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 100px 0;
+    @media #{$mobile-tablet} {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+
+  & .PROTO-wrapper {
+    //
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .about-title {
+  @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+  text-align: center;
+  color: #444341;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  @media #{$mobile-tablet} {
+
+    @include font(normal, 700, 22px, 17px, 'Roboto Condensed');
+  }
+}
+
+
+.page-window-systems .divider {
+  display: block;
+  border: none;
+  outline: none;
+
+
+  margin: 0 auto;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 30px;
+
+
+}
+
+
+.page-window-systems .about-content__text {
+  width: 736px;
+  margin: 0 auto;
+  @include font(normal, 400, 18px, 27px, 'Roboto');
+
+  color: #444341;
+  margin-bottom: 27px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media #{$mobile-tablet} {
+    width: auto;
+    @include font(normal, 400, 18px, 27px, 'Roboto');
+  }
+
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-window-systems .PROTO {
+  & .CLASS{
+
+  }
+}

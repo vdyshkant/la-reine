@@ -1,0 +1,29 @@
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin fsize($size) {
+  font-size: calculateRem($size);
+}
+
+@mixin font($style, $wt, $size, $lh, $ff) {
+    font: $style $wt #{$size}/#{$lh} $ff;
+    font-size: calculateRem($size);
+}
+
+@mixin list {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    > li {
+        display: inline-block;
+        vertical-align: top;
+    }
+}

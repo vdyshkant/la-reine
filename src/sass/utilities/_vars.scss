@@ -1,0 +1,67 @@
+/**
+* Variables module
+*
+*/
+
+//   $main-nav-color: #00111a;
+//   $footer-nav-color: #FFF;
+//
+// /* search field */
+//   $s_bg-color: transparent;
+//   $s_txt-color: #FFFFFF;
+//   $s_icn-color: #FFFFFF;
+// /* eof search field */
+//
+// // $claret         : #a70c5d;
+// // $freshEggplant  : #970048;
+// // $mako           : #3f4147;
+// // $iron           : #dfdfe2;
+// //
+// //
+// //
+$ir 	:	"IntroRegular", Arial, Helvetica, sans-serif;
+$ii 	:	"IntroInline", Arial, Helvetica, sans-serif;
+$arial 	:	Arial, Helvetica, sans-serif;
+// $pst 	:	"PermianSansTypeface", Arial, Helvetica, sans-serif;
+// $pslab 	:	"PermianSlabSerifTypeface", Arial, Helvetica, sans-serif;
+// $ubo  : "Ubuntu-Bold", Arial, Helvetica, sans-serif;
+// $ub   : "Ubuntu-B", Arial, Helvetica, sans-serif;
+// $ul   : "Ubuntu-Light", Arial, Helvetica, sans-serif;
+// // $gpm	:	"GothamPro-Medium", Arial, Helvetica, sans-serif;
+// // $gpbl	:	"GothamPro-Black", Arial, Helvetica, sans-serif;
+// // $gpbo	:	"GothamPro-Bold", Arial, Helvetica, sans-serif;
+// // $babo   :   "BanderaPro-Bold", Arial, Helvetica, sans-serif;
+// // $pdf    :   "PFDinDisplayPro-Regular", Arial, Helvetica, sans-serif;
+// //
+// //
+// //
+// $break-mobile: 320px;
+// $break-tablet: 768px;
+// $break-desktop: 1200px;
+//
+// $mobile: "only screen and (max-width: "$break-tablet - 1")";
+// $mobile-tablet: "only screen and (max-width: "$break-desktop - 1")";
+// $tablet: "only screen and (min-width: "$break-tablet") and (max-width: "$break-desktop - 1")";
+// $tablet-desktop: "only screen and (min-width: "$break-tablet")";
+// $desktop: "only screen and (min-width: "$break-desktop")";
+
+$break-mobile: 320px;
+$break-tablet: 768px;
+// $break-desktop: 1000px;
+// $break-laptop: 1200px;
+$break-wide: 1360px;
+// когда таблет высчитывается от значения desktop, поэтому после комментирования,
+// его рассчет был изменен на отсчет от значения WIDE!!!!
+
+$mobile: "only screen and (max-width: "$break-tablet - 1")";
+$mobile-tablet: "only screen and (max-width: "$break-wide - 1")";
+  // $tablet: "only screen and (min-width: "$break-tablet") and (max-width: "$break-desktop - 1")";
+  $tablet: "only screen and (min-width: "$break-tablet") and (max-width: "$break-wide - 1")";
+  // $tablet-desktop: "only screen and (min-width: "$break-tablet")";
+  $tablet-wide: "only screen and (min-width: "$break-tablet")";
+// $desktop: "only screen and (min-width: "$break-desktop")";
+// $laptop: "only screen and (min-width: "$break-desktop") and (max-width: "$break-laptop - 1")";
+
+$wide: "only screen and (min-width: "$break-wide")";
+// $tablet-laptop:  "only screen and (min-width: "$break-tablet") and (max-width: "$break-wide - 1")";
+// $desktop-laptop:  "only screen and (min-width: "$break-desktop") and (max-width: "$break-wide - 1")";

@@ -1,0 +1,139 @@
+extends ../../../conf/002_docwrapper
+
+
+append 001_config
+  - var PageTitle = 'Главная страница'
+  //- - var MetaDesc = 'Now we override default configed MetaDesc'
+  //- - var jQuery = true
+  //- - var jQueryUI = true
+  //- - var jQueryEasing = true
+  - var bxSlider = true
+  - var picturefill = true
+  //- - var animateNumber = true
+  //- - var animateCss = true
+  //- - var wowJs = true
+  //- - var mainJsSrc = 'js/main.min.js'
+
+  //- smoothDivScroll
+  - var jQuery = true
+  - var jQueryUI = true
+  - var jQueryMousewheel = true
+  - var jQkinetic = true
+  - var jQsmoothDivScroll = true
+  //- eof smoothDivScroll
+
+  - var waterwheelCarousel = true
+  //- counter:
+  - var animateNumber = true
+  - var animateCss = true
+  - var wowJs = true
+
+  //- countdown circles
+  - var TimeCircles = true
+
+  - var updateBodyClass = bodyClasses.push('page-index');
+
+  - var jQueryFancybox = true
+
+  //- - var GoogleFonts = 'Poiret+One'
+  //- - var GoogleFonts = GoogleFonts.concat('|Roboto:400,700&subset=cyrillic')
+  //- ...
+
+append stylesheets
+  //- link( href='css/extrastyles.css', rel='stylesheet' )
+
+
+  //- eof HEAD appends
+  //- –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+block content
+  .wrapper
+
+
+    //
+          ========================================================
+                                  HEADER
+          ========================================================
+
+    //- header
+    //- include ../../global-modules/001__header
+    //- eof header
+
+    //- include ../../global-modules/003c__side-burger
+
+    //- include ../../global-modules/003a__side-nav
+
+
+    //- include ../../global-modules/003b__side-right
+
+
+
+    //
+          ========================================================
+                                  CONTENT
+          ========================================================
+
+    //- main
+    main.main
+
+
+      //- include 03--page-header
+
+
+
+      //- include 04--product-top
+
+      //- include 05--product-items
+
+      //- include 06--constructor
+
+
+
+      //- include 07--interrogation
+
+      //- include 08--counter
+
+      //- include 09--feedbacks
+
+
+
+      //- include 10--gallery
+
+      //- include 11--consultation
+
+      //- include 12--video
+
+
+
+      //- include 13--articles
+
+      //- include 14--partners
+
+      //- include 15--firms
+      //- eof main
+
+
+
+
+
+    //
+          ========================================================
+                                  FOOTER
+          ========================================================
+
+    //- footer
+
+    include ../../global-modules/002__footer
+
+
+    include ../../global-modules/005__modal-content
+
+
+
+
+    //- modal content
+    //- include partials/__popup
+    //- eof modal content
+
+    //- eof footer

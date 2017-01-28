@@ -1,0 +1,154 @@
+.page-fitments .rules {
+  // bg 1
+}
+
+
+.page-fitments .rules {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+
+      padding: 0 22px;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 85px 0 100px;
+
+    @media #{$wide} {
+      padding-top: 90px;
+    }
+
+    @media #{$tablet} {
+      padding-bottom: 70px;
+    }
+
+    @media #{$mobile} {
+      padding-bottom: 60px;
+    }
+  }
+
+  & .rules-wrapper {
+    //
+  }
+
+  & .rules-essence {
+    //
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .rules-title {
+    @include font(normal, 700, 36px, 34px, 'Roboto Condensed')
+    text-transform: uppercase;
+    text-align: center;
+    color: #444341;
+
+    margin-bottom: 20px;
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed')
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 33px, 'Roboto Condensed')
+    }
+}
+
+
+.page-fitments .rules-divider {
+  display: block;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+
+  outline: none;
+  border: none;
+
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .rules-content {
+  width: 740px;
+  margin: 0 auto;
+
+  @include font(normal, 400, 18px, 27px, 'Roboto');
+  color: #444341;
+
+  @media #{$mobile-tablet} {
+    width: auto;
+  }
+
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .rules-content-list__item {
+  position: relative;
+  text-indent: 30px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 16px;
+    top: 6px;
+    left: 0;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAABUUlEQVQoU2NkwALYC7/lg4R/9nNNRJdmxFCf98uYjfHPcZD4r/8slgyT2M4iq0HVkPafn5v7840Go7kSIEUN55JffP3Kq8Ewi/EjTBOKBr7CD9usJC67bHMvYgUp8NrZ9/vYC909n/oFvDA0gNwtyPqp62pwFJsQ+yew/LuffAzaa5f9ev+brwzmH4gNUHcf8M5itRS7guKt4690GBy2TvsN8w8jA5K7S3SXYgs0hp7L0XD/MCK7m5HhP1YN/xkY4f5h5Cn6vMNG/IITyKOENBx5abCPkSHzvyA3BzgoxQg46dXXH7waEE/n/jJjZfp75KB3JlZP22+d/vv3P2Ybhslsp+DxAAzWYmCwtuEI1ipgsPaCzEaKuP9A/3zZDvMPLOJA7v7Sx+MJVAoOEdSkgeQfaNIAu5thOuN7rEkD2T8gNszduBMfVAbkHxAT5m5kDQAKb7FMD2hk3gAAAABJRU5ErkJggg==');
+  }
+
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}

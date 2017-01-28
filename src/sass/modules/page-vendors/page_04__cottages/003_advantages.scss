@@ -1,0 +1,376 @@
+.page-cottages .advantages {
+  // bg 1
+}
+
+
+.page-cottages .advantages {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+    min-width: 1160px;
+
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      padding: 0 8px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 100px 0;
+
+    @media #{$mobile-tablet} {
+      padding: 60px 0 70px;
+    }
+  }
+
+  & .advantages-wrapper {
+    //
+  }
+
+  & .advantages-essence {
+    //
+  }
+}
+
+
+.page-cottages .advantages {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .advantages-title {
+  @include font(normal, 700, 32px, 29px, 'Roboto');
+  color: #444341;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 35px;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 33px, 'Roboto');
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 33px, 'Roboto');
+  }
+}
+
+
+.page-cottages .advantages-sub-title {
+  @include font(normal, 400, 15px, 21px, 'Roboto');
+  color: #444341;
+  margin-bottom: 50px;
+  text-align: center;
+
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 45px;
+  max-width: 923px;
+  margin: 0 auto 50px;
+}
+
+
+.page-cottages .advantages {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .advantages-content {
+  @include clearfix;
+
+  @media #{$mobile} {
+    position: relative;
+    padding-top: 470px;
+  }
+}
+
+
+.page-cottages .advantages-content-column {
+  float: left;
+  @media #{$wide} {
+    width: 360px;
+    margin-right: 20px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+
+  @media #{$tablet} {
+    width: 354px;
+    &:first-child {
+      margin-right: 18px;
+    }
+
+    // outline: 2px dashed gold;
+    // outline-offset: -2px;
+  }
+
+  @media #{$mobile} {
+    float: none;
+  }
+
+  & .func__item__icon {
+    @media #{$mobile} {
+      left: 50%;
+      margin-left: 4px;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+
+.page-cottages .advantages {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .func__item {
+  position: relative;
+  padding: 30px 110px 50px 20px;
+
+  @media #{$tablet} {
+    padding: 30px 138px 20px 20px;
+  }
+
+  @media #{$mobile} {
+    padding: 100px 0 55px 0;
+  }
+}
+
+
+.page-cottages .func__item__icon {
+  width: 87px;
+  height: 87px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.page-cottages .func__item__title {
+  @include font(normal, 700, 18px, 17px, 'Roboto');
+  color: #444341;
+  margin-bottom: 25px;
+}
+
+
+.page-cottages .func__item__text {
+  @include font(normal, 400, 15px, 22px, 'MyriadPro-Regular');
+  color: #8e8e8e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 60px;
+  max-width: 230px;
+
+  @media #{$mobile} {
+    max-width: none;
+  }
+}
+
+// left
+.page-cottages .advantages-content-column-left {
+  padding-top: 50px;
+
+  @media #{$mobile-tablet} {
+    padding-top: 0;
+  }
+
+  & .func__item__title,
+  & .func__item__text {
+    text-align: right;
+
+    @media #{$mobile} {
+      text-align: center;
+    }
+  }
+
+
+}
+
+
+.page-cottages .advantages-content-column-left {
+  & .func__item:nth-child(1) .func__item__icon{
+    background-image: url('../img/004_advantages__item__icon_01.png');
+  }
+}
+
+
+.page-cottages .advantages-content-column-left {
+  & .func__item:nth-child(2) .func__item__icon{
+    background-image: url('../img/004_advantages__item__icon_02.png');
+
+  }
+}
+
+
+// right
+.page-cottages .advantages-content-column-right {
+  padding-top: 50px;
+
+  @media #{$mobile-tablet} {
+    padding-top: 0;
+  }
+}
+
+
+.page-cottages .advantages-content-column-right {
+
+  & .func__item {
+    @media #{$wide} {
+      padding: 30px 0px 50px 15px;
+
+      & .func__item__icon {
+       right: auto;
+       left: 4px;
+      }
+
+      & .func__item__text {
+        // margin-left: 100px;
+        box-sizing: content-box;
+      }
+    }
+
+    @media #{$tablet} {
+      padding: 30px 110px 50px 20px;
+    }
+
+    @media #{$mobile} {
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+
+  }
+
+  & .func__item {
+     @media #{$tablet} {
+       right: 0px;
+       left: auto;
+     }
+    }
+
+    & .func__item__text {
+      box-sizing: content-box;
+      max-width: 250px;
+
+      @media #{$mobile} {
+        max-width: none;
+      }
+    }
+
+    & .func__item__title,
+    & .func__item__text {
+
+      @media #{$wide} {
+        text-align: left;
+        margin-left: 100px;
+      }
+
+      @media #{$tablet} {
+        text-align: right;
+      }
+
+      @media #{$mobile} {
+        text-align: center;
+      }
+    }
+
+
+
+}
+
+
+.page-cottages .advantages-content-column-right {
+  & .func__item:nth-child(1) {
+    & .func__item__icon{
+     background-image: url('../img/004_advantages__item__icon_03.png');
+    }
+  }
+}
+
+
+.page-cottages .advantages-content-column-right {
+  & .func__item:nth-child(2) {
+    & .func__item__icon{
+     background-image: url('../img/004_advantages__item__icon_04.png');
+    }
+  }
+}
+
+
+// MID
+.page-cottages .advantages-content-column-mid {
+  box-shadow: 2.5px 3.2px 7px rgba(26, 47, 60, 0.21);
+  height: 420px;
+  & img {
+    height: 420px;
+  }
+
+  @media #{$tablet} {
+    float: right;
+    // margin-right: 0;
+  }
+
+  @media #{$mobile} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 304px;
+  }
+}
+
+
+.page-cottages .advantages {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .advantages {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .advantages {
+  & .CLASS{
+
+  }
+}
+
+
+.page-cottages .advantages {
+  & .CLASS{
+
+  }
+}

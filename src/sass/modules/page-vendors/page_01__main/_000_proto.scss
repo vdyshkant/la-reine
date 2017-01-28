@@ -1,0 +1,59 @@
+.page-index .PROTO {
+  // bg 1
+}
+
+
+.page-index .PROTO {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+  }
+
+  & .PROTO-wrapper {
+    //
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-index .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .PROTO {
+  & .CLASS{
+
+  }
+}

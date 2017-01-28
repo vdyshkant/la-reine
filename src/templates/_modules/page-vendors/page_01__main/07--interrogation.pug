@@ -1,0 +1,62 @@
+// interrogation
+section.interrogation
+  .shell
+    .inner
+      .container
+        .interrogation-essence
+
+
+          //-title
+          h2.interrogation-title Нас интересует ваше&nbsp;мнение
+          hr.divider
+
+
+          //- content
+            //- unit
+          .interrogation-unit
+            .interrogation-unit-title Какого цвета окна вы&nbsp;хотите?
+            .interrogation-unit-content
+              form.interrogation-unit-form
+                .interrogation-unit-form__items
+                  ul
+                    li
+                      label.unit-form-radio
+                        input(type="radio" name="tree")
+                        span.radio-indicator
+                        .label-text Светлый дуб
+                    li
+                      label.unit-form-radio
+                        input(type="radio" name="tree")
+                        span.radio-indicator
+                        .label-text Орегон
+                    li
+                      label.unit-form-radio
+                        input(type="radio" name="tree")
+                        span.radio-indicator
+                        .label-text Махагон
+                    li
+                      label.unit-form-radio
+                        input(type="radio" name="tree" checked)
+                        span.radio-indicator
+                        .label-text Дуб
+
+                //- preview
+                .interrogation-unit-preview
+                  picture
+                    source(srcset='img/interrogation_img-01--tablet.png', media='(min-width: 768px)')
+                    source(srcset='img/interrogation_img-01--mobile.png', media='(max-width: 767px)')
+                    source(srcset='img/interrogation_img-01.png')
+                    img(srcset='img/interrogation_img-01.png', alt='My default image')
+
+                //- button
+                button.interrogation-btn-vote(type="button" onclick="return false;") Проголосовать
+
+
+
+
+
+
+
+
+
+// interrogation end

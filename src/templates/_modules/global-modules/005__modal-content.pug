@@ -1,0 +1,29 @@
+.modal-content.modal-index
+  .wrap
+    .title Мы вам перезвоним в ближайшее время
+    .subtitle Вы сможете комфортно обсудить все детали с нашим менеджером.
+    .form-modal
+      form
+
+        //- left
+        .form-modal-left
+          input(placeholder="Ваше имя")
+          input(placeholder="E-mail (не обязательно)")
+
+          .browse-btn
+            .text Загрузить файл
+          .captcha
+            span captcha
+
+
+
+        //- right
+        .form-modal-right
+          input(placeholder="Ваш номер телефона")
+          textarea(placeholder="Ваш коментарий (не обязательно)")
+          button.button.modal-btn(type='button') Перезвоните мне
+
+  button.modal-content-close(type='button' title='Закрыть')
+
+
+.modal-index-overlay

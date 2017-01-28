@@ -1,0 +1,30 @@
+- dont forget to update reset.css in scss/base/_reset.scss
+	- normalize.css - the same
+
+
+# Project directory layout
+
+src/
+  files/        // contains static assets
+    fonts/      // copy2dev/fonts
+    images/     // copy2dev/images
+  js/
+    collections/
+    controllers/
+    main.js
+  sass/
+    modules
+    variables.scss
+    main.scss
+  templates/
+    partials/
+    index.jade
+
+builds/
+  development/
+    fonts/
+    images/
+    css/
+    js/
+    index.html
+  production/

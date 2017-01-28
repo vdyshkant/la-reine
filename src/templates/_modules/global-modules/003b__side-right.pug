@@ -1,0 +1,53 @@
+// offcanvas right side
+//- .mask__offcanvas-right-side
+.overlay__offcanvas
+.offcanvas-right-side.js-right-side
+  .offcanvas-right-side-wrapper
+    //- foreground
+    .offcanvas-right-side__foreground
+      ul.offcanvas-right-side__list
+
+
+
+        //- CALLBACK
+        li.offcanvas-right-side__item.offcanvas-right-side__item__callback#callback
+          //- .icon-callback
+          +svg([{'class': 'icon-callback svg-icon', 'pathid': 'svg-callback', 'filename':'offcanvas-right_callback'}])
+          .offcanvas-right-side__callback.title +77054009101
+          .offcanvas-right-side__callback.title--tablet Введите ваш номер и мы перезвоним в&nbsp;ближайшее время
+          //- form
+          form.offcanvas-right-side__form
+            input(name="user_name",placeholder="Ваше имя")
+            input(name="tel_number",placeholder="Ваш номер телефона")
+            button(type="button" onclick="return: false;") Перезвоните мне
+
+
+        //- SEARCH
+        li.offcanvas-right-side__item.offcanvas-right-side__item__search#search
+          +svg([{'class': 'icon-search svg-icon', 'pathid': 'svg-search', 'filename':'offcanvas-right_search'}])
+          .offcanvas-right-side__search.title Поиск
+          //- form
+          form.offcanvas-right-side__form
+            input(name='sfield')
+            button(type="button" onclick="return: false;") Найти
+
+
+    .offcanvas-right-side__top-row
+
+
+      //- flags
+      .offcanvas-right-side__flags
+        .offcanvas-right-side__flags__item
+        .offcanvas-right-side__flags__item
+        .offcanvas-right-side__flags__item
+        //-
+        //-
+        //- //- logo
+        //- .offcanvas-right-side__logo
+        //-   .offcanvas-right-side__logo-thumb
+        //-   .offcanvas-right-side__logo-desc
+        //-
+        //-
+
+
+// offcanvas right side end

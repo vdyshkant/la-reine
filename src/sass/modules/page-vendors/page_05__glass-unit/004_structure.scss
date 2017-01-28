@@ -1,0 +1,122 @@
+.page-glass-unit .structure {
+  // background: #fff;
+}
+
+
+.page-glass-unit .structure {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$mobile-tablet} {
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 95px 0 125px;
+
+    @media #{$tablet} {
+      padding: 50px 0 100px;
+    }
+
+    @media #{$mobile} {
+      padding: 50px 0 70px;
+    }
+  }
+
+  & .PROTO-wrapper {
+    //
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .structure-title {
+  @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+  text-align: center;
+  color: #444341;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  @media #{$mobile-tablet} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    margin-bottom: 10px;
+  }
+}
+
+
+.page-glass-unit .structure .divider {
+  display: block;
+  border: none;
+  outline: none;
+
+
+  margin: 0 auto;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 30px;
+
+
+}
+
+
+.page-glass-unit .structure-content__img {
+  display: block;
+  margin: 0 auto;
+
+  height: 754px;
+  width: 1160px;
+
+  @media #{$tablet} {
+    height: 499px;
+    width: 768px;
+  }
+
+  @media #{$mobile} {
+    height: 444px;
+    width: 320px;
+  }
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}

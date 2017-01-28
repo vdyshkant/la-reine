@@ -1,0 +1,366 @@
+.page-404 .window {
+  background: #e5e5e7;
+}
+
+
+.page-404 .window {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+    min-width: 1160px;
+
+    @media #{$wide} {
+      padding: 0 20px;
+    }
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    height: 737px;
+
+    @media #{$tablet} {
+      height: 592px;
+    }
+
+    @media #{$mobile} {
+      height: 368px;
+    }
+  }
+
+  & .window-wrapper {
+    position: relative;
+  }
+
+  & .window-essence {
+    //
+  }
+}
+
+
+.page-404 .window {
+  & .CLASS{
+
+  }
+}
+
+
+.page-404 .window {
+  & .CLASS{
+
+  }
+}
+
+
+.page-404 .window {
+  & .CLASS{
+
+  }
+}
+
+
+
+.page-404 .window {
+  & .window__sky{
+    // background: url('../img/window-sky.png') no-repeat center center;
+    background: #fff;
+    width: 100%;
+    height: 737px;
+
+    @media #{$tablet} {
+      height: 592px;
+    }
+
+    @media #{$mobile} {
+      height: 367px;
+    }
+  }
+}
+
+
+.page-404 .window {
+  & .window__window {
+    background: rgba(134, 4, 4, 0.5) url('../img/window.png') no-repeat left -357px top 0px;
+    height: 737px;
+
+    position: absolute;
+    width: 100%;
+    // width: 83.62068965517241%;
+    top: 0px;
+    // left: 50%;
+    transform: translteX(-50%);
+
+    @media #{$tablet} {
+      height: 592px;
+    }
+
+    @media #{$mobile} {
+      height: 368px;
+    }
+
+    @media #{$tablet} {
+      background: rgba(134, 4, 4, 0.5) url('../img/window--tablet.png') no-repeat left -37px top -30px;
+    }
+
+    @media #{$mobile} {
+      background: rgba(134, 4, 4, 0.5) url('../img/window--mobile.png') no-repeat left -117px top -11px;
+    }
+
+    // outline: 2px dashed yellowgreen;
+    // outline-offset: -2px;
+  }
+}
+
+
+.page-404 .window {
+  & .window__rollet{
+    background: url('../img/window-rollet.png') no-repeat;
+
+    position: absolute;
+    top: 41px;
+    right: 85px;
+          width: 430px;
+          height: 330px;
+
+    padding-top: 70px;
+
+    @media #{$tablet} {
+      background: url('../img/window-rollet--tablet.png') no-repeat;
+      width: 304px;
+      height: 224px;
+      top: 32px;
+      right: 45px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media #{$mobile} {
+      background: url('../img/window-rollet--mobile.png') no-repeat;
+      width: 193px;
+      height: 143px;
+      top: 27px;
+      right: 65px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 43px;
+    }
+
+    // outline: 2px dashed magenta;
+    // outline-offset: -2px;
+  }
+}
+
+
+.page-404 .window {
+  & .window__rollet-title {
+    @include font(normal, 900, 60px, 46px, 'Roboto');
+    color: #444341;
+    text-align: center;
+    margin-bottom: 25px;
+
+    @media #{$tablet} {
+      @include font(normal, 900, 43px, 34px, 'Roboto');
+      margin-bottom: 15px;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 900, 27px, 22px, 'Roboto');
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+.page-404 .window {
+  & .window__rollet-desc {
+    @include font(normal, 300, 32px, 42px, 'Roboto');
+    color: #444341;
+    text-align: center;
+
+    margin: 0 auto;
+
+    width: 345px;
+
+    @media #{$tablet} {
+      @include font(normal, 300, 23px, 25px, 'Roboto');
+      width: 100%;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 300, 14px, 18px, 'Roboto');
+      width: 100%;
+    }
+  }
+}
+
+
+.page-404 .window {
+  & .window__tree{
+                                              // PARALLAX
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 737px;
+
+    @media #{$tablet} {
+      height: 592px;
+    }
+
+    @media #{$mobile} {
+      height: 368px;
+    }
+
+    // outline: 1px solid red;
+    // outline-offset: -1px;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   left: 115px;
+    //   top: 75px;
+    //   width: 4px;
+    //   height: 4px;
+    //   background: crimson;
+    // }
+  }
+}
+
+
+.page-404 .window {
+  & #tree{
+                                              // PARALLAX
+    background: url('../img/window-tree--red.png') no-repeat;
+    position: absolute;
+    width: 359px;
+    height: 600px;
+    top: 370px;
+    right: 135px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    z-index: 2;
+
+    @media #{$tablet} {
+      background: url('../img/window-tree--red-tablet.png') no-repeat;
+      width: 264px;
+      top: 295px;
+      right: 60px;
+    }
+
+    @media #{$mobile} {
+      background: url('../img/window-tree--red-mobile.png') no-repeat;
+      width: 165px;
+      top: 195px;
+      right: 82px;
+    }
+  }
+}
+
+
+.page-404 .window {
+  & .CLASS{
+    //
+  }
+}
+
+
+// RAINY
+
+
+
+.page-404 .window {
+  & .window__rainy{
+    // position: relative;
+    position: absolute;
+    top: 65px;
+    left: 0px;
+
+    &__mask {
+      display: none;
+    }
+
+    @media #{$tablet} {
+      top: 35px;
+
+      position: relative;
+
+      &__mask {
+        display: block;
+        position: absolute;
+        width: 120px;
+        height: 550px;
+        background: #e5e5e7;
+        top: 0px;
+        right: -110px;
+      }
+    }
+
+    @media #{$mobile} {
+      top: 145px;
+      width: 100%;
+    }
+  }
+}
+
+
+.page-404 .window {
+  & video, canvas {
+  	width: 100%;
+  	vertical-align: top;
+
+    @media #{$tablet} {
+      width: 840px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    @media #{$mobile} {
+      width: 300px;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+
+.page-404 .window {
+  & canvas {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  }
+}
+
+
+.page-404 .window {
+  & .CLASS{
+
+  }
+}
+
+
+
+// RAINY END

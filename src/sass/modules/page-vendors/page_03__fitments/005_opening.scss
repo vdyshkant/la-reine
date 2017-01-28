@@ -1,0 +1,230 @@
+.page-fitments .opening {
+  // bg 1
+}
+
+
+.page-fitments .opening {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      max-width: 768px;
+      min-width: 768px;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      padding: 0 9px;
+
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 100px 0;
+
+    @media #{$tablet} {
+      padding: 60px 0 50px;
+    }
+
+    @media #{$mobile} {
+      padding: 70px 0 50px;
+    }
+  }
+
+  & .opening-wrapper {
+    //
+  }
+
+  & .opening-essence {
+    //
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .opening-title {
+  @include font(normal, 700, 36px, 27px, 'Roboto Condensed')
+  text-transform: uppercase;
+  text-align: center;
+  color: #444341;
+
+  margin-bottom: 30px;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 17px, 'Roboto Condensed')
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 17px, 'Roboto Condensed')
+  }
+
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+
+.page-fitments .opening-divider {
+  margin: 0 auto;
+  display: block;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+
+  outline: none;
+  border: none;
+
+  margin-bottom: 50px;
+
+  @media #{$mobile-tablet} {
+    margin-bottom: 30px;
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+// opening CONTENT
+.page-fitments .opening-content__row {
+  @include clearfix;
+  margin-bottom: 45px;
+
+  @media #{$mobile} {
+    margin-bottom: 55px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+.page-fitments .opening-content__col {
+
+}
+
+
+.page-fitments .opening-content__col.col-left {
+  float: left;
+  width: 360px;
+  margin-right: 20px;
+
+  @media #{$tablet} {
+    width: 260px;
+    margin-right: 15px;
+  }
+
+  @media #{$mobile} {
+    width: 270px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 25px;
+  }
+}
+
+
+.page-fitments .opening-content__col.col-right {
+  float: right;
+  width: 740px;
+  padding-right: 95px;
+
+  @media #{$tablet} {
+    width: 447px;
+    padding-right: 5px;
+    float: none;
+    width: auto;
+  }
+
+  @media #{$mobile} {
+    width: auto;
+    float: none;
+    padding-right: 0;
+  }
+}
+
+
+.page-fitments .opening-content__img {
+  // width: 373px;
+  // height: 346px;
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .opening-content__col__title {
+  @include font(normal, 700, 32px, 54px, 'Roboto');
+  width: 500px;
+  color: #444341;
+  margin-bottom: 30px;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 21px, 31px, 'Roboto');
+    width: auto;
+    margin-bottom: 5px;
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 21px, 31px, 'Roboto');
+    width: auto;
+    margin-bottom: 10px;
+  }
+}
+
+
+.page-fitments .opening-content__col__text {
+  @include font(normal, 400, 18px, 27px, 'Roboto');
+  color: #444341;
+
+  & span {
+    @include font(normal, 700, 18px, 27px, 'Roboto');
+
+    @media #{$mobile-tablet} {
+      @include font(normal, 400, 18px, 27px, 'Roboto');
+    }
+  }
+
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}

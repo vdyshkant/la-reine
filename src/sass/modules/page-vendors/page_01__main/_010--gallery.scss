@@ -1,0 +1,325 @@
+.page-index .gallery {
+  // bg 1
+  background: #444341;
+}
+
+
+.page-index .gallery {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @media #{$mobile} {
+      padding: 70px 0;
+    }
+  }
+
+  & .gallery-wrapper {
+    //
+  }
+
+  & .gallery-smooth {
+    margin-bottom: 50px;
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .gallery-essence {
+  @media #{$mobile} {
+    @include clearfix;
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1{
+    display: flex;
+    flex-direction: row;
+
+    @media #{$mobile} {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+}
+
+.page-index .gallery {
+  & .row-2{
+    @media #{$mobile} {
+      float: left;
+    }
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1 .col {
+    margin-bottom: 20px;
+
+    @media #{$mobile} {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1 .col-1{
+    width: 550px;
+    margin-right: 20px;
+
+    @media #{$mobile} {
+      width: 300px;
+    }
+
+    & .gallery__item {
+
+      height: 470px;
+
+      @media #{$mobile} {
+        height: 256px;
+      }
+    }
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1 .col-2{
+    width: 170px;
+    margin-right: 20px;
+
+    @media #{$mobile} {
+      width: 360px;
+      @include clearfix;
+
+      & .gallery__item {
+        float: left;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.page-index .gallery {
+  & .row-1 .col-3{
+    width: 360px;
+
+    @media #{$mobile} {
+      width: 740px;
+      @include clearfix;
+    }
+
+    & .gallery__item {
+      height: 225px;
+
+      @media #{$mobile} {
+        float: left;
+        margin-right: 20px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+
+.page-index .gallery {
+  & .col-2 .gallery__item:first-child,
+  & .col-3 .gallery__item:first-child{
+    margin-bottom: 15px;
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .gallery {
+  & .row-2 .col-s {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+.page-index .gallery {
+  & .col-s .gallery__item {
+    width: 360px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// EXPAND
+.page-index .gallery {
+  & .gallery__expand{
+    min-height: 50px;
+    transition: .3s ease-out;
+
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .gallery {
+  & .gallery__expand-item {
+    // FLEX
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.page-index .gallery {
+  & .gallery__expand-item.divider{
+
+    width: 33.92857142857143%;
+    border-bottom: 1px solid #fff;
+    &:first-child {
+      margin-right: 20px;
+    }
+    &:last-child {
+      margin-left: 20px;
+    }
+
+    @media #{$mobile} {
+      display: none;
+    }
+  }
+}
+
+
+.page-index .gallery {
+  & .gallery__expand__btn{
+    display: block;
+    @include font(normal, 400, 18px, 50px, 'Roboto');
+    color: white;
+
+    white-space: nowrap;
+    width: 320px;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #ffffff;
+    text-align: center;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: .3s ease-out;
+
+
+    position: relative;
+    margin-top: -1px;
+    user-select: none;
+
+    &:hover {
+      background: #fff;
+      color: #444341;
+      // background: #3a8147;
+
+    }
+
+    &:active {
+      background: #fff;
+      color: #444341;
+      margin-top: 0px;
+    }
+  }
+}
+
+
+.page-index .gallery {
+  & .CLASS{
+
+  }
+}
+
+
+// smooth div scroll:
+
+#gallery-smooth div.scrollableArea .gallery-essence
+{
+	position: relative;
+	display: block;
+	float: left;
+	// margin: 0;
+	// padding: 0;
+	/* If you don't want the images in the scroller to be selectable, try the following
+		block of code. It's just a nice feature that prevent the images from
+		accidentally becoming selected/inverted when the user interacts with the scroller. */
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+  margin-right: 20px;
+
+}
+
+#gallery-smooth div.scrollableArea
+{
+	@include clearfix;
+}
+
+// smooth div scroll end
+
+
+#gallery-smooth .gallery-essence {
+  @media #{$mobile} {
+    @include clearfix;
+  }
+}

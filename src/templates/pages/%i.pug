@@ -1,0 +1,69 @@
+extends ../conf/002_docwrapper
+
+
+append 001_config
+  - var PageTitle = 'Contents'
+
+
+  - var updateBodyClass = bodyClasses.push('page-contents')
+
+append stylesheets
+  //- link( href='css/extrastyles.css', rel='stylesheet' )
+
+
+  //- eof HEAD appends
+  //- –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+block content
+  .wrapper
+    //
+          ========================================================
+                                  CONTENT
+          ========================================================
+
+
+
+    .dev_contents
+      .dev_contents__testServer
+        h1 i.html page -- test server CONTENTS:
+        h3 {testServer} / %page%
+        ol
+          li: a(data-num='01' href=testServer + "") / index
+          li: a(data-num='02' href=testServer + "windsystems.html") / windsystems
+          li: a(data-num='03' href=testServer + "fitments.html") / fitments
+          li: a(data-num='04' href=testServer + "cottages.html") / cottages
+          li: a(data-num='05' href=testServer + "glassunit.html") / glassunit
+          li: a(data-num='06' href=testServer + "accessories.html") / accessories
+          li: a(data-num='07' href=testServer + "affair.html") / affair
+          li: a(data-num='08' href=testServer + "article.html") / article
+          li: a(data-num='09' href=testServer + "articles.html") / articles
+          li: a(data-num='10' href=testServer + "choosingadvices.html") / choosingadvices
+          li: a(data-num='11' href=testServer + "contacts.html") / contacts
+          li: a(data-num='12' href=testServer + "doors.html") / doors
+          //- li: a(data-num='13' href=testServer + "choosingadvices.html") / choosingadvices
+          //- li: a(data-num='14' href=testServer + "choosingadvices.html") / choosingadvices
+
+          li: a(data-num='98' href=testServer + ". . .") / . . .
+          li: a(data-num='99' href=testServer + "404.html") / 404
+
+      .dev_contents__localhost
+        h1 /for developers only/ -- localhost CONTENTS:
+        h3 { lh8809 } / %page%
+        ol
+          li: a(data-num='01' href=localhost + "") / index
+          li: a(data-num='02' href=localhost + "windsystems.html") / windsystems
+          li: a(data-num='03' href=localhost + "fitments.html") / fitments
+          li: a(data-num='04' href=localhost + "cottages.html") / cottages
+          li: a(data-num='05' href=localhost + "glassunit.html") / glassunit
+          li: a(data-num='06' href=localhost + "accessories.html") / accessories
+          li: a(data-num='07' href=localhost + "affair.html") / affair
+          li: a(data-num='08' href=localhost + "article.html") / article
+          li: a(data-num='09' href=localhost + "articles.html") / articles
+          li: a(data-num='10' href=localhost + "choosingadvices.html") / choosingadvices
+          li: a(data-num='11' href=localhost + "contacts.html") / contacts
+          li: a(data-num='12' href=localhost + "doors.html") / doors
+          //- li: a(data-num='13' href=localhost + "choosingadvices.html") / choosingadvices
+
+          li: a(data-num='98' href=localhost + ". . .") / . . .
+          li: a(data-num='99' href=localhost + "404.html") / 404

@@ -1,0 +1,257 @@
+.page-glass-unit .differences {
+  background: url('../img/005_differences_bg.jpg');
+}
+
+
+.page-glass-unit .differences {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 90px 0 100px;
+
+    @media #{$tablet} {
+      padding: 90px 0 100px;
+    }
+
+    @media #{$mobile} {
+      padding: 90px 0 50px;
+    }
+  }
+
+  & .differences-wrapper {
+    //
+  }
+
+  & .differences-essence {
+    //
+  }
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .differences-title {
+    @include font(normal, 700, 36px, 34px, 'Roboto Condensed')
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+
+    margin-bottom: 25px;
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 54px, 'Roboto Condensed'); // 36/2 = 18
+      margin-bottom: 10px;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+      margin-bottom: 10px;
+    }
+}
+
+
+.page-glass-unit .differences-divider {
+  display: block;
+  width: 236px;
+  height: 1px;
+  background-color: #fff;
+
+  outline: none;
+  border: none;
+
+  margin: 0 auto 25px;
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .differences-content {
+
+  @include font(normal, 400, 18px, 27px, 'Roboto');
+  color: #fff;
+
+
+  max-width: 740px;
+  margin: 0 auto;
+
+  @media #{$mobile} {
+    @include font(normal, 400, 15px, 21px, 'Roboto');
+  }
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .differences-content__text {
+  margin-bottom: 50px;
+}
+
+
+// TABLE
+.page-glass-unit .differences-table {
+  @media #{$tablet-wide} {
+    border-left: 1px solid white;
+  }
+}
+
+
+.page-glass-unit .differences-table__row {
+  display: flex;
+
+  @media #{$mobile} {
+    display: block;
+    @include clearfix;
+
+    margin-bottom: 30px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+
+    &:last-child {
+      margin-bottom: 0;
+      // border-bottom: none;
+    }
+  }
+
+  &:last-child {
+    & > .differences-table__cell {
+      border-bottom: 1px solid white;
+
+      @media #{$mobile} {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .differences-table__cell {
+  border: 1px solid white;
+  border-bottom: none;
+  border-left: none;
+
+  width: 96px;
+
+  padding: 18px 20px;
+
+  position: relative;
+
+  @media #{$mobile} {
+    float: left;
+    width: 25%;
+    min-height: 50px;
+    padding: 14px 20px;
+  }
+
+  &:not(:first-child) {
+    & .differences-table__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+.page-glass-unit .differences-table__row > .differences-table__cell {
+  &:first-child {
+    width: 360px;
+
+    @media #{$mobile} {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+
+.page-glass-unit .differences-table__mobile-row {
+  display: none;
+  @include clearfix;
+
+  @media #{$mobile} {
+    display: block;
+  }
+}
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-glass-unit .differences-content__row {
+  @include clearfix;
+}
+
+
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+
+
+
+.page-glass-unit .PROTO {
+  & .CLASS{
+
+  }
+}

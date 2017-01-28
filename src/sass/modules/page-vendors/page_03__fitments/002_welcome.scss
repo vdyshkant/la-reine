@@ -1,0 +1,181 @@
+.page-fitments .welcome {
+
+
+  // @media #{$mobile-tablet} {
+  //   box-shadow: none;
+  // }
+}
+
+
+.page-fitments .welcome {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
+    @media #{$wide} {
+      min-width: 1160px;
+    }
+
+    // padding: 0 5px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+    background: url('../img/bg_welcome.png');
+
+    @media #{$tablet} {
+      max-width: 768px;
+    }
+
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+
+  }
+
+  & .welcome-wrapper {
+      // min-height: 600px;
+      @include clearfix;
+      @media #{$mobile} {
+        padding-bottom: 50px;
+      }
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .welcome-thumb {
+  height: 510px;
+  float: left;
+
+  @media #{$wide} {
+    width: 595px;
+  }
+
+  @media #{$tablet} {
+    width: 393px;
+    width: 51.171875%;
+    height: 336px;
+  }
+
+  @media #{$mobile} {
+    float: none;
+    height: 202px;
+    background: url('../img/bg_white.jpg');
+  }
+
+}
+
+
+.page-fitments .welcome-thumb__img {
+
+  background: #fff url('../img/003_welcome-img.jpg') no-repeat left 45px top -50px;
+  height: 100%;
+
+  @media #{$tablet} {
+
+    background: #fff url('../img/003_welcome-img_tablet.jpg') no-repeat right 20px top 0px;
+  }
+
+  @media #{$mobile} {
+    background: #fff url('../img/003_welcome-img_mobile.jpg') no-repeat right -5px top 0px;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .welcome-content {
+  background: url('../img/bg_white.jpg');
+  // position: absolute;
+  // bottom: 0;
+  // right: 0px;
+  // width: 565px;
+  // min-height: 510px;
+
+  padding: 30px 20px 50px 20px;
+
+  width: 48.706896551724135%;
+  float: right;
+  margin-top: 90px;
+
+  @media #{$tablet} {
+    // width: 375px;
+    width: 48.828125%;
+    margin-top: 60px;
+    padding: 30px 20px 35px 20px;
+  }
+  @media #{$mobile} {
+    width: 100%;
+    margin-top: 0;
+    float: none;
+    // padding-bottom: 20px;
+    padding: 30px 10px 20px 20px;
+  }
+}
+
+
+.page-fitments .welcome-title {
+  @include font(normal, 700, 32px, 25px, 'Roboto');
+  text-align: center;
+  color: #444341;
+  margin-bottom: 30px;
+  @media #{$mobile-tablet} {
+    @include font(normal, 700, 21px, 31px, 'Roboto');
+  }
+}
+
+
+.page-fitments .welcome-text__item {
+  @include font(normal, 400, 18px, 23px, 'Roboto');
+  color: #444341;
+  margin-bottom: 23px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-fitments .PROTO {
+  & .CLASS{
+
+  }
+}

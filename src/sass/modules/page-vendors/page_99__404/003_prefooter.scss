@@ -1,0 +1,60 @@
+.page-404 .prefooter {
+  background: url('../img/bg_tan.jpg');
+}
+
+
+.page-404 .PROTO {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    outline: 2px dashed tan;
+    outline-offset: -2px;
+
+    @media #{$mobile} {
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    //
+  }
+
+  & .PROTO-wrapper {
+    //
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-404 .prefooter-essence {
+  background: url('../img/prefooter_bg.png') no-repeat center top 10px;
+  height: 119px;
+  width: 100%;
+
+}
+
+
+.page-404 .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-404 .PROTO {
+  & .CLASS{
+
+  }
+}

@@ -1,0 +1,467 @@
+.page-index .feedbacks {
+  // bg 1
+  background: url('../img/feedbacks_bg.jpg');
+  @media #{$wide} {
+    margin-top: -195px;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    @media #{$tablet} {
+      max-width: 768px;
+      min-width: 768px;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+
+      padding: 0 10px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 210px 0 100px;
+    min-height: 1020px;
+
+    @media #{$tablet} {
+      min-height: 810px;
+      // padding: 50px 0 85px;
+      padding: 50px 0 5px;
+    }
+    @media #{$mobile} {
+      padding: 65px 0 70px;
+    }
+  }
+
+  & .feedbacks-wrapper {
+    //
+  }
+
+  & .feedbacks-essence {
+    //
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .feedbacks-title{
+    margin-bottom: 35px;
+    @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+    color: #444341;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 32px, 'Roboto Condensed');
+    }
+  }
+}
+
+
+.page-index .feedbacks {
+  & .divider{
+    // margin-bottom: 35px;
+
+    width: 236px;
+    height: 1px;
+    background-color: #333;
+    margin: 0 auto;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-stage{
+    position: relative;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.page-index .feedbacks {
+  & .feedbacks-slider{
+    margin-top: 30px;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item__inner{
+    padding: 25px 20px;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item__iframe{
+    width: 360px;
+    // height: 245px;
+
+    @media #{$mobile} {
+      width: 260px;
+    }
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item{
+    // min-width: 255px;
+    width: 400px;
+
+    @media #{$mobile} {
+      // width: 300px;
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+    }
+    // margin-right: 30px;
+
+    & .slider-item-author__img {
+      display: block;
+      margin: 0 auto;
+    }
+
+
+    // ACTIVE
+    &.active {
+      width: 400px;
+
+      & .slider-item__content {
+        padding: 0;
+
+        & p {
+          text-indent: 20px;
+          @include font(normal, 400, 18px, 23px, 'Roboto');
+          color: #444341;
+          margin-bottom: 25px;
+        }
+
+        & date {
+          display: block;
+          text-align: right;
+          @include font(italic, 300, 14px, 13px, 'Roboto');
+          color: #444341;
+        }
+      }
+
+      & .slider-item-author__name {
+        @include font(normal, 700, 18px, 17px, 'Roboto');
+      }
+
+
+    }
+  }
+}
+
+
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item__content{
+    background: url('../img/feedbacks_item_bg.jpg');
+    margin-bottom: 20px;
+    // padding: 40px 20px;
+    position: relative;
+    box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.41);
+  }
+}
+
+
+.page-index .feedbacks {
+  & blockquote{
+    padding: 40px 20px;
+  }
+}
+
+
+.page-index .slider-item:nth-child(1){
+  & .slider-item__content p{
+    @include font(italic, 300, 14px, 23px, 'Roboto');
+    color: #444341;
+
+  }
+}
+
+
+.page-index .slider-item:nth-child(2){
+  & .slider-item:nth-child(2)__content p{
+    @include font(normal, 400, 18px, 23px, 'Roboto');
+    color: #444341;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .expand{
+    display: none;
+    border-top: 1px solid #000;
+
+    @media #{$mobile-tablet} {
+      display: block;
+    }
+
+    & .show-all {
+      display: block;
+      text-align: center;
+      @include font(normal, 700, 18px, 50px, 'Roboto');
+      color: #444341;
+      letter-spacing: .5px;
+      width: 100%;
+      height: 50px;
+      transition: .3s ease-in-out;
+      &:hover {
+        color: #fff;
+        background: #42a455;
+      }
+
+      &:active {
+        color: #fff;
+        background: #42a455;
+      }
+    }
+  }
+}
+
+
+.page-index .feedbacks .slider-item.carousel-center {
+
+  @media #{$mobile} {
+    // max-width: 260px;
+    // left: 50%;
+    // transform: translateX(-50%);
+  }
+
+  & .expand{
+    display: block;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item-author__photo{
+    margin-bottom: 10px;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-item-author__name{
+    @include font(normal, 400, 18px, 17px, 'Roboto');
+    color: #444341;
+    text-align: center;
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .feedbacks {
+  & .CLASS{
+
+  }
+}
+
+
+// CAROUSEL
+
+#carousel {
+  //  width:960px;
+  //  border:1px solid #222;
+   min-height: 700px;
+   position:relative;
+   clear:both;
+// mih и h обязательно должны бить прописаны, чтоб слайды как нужно ложились на площадке
+   @media #{$tablet} {
+     min-height: 650px;
+     height: 650px;
+   }
+
+   @media #{$mobile} {
+     min-height: 700px;
+    height: 700px;
+   }
+
+  //  outline: 2px dashed limegreen;
+  //  outline-offset: -2px;
+ }
+ #carousel .slider-item {
+   visibility:hidden; /* hide images until carousel can handle them */
+   cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+
+   @media #{$mobile-tablet} {
+    //  margin: 0 auto;
+   }
+
+  //  outline: 2px dashed crimson;
+  //  outline-offset: -2px;
+ }
+ #carousel h2 {
+   position: absolute;
+   top: 10px;
+   left: 10px;
+ }
+
+ .split-left {
+   width:450px;
+   float:left;
+ }
+ .split-right {
+   width:400px;
+   float:left;
+   margin-left:10px;
+ }
+
+
+
+// controls
+.page-index .feedbacks {
+  & .slider-controls{
+    position: absolute;
+    // top: 50%;
+    transform: translateY(-50%);
+    height: 60px;
+    width: 100%;
+
+    transition: .3s ease-out;
+    z-index: 99;
+
+    @media #{$wide} {
+      display: none;
+    }
+
+    @media #{$tablet} {
+      top: 45%;
+    }
+
+    @media #{$mobile} {
+      // position: relative;
+      // top: -140px;
+      // z-index: 100;
+      //
+      // & img {
+      //   width: 16px;
+      //   height: 25px;
+      // }
+      height: 25px;
+      bottom: 50px;
+    }
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-controls__arrow {
+    top: 0;
+    position: absolute;
+    width: 46px;
+    height: 67px;
+    cursor: pointer;
+
+    @media #{$mobile} {
+      width: 16px;
+      height: 25px;
+    }
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-controls__arrow.left {
+    left: 0px;
+    background: url('../img/feedbacks__arr_left.png') no-repeat;
+
+    @media #{$mobile} {
+      background: url('../img/feedbacks__arr_left--mobile.png') no-repeat;
+    }
+  }
+}
+
+
+.page-index .feedbacks {
+  & .slider-controls__arrow.right {
+    right: 0px;
+    background: url('../img/feedbacks__arr_right.png') no-repeat;
+
+    @media #{$mobile} {
+      background: url('../img/feedbacks__arr_right--mobile.png') no-repeat;
+    }
+  }
+}
+
+// CAROUSEL end

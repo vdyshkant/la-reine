@@ -1,0 +1,53 @@
+
+
+
+
+// @import "000_proto.scss";
+@import "001_breadcrumbs";
+@import "002_actions-general-text";
+@import "003_slider-aka-general";
+
+@import "004_actions-01-text";
+@import "005_slider-01";
+
+@import "006_actions-02-text";
+@import "007_slider-02";
+
+@import "008_actions-03-text";
+@import "009_slider-03";
+
+@import "010_contact";
+@import "011_prefooter";
+// @import "002_welcome";
+// @import "003_types";
+// @import "004_about";
+// @import "005_our-process.scss";
+// @import "005_process.scss";
+// @import "002_contact";
+// @import "003_prefooter";
+
+
+// very global styles:
+
+// .page-index {
+//   & .main{
+//     // margin: 0 auto;
+//     // max-width: 1360px;
+//     position: relative;
+//
+//     // outline: 2px dashed blue;
+//     // outline-offset: -2px;
+//   }
+// }
+//
+// .page-index {
+//   & .CLASS{
+//
+//   }
+// }
+//
+// .page-index {
+//   & .CLASS{
+//
+//   }
+// }

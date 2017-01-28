@@ -1,0 +1,20 @@
+/* === Layout grid === */
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 100%; // чтоб дочерним можно было выставить height 100%
+  // min-width: 1360px;
+  // & > .wrap {
+  //   margin: 0 auto;
+  //   max-width: 1920px;
+  //
+  //   @media #{$mobile} {
+  //     min-width: 320px;
+  //     // а для внутряков обязательно заранее пропиши:
+  //     // & .wrap {
+  //     //   min-width: initial;
+  //     // }
+  //   }
+  // }
+}

@@ -1,0 +1,359 @@
+.page-doors .entry {
+  background: url('../img/005_differences_bg.jpg');
+
+  position: relative;
+
+  box-shadow: 0px 4px 7px 0px rgba(26, 47, 60, 0.21);
+}
+
+
+.page-doors .entry {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+    // padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+      padding: 0 20px;
+
+    @media #{$tablet} {
+      padding: 0 20px;
+      min-width: 768px;
+      max-width: 768px;
+    }
+
+    @media #{$mobile} {
+      padding: 0 10px;
+      min-width: 320px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 90px 0 90px;
+    @media #{$mobile-tablet} {
+      // padding-top: 55px;
+      // padding-bottom: 65px;
+    }
+    @media #{$mobile} {
+      padding-bottom: 80px;
+    }
+  }
+
+  & .PROTO-wrapper {
+    //
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-doors .entry-title-container {
+  text-align: center;
+}
+
+
+.page-doors .entry-title {
+  @include font(normal, 700, 36px, 54px, 'Roboto Condensed'); // 22/2==11~~ +/- 10
+  color: #ffffff;
+  text-transform: uppercase;
+  // text-transform: uppercase;
+  margin-bottom: 20px;
+
+  // background: url('../img/bg_white.jpg');
+  display: inline-block;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+  }
+
+}
+
+.page-doors .entry-advices-title {
+  text-align: center;
+  @media #{$tablet} {
+    overflow: hidden;
+  }
+}
+
+.page-doors .entry-advices-title-text {
+  @include font(normal, 700, 36px, 54px, 'Roboto Condensed'); // 22/2==11~~ +/- 10
+  color: #ffffff;
+  text-transform: uppercase;
+  // text-transform: uppercase;
+  margin-bottom: 45px;
+
+  // background: url('../img/bg_white.jpg');
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 54px, 'Roboto');
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 54px, 'Roboto');
+    padding: 0;
+    text-transform: none;
+  }
+
+  &::after,
+  &::before {
+
+    content: "";
+    position: absolute;
+    width: 10000%;
+    height: 1px;
+    background: #fff;
+    top: 28px;
+
+    @media #{$tablet} {
+      top: 27px;
+    }
+
+    @media #{$mobile} {
+      content: none;
+    }
+  }
+
+  &::after {
+    right: -10000%;
+
+  }
+
+  &::before {
+    left: -10000%;
+    // z-index: -1;
+
+  }
+}
+
+.page-doors .entry-advices-column-num {
+  top: 0;
+  left: 0;
+  @media #{$wide} {
+    top: 20px;
+    left: 20px;
+  }
+  @media #{$tablet} {
+    left: -5px;
+  }
+  position: absolute;
+  @include font(normal, 700, 150px, 54px, 'Roboto Condensed');
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 0.15;
+}
+
+
+.page-doors .entry-advices-column-title {
+  @include font(normal, 700, 36px, 54px, 'Roboto Condensed');
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+
+  position: relative;
+
+
+  @media #{$tablet} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  @media #{$mobile} {
+    @include font(normal, 700, 22px, 54px, 'Roboto Condensed');
+    text-align: left;
+    padding-left: 35px;
+    margin-bottom: 0;
+  }
+}
+
+
+.page-doors .entry-advices-column-text {
+  @include font(normal, 400, 18px, 28px, 'Roboto');
+  color: #ffffff;
+}
+
+
+.page-doors .divider {
+  display: block;
+  border: none;
+  outline: none;
+
+
+  margin: 0 auto;
+  width: 236px;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 30px;
+
+
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-doors .entry-container {
+  @include clearfix;
+  margin-bottom: 95px;
+  @media #{$tablet} {
+    margin-bottom: 50px;
+  }
+  @media #{$mobile} {
+    margin-bottom: 10px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+.page-doors .entry-features-thumb {
+  float: left;
+  margin-right: 18px;
+  @media #{$wide} {
+    width: 455px;
+  }
+  @media #{$tablet} {
+    width: 267px;
+  }
+  @media #{$mobile} {
+    width: 280px;
+    float:none;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  &__img {
+    @media #{$mobile} {
+      width: 280px;
+    }
+  }
+}
+
+
+.page-doors .entry-features-list {
+  @media #{$tablet-wide} {
+      float: right;
+      width: 647px;
+  }
+  @media #{$tablet} {
+    width: 443px;
+  }
+  @media #{$mobile} {
+
+  }
+}
+
+
+.page-doors .entry-features-list-item {
+  @include font(normal, 400, 18px, 28px, 'Roboto');
+  color: #ffffff;
+    position: relative;
+    // text-indent: 30px;
+    margin-bottom: 10px;
+  padding-left: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 16px;
+    top: 6px;
+    left: 0;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAABVklEQVQ4T2NkwALYC7/lg4R/9nNNRJdmxFCf98uYjfHPcZD4r/8slgyT2M4iq0HVkPafn5v7840Go7kSIEUN55JffP3Kq8Ewi/EjTBOKBr7CD9usJC67bHMvYgUp8NrZ9/vYC909n/oFvDA0gNwtyPqp62pwFJsQ+yew/LuffAzaa5f9ev+brwzmH4gNUHcf8M5itRS7guKt4690GBy2TvsN8w8jA5K7S3SXYgs0hp7L0XD/MCK7m5HhP1YN/xkY4f5h5Cn6vMNG/IITyKOENBx5abCPkSHzvyA3BzgoxQg46dXXH7waEE/n/jJjZfp75KB3JlZP22+d/vv3P2Ybhslsp+DxwF74rViQ9VMbjmCt+tnP1QsyGyni/jPyFH3ZDvMPLOJA7v7Sx+PJwMAIDhHUpIHkH2jSALubYTrje6xJA9k/IDbM3bgTH1QG5B9o8ga7GxkAAApvsUxGCfPDAAAAAElFTkSuQmCC');
+}
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-doors .entry-advices-columns {
+  @media #{$wide} {
+    @include clearfix;
+  }
+}
+
+
+.page-doors .entry-advices-column {
+  float: left;
+  position: relative;
+  @media #{$wide} {
+    width: 360px;
+    padding: 0 20px;
+
+    margin-right: 20px;
+  }
+  @media #{$tablet} {
+    margin-bottom: 50px;
+  }
+  @media #{$mobile} {
+    margin-bottom: 75px;
+  }
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}

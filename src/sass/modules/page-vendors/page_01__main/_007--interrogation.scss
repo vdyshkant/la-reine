@@ -1,0 +1,445 @@
+.page-index .interrogation {
+  // bg 1
+  background: url("../img/interrogation_foreground.png") no-repeat center top -95px,
+              url('../img/interrogation_bg.jpg');
+  box-shadow: 2px 2px 7px 0px rgba(68, 67, 65, 0.21);
+  position: relative;
+  z-index: 2;
+
+  @media #{$tablet} {
+    background: url("../img/interrogation_foreground--tablet.png") no-repeat center top -130px,
+                url('../img/interrogation_bg.jpg');
+  }
+
+  @media #{$mobile} {
+    background: url("../img/interrogation_foreground--mobile.png") no-repeat center top 10px,
+                url('../img/interrogation_bg.jpg');
+  }
+
+}
+
+.page-index .interrogation {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+    // background: url("../img/interrogation_foreground.png") no-repeat left -460px top -90px;
+
+    padding: 0 20px;
+
+    min-width: 1160px;
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+
+      padding: 0;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
+
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // bg 2
+  }
+
+  & .container {
+    padding: 100px 0;
+
+    @media #{$tablet} {
+      padding: 110px 0 100px;
+    }
+
+    @media #{$mobile} {
+      padding: 65px 0 70px;
+    }
+  }
+
+  & .interrogation-wrapper {
+    //
+  }
+
+  & .interrogation-essence {
+    //
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+// TITLE
+.page-index .interrogation {
+  & .interrogation-title{
+            margin-bottom: 35px;
+
+    @include font(normal, 700, 36px, 27px, 'Roboto Condensed');
+    color: #444341;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 34px, 'Roboto Condensed');
+      margin-bottom: 20px;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 34px, 'Roboto Condensed');
+      margin-bottom: 20px;
+    }
+
+
+    // outline: 2px dashed violet;
+    // outline-offset: -2px;
+  }
+}
+
+
+.page-index .interrogation {
+  & .divider{
+    width: 236px;
+    height: 1px;
+    background-color: #333;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 70px;
+    border: none;
+    outline: none;
+
+    @media #{$tablet} {
+      margin-bottom: 35px;
+    }
+
+    @media #{$mobile} {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+
+// UNIT
+.page-index .interrogation {
+  & .interrogation-unit{
+    // padding-top: 25px;
+
+    @media #{$tablet} {
+      padding-left: 115px;
+    }
+  }
+}
+
+
+.page-index .interrogation {
+  & .interrogation-unit-title{
+    @include font(normal, 700, 32px, 30px, 'Roboto');
+    color: #444341;
+    margin-left: 190px;
+    margin-bottom: 23px;
+
+    @media #{$tablet} {
+      @include font(normal, 700, 22px, 32px, 'Roboto');
+      margin-left: 0;
+      margin-bottom: 19px;
+    }
+
+    @media #{$mobile} {
+      @include font(normal, 700, 22px, 32px, 'Roboto');
+      margin-left: 20px;
+    }
+  }
+}
+
+
+.page-index .interrogation {
+  & .interrogation-unit-content{
+    // margin-top: 45px;
+    @media #{$wide} {
+      margin-left: 190px;
+    }
+
+    // outline: 2px dashed brown;
+    // outline-offset: -2px;
+
+    display: flex;
+    flex-direction: row;
+
+    @media #{$tablet} {
+
+    }
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .interrogation {
+  & .interrogation-unit-form{
+    position: relative;
+
+
+
+    @include clearfix;
+  }
+}
+
+
+.page-index .interrogation {
+  & .unit-form-radio {
+    display: block;
+    margin-bottom: 30px;
+  }
+}
+
+
+.page-index .interrogation {
+  & .label-text {
+    @include font(normal, 400, 18px, 20px, 'Roboto');
+    color: #444341;
+  }
+}
+
+
+        // LABEL
+.page-index .interrogation {
+  & .unit-form-radio {
+    position: relative;
+    padding-left: 33px;
+    cursor: pointer;
+  }
+}
+
+
+        // input
+.page-index .interrogation {
+  & .unit-form-radio input[type="radio"] {
+      display: none;
+      transition: .3s ease-in-out;
+  }
+}
+
+
+        // indicator
+.page-index .interrogation {
+  & .unit-form-radio input[type="radio"] + .radio-indicator {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #444341;
+    border-radius: 50%;
+    top: -1px;
+    left: 0;
+    transition: .3s ease-in-out;
+  }
+}
+
+
+        // if CHECKED
+
+.page-index .interrogation {
+  & .unit-form-radio input[type="radio"]:checked ~ .label-text{
+    color: #42a455;
+    transition: .3s ease-in-out;
+  }
+  & .unit-form-radio input[type="radio"]:checked + .radio-indicator {
+    border: 2px solid #42a455;
+  }
+  & .unit-form-radio input[type="radio"]:checked + .radio-indicator::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 3px;
+    top: 3px;
+    background-color: #42a455;
+    border-radius: 50%;
+  }
+}
+
+
+
+.page-index .interrogation {
+  & .interrogation-btn-vote{
+    display: block;
+    width: 214px;
+    height: 50px;
+    border: 1px solid #000;
+    @include font(normal, 400, 18px, 50px, 'Roboto');
+    color: #444341;
+    text-align: center;
+    text-decoration: none;
+
+    position: relative;
+    bottom: 0;
+    left: 0;
+
+    cursor: pointer;
+    transition: .3s ease-out;
+
+    user-select: none;
+
+    @media #{$wide} {
+      clear: left;
+    }
+
+    &:hover {
+      background: #42a455;
+      border: 1px solid transparent;
+      color: #fff4f4;
+    }
+    &:active {
+      background: #42a455;
+      border: 1px solid transparent;
+      color: #fff4f4;
+      bottom: -1px;
+    }
+
+    @media #{$mobile} {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .interrogation {
+  & .interrogation-unit-form{
+    // width: 550px;
+
+    width: 100%;
+
+    @media #{$tablet} {
+      // width: 250px;
+      padding-right: 20px;
+    }
+
+    @media #{$mobile} {
+
+    }
+
+    // outline: 2px dashed teal;
+    // outline-offset: -2px;
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .interrogation {
+  & .interrogation-unit-form__items{
+    float: left;
+    padding-top: 30px;
+
+    @media #{$mobile} {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+  }
+}
+
+// PREVIEW
+.page-index .interrogation {
+  & .interrogation-unit-preview{
+    float: right;
+    width: 360px;
+    height: 286px;
+
+    @media #{$mobile} {
+      width: 300px;
+      height: 234px;
+      margin-bottom: 30px;
+    }
+    // padding-left: 95px;
+
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .interrogation {
+  & .unit-preview__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}
+
+
+.page-index .interrogation {
+  & .unit-preview__item__img{
+    margin-right: 20px;
+    height: 40px;
+  }
+}
+
+
+.page-index .interrogation {
+  & .unit-preview__item__name{
+    @include font(normal, 400, 18px, 19px, 'Roboto');
+    color: #444341;
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}
+
+
+.page-index .interrogation {
+  & .CLASS{
+
+  }
+}

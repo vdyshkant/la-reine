@@ -1,0 +1,10 @@
+@function em($target, $context: $base-font-size) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
+/* set your base font and uncomment
+
+$base-font-size: 15px;
+
+*/

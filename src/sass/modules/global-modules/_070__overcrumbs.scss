@@ -1,0 +1,10 @@
+// OPTIONAL MODELE
+// overcrumbs, e.g. When we need to cut words and make them '...'
+
+.overcrumbs {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}

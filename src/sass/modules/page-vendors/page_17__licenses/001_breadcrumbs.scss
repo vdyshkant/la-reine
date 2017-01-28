@@ -1,0 +1,150 @@
+.page-doors .breadcrumbs {
+  // bg 1
+  margin-bottom: 55px;
+  @media #{$tablet} {
+    // margin-top: 60px;
+    margin-bottom: 50px;
+  }
+
+  @media #{$mobile} {
+    margin-bottom: 60px;
+  }
+}
+
+
+.page-doors .breadcrumbs {
+  & .shell {
+    margin: 0 auto;
+    max-width: 1160px;
+
+
+    padding: 0 20px;
+
+    // outline: 2px dashed tan;
+    // outline-offset: -2px;
+
+    min-width: 1160px;
+
+    @media #{$tablet} {
+      min-width: 768px;
+      max-width: 768px;
+    }
+
+    @media #{$mobile} {
+      min-width: 320px;
+      max-width: 320px;
+
+      padding: 0 10px;
+      // а для внутряков обязательно заранее пропиши:
+      // & .wrap {
+      //   min-width: initial;
+      // }
+    }
+  }
+
+  & .inner {
+    // wide bg [2] for example
+  }
+
+  & .container {
+    padding: 20px 0 10px;
+
+    @media #{$tablet} {
+      // padding-bottom: 30px;
+    }
+
+    @media #{$mobile} {
+      // padding-bottom: 25px;
+    }
+  }
+
+  & .breadcrumbs-wrapper {
+    //
+  }
+
+  & .PROTO-essence {
+    //
+  }
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}
+
+
+.page-doors .breadcrumbs-essence {
+  display: flex;
+  position: relative;
+
+  @media #{$mobile-tablet} {
+    padding-left: 12px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: rgba(68, 67, 65, 0.2);
+  }
+}
+
+
+.page-doors .breadcrumbs__item {
+  margin-right: 27px;
+
+  position: relative;
+
+  &::after {
+    content:'';
+    position: absolute;
+    width: 8px;
+    height: 14px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOCAYAAAASVl2WAAAAuElEQVQYV2N0dXW0/v+PYRkD41+fPXsOXWZAA4wuzo4vgGLiQPz0339G+3379t1FVsPo6ujo95+JYR1QkBmI70IVPYUpYgQxXJ0dYv4zMC4GC/5nuPKfkclh7969b0FcsAIQcHFyymFg/D8ZKnjq249fLkePHv0MVwBW5OJUw/D/fzNEy//9rGycnigKINY59v5nYCgCq2Fk2ESaArxW4HUkXm8SDCjkoGb++99h54EDd1CDmkBkAQD3umrHNzU0PwAAAABJRU5ErkJggg==');
+    bottom: 2px;
+    right: -18px;
+  }
+
+  &:last-child {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+
+.page-doors .breadcrumbs__link {
+  display: block;
+  @include font(normal, 400, 18px, 18px, 'Roboto');
+  color: #444341;
+  text-decoration: none;
+  @media #{$mobile} {
+    @include font(normal, 400, 18px, 16px, 'Roboto');
+  }
+}
+
+
+.page-doors .PROTO {
+  & .CLASS{
+
+  }
+}
