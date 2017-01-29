@@ -1,7 +1,16 @@
 .page-index .page-header {
-  background: url('../img/index-page-header-bg.jpg');
-  background-position: center top;
-  background-repeat: no-repeat;
+  @media #{$desktop} {
+    background: url('../img/index-page-header-bg.jpg') no-repeat center top;
+    min-height: 980px;
+    height: 980px;
+  }
+
+  @media #{$i7} {
+    background: url('../img/index-page-header-bg--i7.jpg') no-repeat calc(50% + 220px) calc(0% - 20px);
+    min-height: 735px;
+    height: 735px;
+  }
+  background: url('../img/index-page-header-bg.jpg') no-repeat center top;
   min-height: 980px;
   height: 980px;
 }
@@ -32,7 +41,12 @@
   }
 
   & .container {
-    //
+    @media #{$desktop} {
+
+    }
+    @media #{$i7} {
+      padding-top: 170px;
+    }
     padding-top: 250px;
   }
 
@@ -55,6 +69,12 @@
 
 .page-index .page-header {
   & .decor{
+    @media #{$desktop} {
+      height: 980px;
+    }
+    @media #{$i7} {
+      height: 735px;
+    }
     position: absolute;
     height: 980px;
     width: 100%;
@@ -65,12 +85,21 @@
 
 .page-index .page-header {
   & .decor__midlines{
+    // @media #{$desktop} {
+
+    // }
     position: absolute;
     height: 100%;
     width: 100%;
 
     &::before,
     &::after {
+      @media #{$desktop} {
+        height: 120px;
+      }
+      @media #{$i7} {
+        height: 80px;
+      }
       content: '';
       position: absolute;
       left: 50%;
@@ -81,9 +110,15 @@
       z-index: 1;
     }
     &::before {
+      // @media #{$desktop} {
+
+      // }
       top: 0;
     }
     &::after {
+      // @media #{$desktop} {
+
+      // }
       bottom: 0;
     }
   }
@@ -92,6 +127,15 @@
 
 .page-index .page-header {
   & .decor__redline{
+    @media #{$desktop} {
+      width: 120px;
+      height: 650px;
+    }
+    @media #{$i7} {
+      width: 74px;
+      height: 408px;
+      top: 145px;
+    }
     position: absolute;
     top: 180px;
     left: 50%;
@@ -124,6 +168,9 @@
 
 .page-index .page-header {
   & .decor__corners{
+    // @media #{$desktop} {
+
+    // }
     position: absolute;
     height: 100%;
     width: 100%;
@@ -136,6 +183,9 @@
   & .decor__top-right,
   & .decor__bottom-left,
   & .decor__bottom-right{
+    // @media #{$desktop} {
+
+    // }
     position: absolute;
     width: 100%;
     height: 100%;
@@ -144,6 +194,9 @@
 
     &::before,
     &::after {
+      // @media #{$desktop} {
+
+      // }
       content: '';
       position: absolute;
       background: #bbb7b5;
@@ -155,58 +208,139 @@
 
   & .decor__top-left{
     &::before{
-      top: 34px;
+      @media #{$desktop} {
+        top: 34px;
+      }
+      @media #{$macair} {
+        top: 25px;
+      }
+      @media #{$i7} {
+        top: 16px;
+      }
+      top: 25px;
       left: 0;
     }
     &::after {
-      top: 41px;
+      @media #{$desktop} {
+        top: 41px;
+      }
+      @media #{$macair} {
+        top: 30px;
+      }
+      @media #{$i7} {
+        top: 21px;
+      }
+      top: 30px;
       left: 0;
     }
   }
   & .decor__top-right{
     &::before,
     &::after {
+      @media #{$desktop} {
+
+      }
       // transform-origin: 100% 100%;
       // transform: rotate(90deg);
       height: 100%;
       width: 1px;
     }
     &::before{
+      @media #{$desktop} {
+        right: 34px;
+      }
+      @media #{$macair} {
+        right: 30px;
+      }
+      @media #{$i7} {
+        right: 16px;
+      }
       top: 0;
-      right: 41px;
+      right: 30px;
     }
     &::after {
+      @media #{$desktop} {
+        right: 34px;
+      }
+      @media #{$macair} {
+        right: 25px;
+      }
+      @media #{$i7} {
+        right: 21px;
+      }
       top: 0;
-      right: 34px;
+      right: 25px;
     }
   }
   & .decor__bottom-left{
     &::before,
     &::after {
+      // @media #{$desktop} {
+
+      // }
 
     }
     &::before{
-      bottom: 41px;
+      @media #{$desktop} {
+        bottom: 41px;
+      }
+      @media #{$macair} {
+        bottom: 30px;
+      }
+      @media #{$i7} {
+        bottom: 16px;
+      }
+      bottom: 30px;
       right: 0;
     }
     &::after {
-      bottom: 48px;
+      @media #{$desktop} {
+        bottom: 48px;
+      }
+      @media #{$macair} {
+        bottom: 25px;
+      }
+      @media #{$i7} {
+        bottom: 21px;
+      }
+      bottom: 25px;
       right: 0;
     }
   }
   & .decor__bottom-right{ // >> to top
     &::before,
     &::after {
+      // @media #{$desktop} {
+
+      // }
       height: 100%;
       width: 1px;
     }
     &::before{
+      @media #{$desktop} {
+        left: 31px;
+      }
+      @media #{$macair} {
+        left: 25px;
+      }
+      @media #{$i7} {
+        left: 16px;
+      }
       top: 0;
-      left: 31px;
+      left: 25px;
     }
     &::after {
+      @media #{$desktop} {
+        left: 38px;
+      }
+      @media #{$macair} {
+        left: 30px;
+      }
+      @media #{$i7} {
+        left: 21px;
+      }
       top: 0;
-      left: 38px;
+      left: 30px;
     }
   }
 }
@@ -221,16 +355,31 @@
 
 .page-index .page-header {
   & .decor__corner{
+    @media #{$desktop} {
+      width: 94px;
+      height: 94px;
+    }
+    @media #{$macair} {
+      width: 79px;
+      height: 79px;
+    }
+    @media #{$i7} {
+      width: 45px;
+      height: 59px;
+    }
     position: absolute;
     border: 1px solid #fff;
-    width: 94px;
-    height: 94px;
+    width: 79px;
+    height: 79px;
   }
 }
 
 
 .page-index .page-header {
   & .decor__top-left-corner{
+    // @media #{$desktop} {
+
+    // }
     top: 0;
     left: 0;
     border-top: transparent;
@@ -242,6 +391,9 @@
 
 .page-index .page-header {
   & .decor__top-right-corner{
+    // @media #{$desktop} {
+
+    // }
     top: 0;
     right: 0;
     border-top: transparent;
@@ -253,6 +405,9 @@
 
 .page-index .page-header {
   & .decor__bottom-left-corner{
+    // @media #{$desktop} {
+
+    // }
     left: 0;
     bottom: 0;
     border-bottom: transparent;
@@ -263,6 +418,9 @@
 
 .page-index .page-header {
   & .decor__bottom-right-corner{
+    // @media #{$desktop} {
+
+    // }
     right: 0;
     bottom: 0;
     border-right: transparent;
@@ -280,21 +438,37 @@
 
 .page-index .page-header {
   & .page-header-content{
+    // @media #{$desktop} {
+
+    // }
     position: relative;
     z-index: 1;
 
-    outline: 2px dashed crimson;
-    outline-offset: -2px;
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
   }
 }
 
 
 .page-index .page-header {
   & .page-header-logo--top{
+    @media #{$desktop} {
+      background: url(../img/page-header-logo-grand.png) no-repeat center center;
+    }
+    @media #{$macair} {
+      background: url(../img/page-header-logo-grand--macair.png) no-repeat center center;
+    }
+    @media #{$i7} {
+      background: url(../img/page-header-logo-grand--macair.png) no-repeat center center;
+      background-size: cover;
+      width: 282px;
+      height: 106px;
+
+      margin-bottom: 60px;
+    }
     width: 695px;
     height: 246px;
-    background: url(../img/page-header-logo--grand.png) no-repeat;
-    background-position: center center;
+    background: url(../img/page-header-logo-grand--macair.png) no-repeat center center;
     margin: 0 auto;
   }
 }
@@ -302,10 +476,26 @@
 
 .page-index .page-header {
   & .page-header-logo--btm{
+    @media #{$desktop} {
+      background: url(../img/page-header-logo-opening.png) no-repeat center center;
+    }
+    @media #{$macair} {
+      background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
+    }
+    @media #{$i7} {
+      background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
+      background-size: cover;
+      width: 230px;
+      height: 73px;
+
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 77px;
+    }
     width: 785px;
     height: 232px;
-    background: url(../img/page-header-logo--opening.png) no-repeat;
-    background-position: center center;
+    background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
     margin: 0 auto;
   }
 }
@@ -313,8 +503,20 @@
 
 .page-index .page-header {
   & .page-header-logo--mid{
-    height: 172px;
-    width: 88.88888888888889%;
+    @media #{$desktop} {
+      height: 172px;
+      width: 50%;
+    }
+    @media #{$macair} {
+      height: 142px;
+      width: 57.83308931185944%;
+    }
+    @media #{$i7} {
+      height: 142px;
+      width: 77.29468599033817%;
+    }
+    height: 142px;
+    width: 57.83308931185944%;
 
     margin: 0 auto;
     position: relative;
@@ -324,12 +526,37 @@
 
 .page-index .page-header {
   & .svg_page-header_logo--mid{
+    @media #{$desktop} {
+      max-width: 470px;
+    }
+    @media #{$macair} {
+      max-width: 392px;
+    }
+    @media #{$i7} {
+      // max-width: 77.29468599033817%;
+    }
     display: block;
     margin: 0 auto;
     width: 100%;
-    max-width: 470px;
-    // height: auto;
+    position: relative;
+    z-index: 1;
+    max-width: 392px;
+    // height: auto;``
     height: 100%;
+  }
+
+  & #svg_page-header_logo--mid {
+    & .innersvg {
+      fill: #fff;
+    }
+    & .innersvg__main-title {
+      @media #{$i7} {
+        stroke: #fff;
+      }
+    }
+    & .innersvg__subtitle {
+      stroke: #fff;
+    }
   }
 }
 
@@ -343,6 +570,9 @@
 
 .page-index .page-header {
   & .page-header-logo-frames{
+    // @media #{$desktop} {
+
+    // }
     position: absolute;
     top: 0;
     left: 0;
@@ -357,6 +587,9 @@
   & .logo-frames__top-right,
   & .logo-frames__bottom-left,
   & .logo-frames__bottom-right{
+    // @media #{$desktop} {
+
+    // }
     position: absolute;
     width: 100%;
     height: 100%;
@@ -365,6 +598,12 @@
 
     &::before,
     &::after {
+      @media #{$desktop} {
+
+      }
+      @media #{$i7} {
+        background: #a0a0a1;
+      }
       content: '';
       position: absolute;
       background: #fff;
@@ -376,10 +615,19 @@
 
   & .logo-frames__top-left{
     &::before{
+      @media #{$desktop} {
+
+      }
+      @media #{$i7} {
+        top: 14px;
+      }
       top: 22px;
       left: 0;
     }
     &::after {
+      @media #{$i7} {
+        top: 18px;
+      }
       top: 29px;
       left: 0;
     }
@@ -387,16 +635,28 @@
   & .logo-frames__top-right{
     &::before,
     &::after {
+      @media #{$desktop} {
+
+      }
+      @media #{$i7} {
+        display: none;
+      }
       // transform-origin: 100% 100%;
       // transform: rotate(90deg);
       height: 100%;
       width: 1px;
     }
     &::before{
+      // @media #{$desktop} {
+
+      // }
       top: 0;
       right: 22px;
     }
     &::after {
+      // @media #{$desktop} {
+
+      // }
       top: 0;
       right: 29px;
     }
@@ -407,10 +667,22 @@
 
     }
     &::before{
+      @media #{$desktop} {
+
+      }
+      @media #{$i7} {
+        bottom: 14px;
+      }
       bottom: 22px;
       right: 0;
     }
     &::after {
+      @media #{$desktop} {
+
+      }
+      @media #{$i7} {
+        bottom: 18px;
+      }
       bottom: 29px;
       right: 0;
     }
@@ -418,14 +690,26 @@
   & .logo-frames__bottom-right{ // >> to top
     &::before,
     &::after {
+      @media #{$desktop} {
+
+      }
+      @media #{$i7} {
+        display: none;
+      }
       height: 100%;
       width: 1px;
     }
     &::before{
+      // @media #{$desktop} {
+
+      // }
       top: 0;
       left: 22px;
     }
     &::after {
+      // @media #{$desktop} {
+
+      // }
       top: 0;
       left: 29px;
     }
@@ -442,6 +726,14 @@
 
 .page-index .page-header {
   & .logo-frames__corner{
+    @media #{$desktop} {
+
+    }
+    @media #{$i7} {
+      width: 28px;
+      height: 28px;
+      border: 1px solid #acacac;
+    }
     position: absolute;
     border: 1px solid #fff;
     width: 45px;
@@ -452,6 +744,9 @@
 
 .page-index .page-header {
   & .logo-frames__top-left-corner{
+    // @media #{$desktop} {
+
+    // }
     top: 0;
     left: 0;
     border-top: transparent;
@@ -463,6 +758,9 @@
 
 .page-index .page-header {
   & .logo-frames__top-right-corner{
+    // @media #{$desktop} {
+
+    // }
     top: 0;
     right: 0;
     border-top: transparent;
