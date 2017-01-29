@@ -1,33 +1,43 @@
 //- page-header
 header.page-header
   .shell
-      .container
-        .range
-          .page-header-wrapper
-            .page-header-content
-              .page-header-logo--top
-                img.page-header-logo--top
-              .page-header-logo--mid
-                img.page-header-logo--mid
-                //- frames
-                .page-header-logo-frames
-                  .logo-frames__top-left
-                  .logo-frames__top-right
-                  .logo-frames__bottom-left
-                  .logo-frames__bottom-right
-                //- eof frames
-              .page-header-logo--btm
-                img.page-header-logo--btm
+    .container
+      .range
+        //- .page-header-wrapper
+        .page-header-content
+          .page-header-logo--top
+            //- img.page-header-logo-img--top
+          .page-header-logo--mid
+            //- img.page-header-logo-img--mid
+            +svg([{'class': 'svg_page-header_logo--mid svg-icon', 'pathid': 'svg_page-header_logo--mid', 'filename':'index__page-header__logo-mid'}])
+
+            //- frames
+            .page-header-logo-frames
+              .logo-frames__top-left
+                .logo-frames__top-left-corner.logo-frames__corner
+              .logo-frames__top-right
+                .logo-frames__top-right-corner.logo-frames__corner
+              .logo-frames__bottom-left
+                .logo-frames__bottom-left-corner.logo-frames__corner
+              .logo-frames__bottom-right
+                .logo-frames__bottom-right-corner.logo-frames__corner
+            //- eof frames
+          .page-header-logo--btm
+            //- img.page-header-logo--btm
 
   //- decorations
   .decor
     .decor__midlines
       .decor__redline
-    .decor__corner
+    .decor__corners
       .decor__top-left
+        .decor__top-left-corner.decor__corner
       .decor__top-right
+        .decor__top-right-corner.decor__corner
       .decor__bottom-left
+        .decor__bottom-left-corner.decor__corner
       .decor__bottom-right
+        .decor__bottom-right-corner.decor__corner
   //- eof decorations
 
 //- page-header end
