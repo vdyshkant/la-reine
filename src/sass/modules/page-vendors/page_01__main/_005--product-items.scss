@@ -18,7 +18,7 @@
       max-width: 1140px;
       // max-width: 83.45534407027819%;
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       max-width: none;
     }
   }
@@ -28,17 +28,17 @@
   }
 
   & .container {
-    padding: 82px 0 82px;
+
 
     @media #{$desktop} {
-      //wwwww
+      padding: 82px 0 82px;
     }
 
     @media #{$macair} {
       padding: 60px 0 55px;
     }
 
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       padding: 0;
     }
   }
@@ -73,7 +73,7 @@
     position: relative;
 
     width: 25%;
-    height: 543px;
+    // height: 543px;
 
     @media #{$desktop} {
       height: 543px
@@ -83,11 +83,13 @@
       height: 388px;
     }
 
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       padding-top: 67%;
       float: none;
       width: auto;
+      max-width: 414px;
       max-height: 561px;
+      margin: 0 auto;
       padding: 0;
     }
 
@@ -104,14 +106,17 @@
 
 .page-home .product-items {
   & .product-item__inner{
-    padding: 300px 50px 55px;
+    padding: 300px 50px 0px;
     padding-top: 76%;
     // padding-top: 300px;
     // padding-left: 50px;
     // padding-right: 50px;
     // padding-bottom: 55px;
 
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
 
     @media #{$desktop} {
@@ -134,6 +139,12 @@
   & .product-item__container{
     height: 188px;
     position: relative;
+
+
+
+    @media #{$mobile} {
+      // height: 188px;
+    }
   }
 }
 
@@ -174,12 +185,22 @@
 
 .page-home .product-items {
   & .product-item__thumb{
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    // top: 0;
+    // left: 50%;
+    // transform: translateX(-50%);
 
     width: 100%; // for picture tag
+
+
+    // @media #{$mobile-i7} {
+    //   min-height: 561px;
+    // }
+
+    // DISABLING line-height SPACE:
+    display: block;
+    line-height: 0;
+    // eof DISABLING line-height SPACE:
 
     & .advantages__img {
       width: 100%;
