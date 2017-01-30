@@ -1,9 +1,9 @@
-.page-index .product-items {
+.page-home .product-items {
   background: #000;
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .shell {
     margin: 0 auto;
     max-width: 1600px;
@@ -38,21 +38,21 @@
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .CLASS{
 
   }
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .product-content{
     @include clearfix;
   }
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .product-item{
     float: left;
     position: relative;
@@ -67,7 +67,7 @@
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .product-item__inner{
     padding: 300px 50px 55px;
     // padding-top: 300px;
@@ -81,7 +81,7 @@
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .product-item__container{
     height: 188px;
     position: relative;
@@ -89,7 +89,7 @@
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .product-item__title{
     @include font(400, normal, 32px, 42px, 'AvenirNext-Regular');
     color: #000000;
@@ -104,14 +104,14 @@
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .CLASS{
 
   }
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .product-item__thumb{
     position: absolute;
     top: 0;
@@ -120,14 +120,14 @@
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .CLASS{
 
   }
 }
 
 
-.page-index .product-items {
+.page-home .product-items {
   & .CLASS{
 
   }

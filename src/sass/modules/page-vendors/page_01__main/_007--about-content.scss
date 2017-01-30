@@ -1,10 +1,10 @@
-.page-index .about-fluid {
+.page-home .about-fluid {
   background: #fff;
   padding-bottom: 150px;
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .shell {
     margin: 0 auto;
     max-width: 1920px;
@@ -31,14 +31,14 @@
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .CLASS{
 
   }
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .about-content{
     background: url('../img/index-about-fluid-bg.jpg') no-repeat center center;
     height: 680px;
@@ -48,14 +48,14 @@
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .CLASS{
 
   }
 }
 
 //- container-fluid
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .container-fluid{
     position: relative;
     width: 1150px;
@@ -71,21 +71,21 @@
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .container-fluid .content{
 
   }
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .container-fluid .content{
     @include clearfix;
   }
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .container-fluid .item{
     &:first-child,
     &:last-child {
@@ -105,7 +105,7 @@
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .container-fluid .item:last-child {
     & .item__container {
       padding: 80px 60px 80px 70px;
@@ -149,14 +149,16 @@
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .CLASS{
 
   }
 }
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .container-fluid .item-modal {
+    display: none;
+
     position: absolute;
     top: -31px;
     left: -42px;
@@ -185,26 +187,26 @@
   }
 }
 
-.page-index .about-fluid {
+.page-home .about-fluid {
+  & .container-fluid .item-modal.hovered{
+    display: block;
+  }
+}
+
+.page-home .about-fluid {
   & .CLASS{
 
   }
 }
 
-.page-index .about-fluid {
-  & .CLASS{
-
-  }
-}
-
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .CLASS{
 
   }
 }
 
 
-.page-index .about-fluid {
+.page-home .about-fluid {
   & .CLASS{
 
   }
