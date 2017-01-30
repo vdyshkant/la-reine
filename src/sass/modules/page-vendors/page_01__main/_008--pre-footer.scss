@@ -1,4 +1,13 @@
 .page-home .pre-footer {
   min-height: 666px;
   background: #fff url('../img/index_pre-footer_stuff.png') no-repeat center top;
+  @media #{$desktop} {
+
+  }
+  @media #{$macair} {
+    background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat center top;
+  }
+  @media #{$i7} {
+    background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat center top;
+  }
 }

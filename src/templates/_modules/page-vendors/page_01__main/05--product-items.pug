@@ -13,7 +13,10 @@ section.product.product-items
               .product-item__inner
                 .product-item__container
                   .product-item__title lingerie
-              img.product-item__thumb(src="img/product-items__item-01.jpg")
+              picture.product-item__thumb
+                source(media='(min-width: 1920px)', srcset='img/product-items__item-01.jpg 1x')
+                source(media='(min-width: 1366px)', srcset='img/product-items__item-01.jpg 1x')
+                img.advantages__img(src='img/product-items__item-01--i7.jpg')
             //- eof item
 
             //- #02

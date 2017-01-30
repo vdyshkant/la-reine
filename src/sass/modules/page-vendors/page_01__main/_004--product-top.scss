@@ -7,16 +7,15 @@
   & .shell {
     margin: 0 auto;
     max-width: 1600px;
+    max-width: 83.33333333333334%;
 
-    // outline: 2px dashed tan;
-    // outline-offset: -2px;
 
-    @media #{$mobile} {
-      // min-width: 320px;
-      // а для внутряков обязательно заранее пропиши:
-      // & .wrap {
-      //   min-width: initial;
-      // }
+    @media #{$macair} {
+      max-width: 1140px;
+      max-width: 83.45534407027819%;
+    }
+    @media #{$i7} {
+
     }
   }
 
@@ -25,10 +24,17 @@
   }
 
   & .container {
+    padding: 70px 0 35px;
+
     @media #{$desktop} {
       padding: 70px 0 35px;
     }
-    padding: 70px 0 35px;
+    @media #{$macair} {
+      padding: 55px 0 20px;
+    }
+    @media #{$i7} {
+      padding: 30px 0 20px;
+    }
   }
 
   & .product-top-wrapper {
@@ -60,6 +66,15 @@
   & .svg_product-top-logo{
     max-width: 420px;
     margin-bottom: 30px;
+    @media #{$macair} {
+      max-width: 342px;
+    }
+    @media #{$i7} {
+      max-width: 223px;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 25px;
+    }
 
     & .innersvg {
       stroke: #000;
@@ -70,6 +85,7 @@
 
 .page-home .product-top {
   & .product-top-logo-divider {
+
     width: 500px;
     height: 1px;
     background-color: #000000;
@@ -77,6 +93,25 @@
     border: 0;
     margin: 0;
     margin-bottom: 30px;
+
+
+    @media #{$desktop} {
+      max-width: 342px;
+      max-width: 17.8125%;
+    }
+    @media #{$macair} {
+      max-width: 355px;
+      max-width: 25.988286969253295%;
+    }
+    @media #{$i7} {
+      max-width: 223px;
+      max-width: 53.864734299516904%;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 15px;
+
+      background: #8d8989;
+    }
   }
 }
 
@@ -90,10 +125,35 @@
 
 .page-home .product-top {
   & .product-top-title{
+    @media #{$desktop} {
+      @include font(400, normal, 32px, 42px, 'AvenirNext-Regular');
+    }
+    @media #{$macair} {
+      @include font(400, normal, 30px, 39px, 'AvenirNext-Regular');
+    }
+    @media #{$i7} {
+      @include font(400, normal, 28px, 36px, 'AvenirNext-Regular');
+      text-align: center;
+    }
+
     @include font(400, normal, 32px, 42px, 'AvenirNext-Regular');
     color: #171717;
     text-transform: uppercase;
     letter-spacing: 5px;
+  }
+}
+
+
+#svg_product-top-logo__top-index {
+
+  @media #{$desktop} {
+    transform: translateX(-33px);
+  }
+  @media #{$macair} {
+    transform: translateX(-33px);
+  }
+  @media #{$i7} {
+
   }
 }
 

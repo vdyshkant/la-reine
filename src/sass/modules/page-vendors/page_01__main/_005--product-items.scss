@@ -7,16 +7,19 @@
   & .shell {
     margin: 0 auto;
     max-width: 1600px;
+    max-width: 83.33333333333334%;
 
-    // outline: 2px dashed tan;
-    // outline-offset: -2px;
 
-    @media #{$mobile} {
-      // min-width: 320px;
-      // а для внутряков обязательно заранее пропиши:
-      // & .wrap {
-      //   min-width: initial;
-      // }
+    @media #{$desktop} {
+      max-width: 1600px;
+      // max-width: 83.33333333333334%;
+    }
+    @media #{$macair} {
+      max-width: 1140px;
+      // max-width: 83.45534407027819%;
+    }
+    @media #{$i7} {
+      max-width: none;
     }
   }
 
@@ -26,6 +29,18 @@
 
   & .container {
     padding: 82px 0 82px;
+
+    @media #{$desktop} {
+      //wwwww
+    }
+
+    @media #{$macair} {
+      padding: 60px 0 55px;
+    }
+
+    @media #{$i7} {
+      padding: 0;
+    }
   }
 
   & .product-items-wrapper {
@@ -53,15 +68,35 @@
 
 
 .page-home .product-items {
-  & .product-item{
+  & .product-item {
     float: left;
     position: relative;
 
     width: 25%;
     height: 543px;
 
+    @media #{$desktop} {
+      height: 543px
+    }
+
+    @media #{$macair} {
+      height: 388px;
+    }
+
+    @media #{$i7} {
+      padding-top: 67%;
+      float: none;
+      width: auto;
+      max-height: 561px;
+      padding: 0;
+    }
+
     &:last-child {
       float: right;
+
+      @media #{$i7} {
+        float: none;
+      }
     }
   }
 }
@@ -70,6 +105,7 @@
 .page-home .product-items {
   & .product-item__inner{
     padding: 300px 50px 55px;
+    padding-top: 76%;
     // padding-top: 300px;
     // padding-left: 50px;
     // padding-right: 50px;
@@ -77,6 +113,19 @@
 
     position: relative;
     z-index: 1;
+
+    @media #{$desktop} {
+      padding-top: 76%;
+    }
+
+    @media #{$macair} {
+      padding-top: 67%;
+    }
+
+    @media #{$i7} {
+      @include font(400, normal, 30px, 39px, 'AvenirNext-Regular');
+      // padding: 0;
+    }
   }
 }
 
@@ -100,6 +149,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media #{$desktop} {
+      // padding-top: 67%;
+    }
+
+    @media #{$macair} {
+      @include font(400, normal, 27px, 35px, 'AvenirNext-Regular');
+    }
+
+    @media #{$i7} {
+      @include font(400, normal, 38px, 49px, 'AvenirNext-Regular');
+    }
   }
 }
 
@@ -115,7 +176,15 @@
   & .product-item__thumb{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%; // for picture tag
+
+    & .advantages__img {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
 
