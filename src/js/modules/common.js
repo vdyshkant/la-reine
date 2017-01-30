@@ -87,15 +87,15 @@ RESET
 (function($) {
   if($('body').is('.page-home')){
 
-    var item = $('.about-fluid .container-fluid .content .item').first();
-    var itemModal = $('.about-fluid .container-fluid .content .item-modal');
+    var item = $('.about .container-fluid .content .item').first();
+    var itemModal = $('.about .container-fluid .content .item-modal');
 
     item.mouseenter(function() {
-      itemModal.fadeIn(300);
+      itemModal.stop().fadeIn(300);
     });
 
     item.mouseleave(function() {
-      itemModal.fadeOut(300);
+      itemModal.stop().fadeOut(300);
     });
 
   }

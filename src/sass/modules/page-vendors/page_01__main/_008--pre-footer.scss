@@ -8,6 +8,8 @@
     background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat center top;
   }
   @media #{$i7} {
-    background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat center top;
+    background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat calc(50% - 65px) calc(0% + 33px);
+    // background-size: 100%;
+    min-height: 500px;
   }
 }

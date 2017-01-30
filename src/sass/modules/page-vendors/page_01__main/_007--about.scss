@@ -42,9 +42,26 @@
 .page-home .about {
   & .about-content{
     background: url('../img/index-about-fluid-bg.jpg') no-repeat center center;
-    height: 680px;
 
-    padding-top: 470px;
+
+
+
+    @media #{$desktop} {
+      height: 680px;
+      padding-top: 470px;
+    }
+
+    @media #{$macair} {
+      height: 485px;
+      padding-top: 335px;
+    }
+
+    @media #{$i7} {
+      height: 390px;
+      padding-top: 175px;
+      background: url('../img/index-about-fluid-bg.jpg') no-repeat calc(0% - 100px) center;
+      background-size: cover;
+    }
   }
 }
 
@@ -59,15 +76,24 @@
 .page-home .about {
   & .container-fluid{
     position: relative;
-    width: 1150px;
-    height: 420px;
+
     margin: 0 auto;
-    background: #fff;
-    // box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.2);
 
-    // outline: 2px dashed tan;
-    // outline-offset: -2px;
+
+    @media #{$desktop} {
+      width: 1150px;
+      height: 420px;
+    }
+
+    @media #{$macair} {
+      width: 818px;
+      height: 400px;
+    }
+
+    @media #{$i7} {
+      box-shadow: none;
+    }
   }
 }
 
@@ -92,15 +118,46 @@
     &:last-child {
       width: 575px;
       height: 420px;
+      @media #{$desktop} {
+        // width: 659px;
+        // height: 482px;
+        // top: -31px;
+        // left: -42px;
+      }
+
+      @media #{$macair} {
+        width: 409px;
+        height: 400px;
+        // top: -21px;
+        // left: -30px;
+      }
+
+      @media #{$i7} {
+        width: 360px;
+        height: 427px;
+        // top: -21px;
+        // left: -30px;
+      }
     }
 
     &:first-child {
       float: left;
       background: url('../img/index_about-fluid_item-thumb.jpg') no-repeat;
       cursor: pointer;
+
+      @media #{$i7} {
+        display: none;
+      }
     }
     &:last-child {
       float: right;
+      background: #fff;
+
+      @media #{$i7} {
+        float: none;
+        margin: 0 auto;
+        box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.2);
+      }
     }
   }
 }
@@ -109,18 +166,66 @@
 .page-home .about {
   & .container-fluid .item:last-child {
     & .item__container {
-      padding: 80px 60px 80px 70px;
+
+
+      @media #{$desktop} {
+        padding: 80px 60px 80px 70px;
+      }
+
+      @media #{$macair} {
+        padding: 45px 45px 35px 55px;
+      }
+
+      @media #{$i7} {
+        padding: 45px 30px 35px 30px;
+      }
     }
 
     & .item__content {
+
+      @media #{$desktop} {
+        max-height: 305px;
+      }
+
+      @media #{$macair} {
+        max-height: 322px;
+      }
+
+      @media #{$i7} {
+        max-height: 349px;
+      }
+
+
       & .item-title {
-        @include font(500, normal, 22px, 28px, 'AvenirNext-Medium');
+
         color: #000000;
         text-transform: uppercase;
         margin-bottom: 65px;
 
         position: relative;
         display: inline-block;
+
+        @media #{$desktop} {
+          @include font(500, normal, 22px, 28px, 'AvenirNext-Medium');
+          margin-bottom: 65px;
+        }
+
+        @media #{$macair} {
+          @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          margin-bottom: 44px;
+        }
+
+        @media #{$i7} {
+          @include font(500, normal, 22px, 28px, 'AvenirNext-Medium');
+          margin-bottom: 44px;
+          display: block;
+          text-align: center;
+          letter-spacing: .8px;
+        }
+
+        @media #{$i7} {
+
+        }
 
         &::before {
           position: absolute;
@@ -130,12 +235,55 @@
           background: #000;
           bottom: -10px;
           left: 0;
+
+          @media #{$desktop} {
+            bottom: -10px;
+          }
+
+          @media #{$macair} {
+            bottom: -5px;
+          }
+
+          @media #{$i7} {
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+
+      & .item-desc {
+        @media #{$desktop} {
+          max-height: 212px;
+        }
+
+        @media #{$macair} {
+          max-height: 250px;
+        }
+
+        @media #{$i7} {
+          max-height: 277px;
         }
       }
 
       & .item-text {
-        @include font(400, normal, 18px, 26px, 'AvenirNext-Regular');
+
         margin-bottom: 30px;
+
+        @media #{$desktop} {
+          @include font(400, normal, 18px, 26px, 'AvenirNext-Regular');
+          margin-bottom: 30px;
+        }
+
+        @media #{$macair} {
+          @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          margin-bottom: 25px;
+        }
+
+        @media #{$i7} {
+          @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          margin-bottom: 25px;
+        }
 
         &:last-child {
           margin-bottom: 0;
@@ -161,17 +309,36 @@
     display: none;
 
     position: absolute;
-    top: -31px;
-    left: -42px;
+
     // width: 575px;
     // height: 420px;
-    min-width: 659px;
-    min-height: 482px;
     border: 14px solid #fff;
     background: rgba(0, 0, 0, 0.7);
-    background: hsla(0, 0%, 0%, 0.7) url('../img/index_about-fluid_item-thumb-overlay.jpg') no-repeat;
+    background: hsla(0, 0%, 0%, 0.7) url('../img/index_about-fluid_item-thumb-overlay.jpg') no-repeat calc(50%) 0;
     box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.06);
     cursor: pointer;
+
+    @media #{$desktop} {
+      background: hsla(0, 0%, 0%, 0.7) url('../img/index_about-fluid_item-thumb-overlay.jpg') no-repeat calc(50%) 0;
+      box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.06);
+      width: 659px;
+      height: 482px;
+      top: -31px;
+      left: -42px;
+    }
+
+    @media #{$macair} {
+      background: hsla(0, 0%, 0%, 0.7) url('../img/index_about-fluid_item-thumb-overlay--macair.jpg') no-repeat calc(50%) 0;
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.06);
+      width: 468px;
+      height: 342px;
+      top: -21px;
+      left: -30px;
+    }
+
+    @media #{$i7} {
+
+    }
 
     &::before {
       content: '';

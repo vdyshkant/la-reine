@@ -1,5 +1,31 @@
+
+.page-home .about {
+  position: relative;
+}
+
+
 .page-home .about-top {
   background: #fff;
+
+  @media #{$desktop} {
+    background: #fff;
+  }
+
+  @media #{$macair} {
+    background: #fff;
+  }
+
+  @media #{$mobile-i7} {
+    background: transparent;
+
+    position: absolute;
+    top: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 336px;
+    height: 60px;
+  }
 }
 
 
@@ -10,7 +36,18 @@
   }
 
   & .about-top__container {
-    padding: 135px 0 155px;
+
+    @media #{$desktop} {
+      padding: 130px 0 150px;
+    }
+
+    @media #{$macair} {
+      padding: 70px 0 75px;
+    }
+
+    @media #{$i7} {
+      // padding: 130px 0 150px;
+    }
   }
 }
 
@@ -22,8 +59,27 @@
 }
 .page-home .about-top {
   & .svg_about-top-logo{
-    max-width: 530px;
+
     margin: 0 auto;
     display: block;
+
+    @media #{$desktop} {
+      max-width: 530px;
+    }
+
+    @media #{$macair} {
+      max-width: 392px;
+    }
+
+    @media #{$i7} {
+      max-width: 336px;
+
+      & .innersvg {
+        stroke: #fff;
+        fill: #fff;
+      }
+    }
+
+
   }
 }
