@@ -1,0 +1,29 @@
+.page-home .about-top {
+  background: #fff;
+}
+
+
+.page-home .about-top {
+  & .about-top__shell {
+    margin: 0 auto;
+    max-width: 1600px;
+  }
+
+  & .about-top__container {
+    padding: 135px 0 155px;
+  }
+}
+
+
+.page-home .about-top {
+  & .CLASS{
+
+  }
+}
+.page-home .about-top {
+  & .svg_about-top-logo{
+    max-width: 530px;
+    margin: 0 auto;
+    display: block;
+  }
+}
