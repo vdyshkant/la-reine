@@ -4,6 +4,38 @@
 }
 
 
+.page-home .about .brilliants {
+  position: absolute;
+  z-index: 3;
+
+
+  @media #{$desktop} {
+    top: -50px;
+    right: 80px;
+    background: url('../img/modal-brilliants__group03.png') no-repeat;
+    width: 336px;
+    height: 229px;
+  }
+
+  @media #{$macair} {
+    top: 0px;
+    right: 190px;
+    background: url('../img/modal-brilliants__group03--macair.png') no-repeat;
+    width: 240px;
+    height: 163px;
+  }
+
+  @media #{$ipad} {
+    top: 25px;
+    right: 140px;
+    background: url('../img/modal-brilliants__group03--macair.png') no-repeat;
+    background-size: 80%;
+    width: 240px;
+    height: 163px;
+  }
+}
+
+
 .page-home .about-top {
   background: #fff;
 

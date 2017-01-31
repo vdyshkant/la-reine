@@ -1,5 +1,38 @@
 .page-home .product-items {
   background: #000;
+  position: relative;
+}
+
+
+.page-home .product-items .brilliants {
+  position: absolute;
+  z-index: 3;
+
+
+  @media #{$desktop} {
+    top: -50px;
+    right: 80px;
+    background: url('../img/modal-brilliants__group02.png') no-repeat;
+    width: 657px;
+    height: 785px;
+  }
+
+  @media #{$macair} {
+    top: -40px;
+    right: 150px;
+    background: url('../img/modal-brilliants__group02--macair.png') no-repeat;
+    width: 467px;
+    height: 560px;
+  }
+
+  @media #{$ipad} {
+    top: -30px;
+    right: 60px;
+    background: url('../img/modal-brilliants__group02--macair.png') no-repeat;
+    background-size: 80%;
+    width: 467px;
+    height: 560px;
+  }
 }
 
 
