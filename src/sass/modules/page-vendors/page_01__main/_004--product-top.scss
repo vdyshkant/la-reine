@@ -7,15 +7,23 @@
   & .shell {
     margin: 0 auto;
     max-width: 1600px;
+
+    //-
     max-width: 83.33333333333334%;
 
-
+    @media #{$desktop} {
+      max-width: 1600px;
+      max-width: 83.33333333333334%;
+    }
     @media #{$macair} {
       max-width: 1140px;
       max-width: 83.45534407027819%;
     }
     @media #{$i7} {
-
+      max-width: 83.45534407027819%;
+    }
+    @media #{$mobile} {
+      max-width: 83.45534407027819%;
     }
   }
 
@@ -32,7 +40,7 @@
     @media #{$macair} {
       padding: 55px 0 35px;
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       padding: 30px 0 20px;
     }
   }
@@ -73,7 +81,7 @@
       max-width: 420px;
       margin-bottom: 25px;
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       max-width: 223px;
       margin: 0 auto;
       display: block;
@@ -108,7 +116,7 @@
       max-width: 25.988286969253295%;
       margin-bottom: 35px;
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       max-width: 223px;
       max-width: 53.864734299516904%;
       display: block;
@@ -136,7 +144,7 @@
     @media #{$macair} {
       @include font(400, normal, 30px, 39px, 'AvenirNext-Regular');
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       @include font(400, normal, 28px, 36px, 'AvenirNext-Regular');
       text-align: center;
     }
