@@ -99,7 +99,7 @@
     @media #{$macair} {
       height: 768px;
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       height: 735px;
     }
     position: absolute;
@@ -124,7 +124,7 @@
       @media #{$desktop} {
         height: 120px;
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         height: 80px;
       }
       content: '';
@@ -146,7 +146,7 @@
       // @media #{$desktop} {
 
       // }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         height: 120px;
       }
       bottom: 0;
@@ -166,7 +166,7 @@
       height: 543px;
       top: 115px;
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       width: 74px;
       height: 408px;
       top: 145px;
@@ -249,7 +249,7 @@
       @media #{$macair} {
         top: 25px;
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         top: 16px;
       }
       top: 25px;
@@ -262,7 +262,7 @@
       @media #{$macair} {
         top: 30px;
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         top: 21px;
       }
       top: 30px;
@@ -287,7 +287,7 @@
       @media #{$macair} {
         right: 30px;
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         right: 16px;
       }
       top: 0;
@@ -300,7 +300,7 @@
       @media #{$macair} {
         right: 25px;
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         right: 21px;
       }
       top: 0;
@@ -322,7 +322,7 @@
       @media #{$macair} {
         bottom: 30px;
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         bottom: 16px;
       }
       bottom: 30px;
@@ -335,7 +335,7 @@
       @media #{$macair} {
         bottom: 25px;
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         bottom: 21px;
       }
       bottom: 25px;
@@ -358,7 +358,7 @@
       @media #{$macair} {
         left: 25px;
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         left: 16px;
       }
       top: 0;
@@ -371,7 +371,7 @@
       @media #{$macair} {
         left: 30px;
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         left: 21px;
       }
       top: 0;
@@ -398,7 +398,7 @@
       width: 79px;
       height: 79px;
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       width: 45px;
       height: 59px;
     }
@@ -498,7 +498,13 @@
       background-size: cover;
       width: 282px;
       height: 106px;
-
+      margin-bottom: 60px;
+    }
+    @media #{$mobile} {
+      background: url(../img/page-header-logo-grand--macair.png) no-repeat center center;
+      background-size: cover;
+      width: 282px;
+      height: 106px;
       margin-bottom: 60px;
     }
     width: 695px;
@@ -519,7 +525,7 @@
       background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
       margin-top: -43px;
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
       background-size: cover;
       width: 230px;
@@ -555,6 +561,11 @@
       width: 77.29468599033817%;
       // margin-top: -5px;
     }
+    @media #{$mobile} {
+      height: 130px;
+      width: 77.29468599033817%;
+      // margin-top: -5px;
+    }
     // height: 142px;
     // width: 57.83308931185944%;
     // margin-top: -25px;
@@ -584,7 +595,7 @@
     @media #{$macair} {
       max-width: 392px;
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       max-width: 264px;
     }
   }
@@ -645,7 +656,7 @@
       @media #{$desktop} {
 
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         background: #a0a0a1;
       }
       content: '';
@@ -669,7 +680,7 @@
       left: 0;
     }
     &::after {
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         top: 18px;
       }
       top: 29px;
@@ -682,7 +693,7 @@
       @media #{$desktop} {
 
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         display: none;
       }
       // transform-origin: 100% 100%;
@@ -714,7 +725,7 @@
       @media #{$desktop} {
 
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         bottom: 14px;
       }
       bottom: 22px;
@@ -724,7 +735,7 @@
       @media #{$desktop} {
 
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         bottom: 18px;
       }
       bottom: 29px;
@@ -737,7 +748,7 @@
       @media #{$desktop} {
 
       }
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         display: none;
       }
       height: 100%;
@@ -773,7 +784,7 @@
     @media #{$desktop} {
 
     }
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       width: 28px;
       height: 28px;
       border: 1px solid #acacac;
