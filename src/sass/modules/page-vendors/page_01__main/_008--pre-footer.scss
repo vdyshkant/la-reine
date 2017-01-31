@@ -7,6 +7,9 @@
   @media #{$macair} {
     background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat center top;
   }
+  @media #{$ipad} {
+    background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat 50% 50%;
+  }
   @media #{$i7} {
     background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat calc(50% - 65px) calc(0% + 33px);
     // background-size: 100%;
