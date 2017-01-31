@@ -44,6 +44,9 @@
     @media #{$macair} {
       padding: 70px 0 75px;
     }
+    @media #{$ipad} {
+      padding: 60px 0 65px;
+    }
 
     @media #{$i7} {
       // padding: 130px 0 150px;
@@ -69,6 +72,9 @@
 
     @media #{$macair} {
       max-width: 392px;
+    }
+    @media #{$ipad} {
+      max-width: 360px;
     }
 
     @media #{$mobile-i7} {

@@ -56,6 +56,11 @@
       padding-top: 335px;
     }
 
+    @media #{$ipad} {
+      height: 455px;
+      padding-top: 335px;
+    }
+
     @media #{$mobile-i7} {
       height: 390px;
       padding-top: 175px;
@@ -87,6 +92,11 @@
     }
 
     @media #{$macair} {
+      width: 818px;
+      height: 400px;
+    }
+
+    @media #{$ipad} {
       width: 818px;
       height: 400px;
     }
@@ -126,6 +136,13 @@
       }
 
       @media #{$macair} {
+        width: 409px;
+        height: 400px;
+        // top: -21px;
+        // left: -30px;
+      }
+
+      @media #{$ipad} {
         width: 409px;
         height: 400px;
         // top: -21px;
@@ -181,6 +198,10 @@
         padding: 45px 45px 35px 55px;
       }
 
+      @media #{$ipad} {
+        padding: 45px 45px 35px 55px;
+      }
+
       @media #{$i7} {
         padding: 45px 30px 35px 30px;
       }
@@ -197,6 +218,10 @@
       }
 
       @media #{$macair} {
+        max-height: 322px;
+      }
+
+      @media #{$ipad} {
         max-height: 322px;
       }
 
@@ -224,6 +249,11 @@
         }
 
         @media #{$macair} {
+          @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          margin-bottom: 44px;
+        }
+
+        @media #{$ipad} {
           @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
           margin-bottom: 44px;
         }
@@ -265,6 +295,10 @@
             bottom: -5px;
           }
 
+          @media #{$ipad} {
+            bottom: -5px;
+          }
+
           @media #{$mobile-i7} {
             bottom: -8px;
             left: 50%;
@@ -279,6 +313,10 @@
         }
 
         @media #{$macair} {
+          max-height: 250px;
+        }
+
+        @media #{$ipad} {
           max-height: 250px;
         }
 
@@ -301,6 +339,11 @@
         }
 
         @media #{$macair} {
+          @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          margin-bottom: 25px;
+        }
+
+        @media #{$ipad} {
           @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
           margin-bottom: 25px;
         }
@@ -358,6 +401,15 @@
     }
 
     @media #{$macair} {
+      background: hsla(0, 0%, 0%, 0.7) url('../img/index_about-fluid_item-thumb-overlay--macair.jpg') no-repeat calc(50%) 0;
+      box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.06);
+      width: 468px;
+      height: 342px;
+      top: -21px;
+      left: -30px;
+    }
+
+    @media #{$ipad} {
       background: hsla(0, 0%, 0%, 0.7) url('../img/index_about-fluid_item-thumb-overlay--macair.jpg') no-repeat calc(50%) 0;
       box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.06);
       width: 468px;
