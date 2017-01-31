@@ -52,9 +52,10 @@ $break-macair: 1366px;
 $break-desktop: 1920px;
 
 $mobile: "only screen and (max-width: "$break-i7 - 1")";
-$mobile-i7: "only screen and (max-width: "$break-ipad - 1")";
+  $mobile-i7: "only screen and (max-width: "$break-ipad - 1")";
 $i7: "only screen and (min-width: "$break-i7") and (max-width: "$break-ipad - 1")";
 $ipad: "only screen and (min-width: "$break-ipad") and (max-width: "$break-macair - 1")";
+$ipad-macair: "only screen and (min-width: "$break-ipad") and (max-width: "$break-desktop - 1")";
 $macair: "only screen and (min-width: "$break-macair") and (max-width: "$break-desktop - 1")";
 $desktop: "only screen and (min-width: "$break-desktop")";
 
