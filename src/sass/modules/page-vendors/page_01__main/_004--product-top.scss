@@ -19,6 +19,10 @@
       max-width: 1140px;
       max-width: 83.45534407027819%;
     }
+    @media #{$ipad} {
+      // max-width: 1140px;
+      max-width: 83.45534407027819%;
+    }
     @media #{$i7} {
       max-width: 83.45534407027819%;
     }
@@ -38,6 +42,9 @@
       padding: 70px 0 30px;
     }
     @media #{$macair} {
+      padding: 55px 0 35px;
+    }
+    @media #{$ipad} {
       padding: 55px 0 35px;
     }
     @media #{$mobile-i7} {
@@ -74,12 +81,15 @@
   & .svg_product-top-logo{
 
     margin-bottom: 30px;
-    @media #{$macair} {
-      max-width: 342px;
-    }
     @media #{$desktop} {
       max-width: 420px;
       margin-bottom: 25px;
+    }
+    @media #{$macair} {
+      max-width: 342px;
+    }
+    @media #{$ipad} {
+      max-width: 282px;
     }
     @media #{$mobile-i7} {
       max-width: 223px;
@@ -109,16 +119,21 @@
 
     @media #{$desktop} {
       max-width: 342px;
-      max-width: 17.8125%;
+      max-width: 18%;
     }
     @media #{$macair} {
       max-width: 355px;
-      max-width: 25.988286969253295%;
+      max-width: 26%;
+      margin-bottom: 35px;
+    }
+    @media #{$ipad} {
+      max-width: 355px;
+      max-width: 36%;
       margin-bottom: 35px;
     }
     @media #{$mobile-i7} {
       max-width: 223px;
-      max-width: 53.864734299516904%;
+      max-width: 54%;
       display: block;
       margin: 0 auto;
       margin-bottom: 25px;
@@ -144,6 +159,9 @@
     @media #{$macair} {
       @include font(400, normal, 30px, 39px, 'AvenirNext-Regular');
     }
+    @media #{$ipad} {
+      @include font(400, normal, 30px, 39px, 'AvenirNext-Regular');
+    }
     @media #{$mobile-i7} {
       @include font(400, normal, 28px, 36px, 'AvenirNext-Regular');
       text-align: center;
@@ -163,6 +181,9 @@
     transform: translateX(-33px);
   }
   @media #{$macair} {
+    transform: translateX(-33px);
+  }
+  @media #{$ipad} {
     transform: translateX(-33px);
   }
   @media #{$i7} {

@@ -18,6 +18,10 @@
       max-width: 1140px;
       // max-width: 83.45534407027819%;^^^
     }
+    @media #{$ipad} {
+      max-width: 830px;
+      // max-width: 83.45534407027819%;^^^
+    }
     @media #{$mobile-i7} {
       max-width: none;
     }
@@ -36,6 +40,9 @@
 
     @media #{$macair} {
       padding: 60px 0 55px;
+    }
+    @media #{$ipad} {
+      padding: 50px 0 45px;
     }
 
     @media #{$mobile-i7} {
@@ -82,6 +89,9 @@
     @media #{$macair} {
       height: 388px;
     }
+    @media #{$ipad} {
+      max-height: 388px;
+    }
 
     @media #{$mobile-i7} {
       padding-top: 67%;
@@ -126,6 +136,9 @@
     @media #{$macair} {
       padding-top: 67%;
     }
+    @media #{$ipad} {
+      padding-top: 59%;
+    }
 
     @media #{$mobile-i7} {
       @include font(400, normal, 30px, 39px, 'AvenirNext-Regular');
@@ -167,6 +180,9 @@
 
     @media #{$macair} {
       @include font(400, normal, 27px, 35px, 'AvenirNext-Regular');
+    }
+    @media #{$ipad} {
+      @include font(400, normal, 23px, 30px, 'AvenirNext-Regular');
     }
 
     @media #{$mobile-i7} {
