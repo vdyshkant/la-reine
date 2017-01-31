@@ -147,7 +147,7 @@
 
     &:first-child {
       float: left;
-      background: url('../img/index_about-fluid_item-thumb.jpg') no-repeat;
+      background: url('../img/index_about-fluid_item-thumb.jpg') no-repeat 50% 50%;
       cursor: pointer;
 
       @media #{$mobile-i7} {
