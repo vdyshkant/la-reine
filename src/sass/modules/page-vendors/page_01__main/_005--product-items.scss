@@ -12,11 +12,11 @@
 
     @media #{$desktop} {
       max-width: 1600px;
-      // max-width: 83.33333333333334%;
+      // max-width: 83.33333333333334%;^^^
     }
     @media #{$macair} {
       max-width: 1140px;
-      // max-width: 83.45534407027819%;
+      // max-width: 83.45534407027819%;^^^
     }
     @media #{$mobile-i7} {
       max-width: none;
@@ -96,7 +96,7 @@
     &:last-child {
       float: right;
 
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         float: none;
       }
     }
@@ -127,7 +127,7 @@
       padding-top: 67%;
     }
 
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       @include font(400, normal, 30px, 39px, 'AvenirNext-Regular');
       // padding: 0;
     }
@@ -169,7 +169,7 @@
       @include font(400, normal, 27px, 35px, 'AvenirNext-Regular');
     }
 
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       @include font(400, normal, 38px, 49px, 'AvenirNext-Regular');
     }
   }

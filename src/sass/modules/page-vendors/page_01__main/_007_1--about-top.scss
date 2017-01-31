@@ -71,13 +71,20 @@
       max-width: 392px;
     }
 
-    @media #{$i7} {
-      max-width: 336px;
+    @media #{$mobile-i7} {
 
       & .innersvg {
         stroke: #fff;
         fill: #fff;
       }
+    }
+
+    @media #{$i7} {
+      max-width: 336px;
+    }
+
+    @media #{$mobile} {
+      max-width: 280px;
     }
 
 

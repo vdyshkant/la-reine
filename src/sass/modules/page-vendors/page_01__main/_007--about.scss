@@ -56,7 +56,7 @@
       padding-top: 335px;
     }
 
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       height: 390px;
       padding-top: 175px;
       background: url('../img/index-about-fluid-bg.jpg') no-repeat calc(0% - 100px) center;
@@ -91,7 +91,7 @@
       height: 400px;
     }
 
-    @media #{$i7} {
+    @media #{$mobile-i7} {
       box-shadow: none;
     }
   }
@@ -138,6 +138,11 @@
         // top: -21px;
         // left: -30px;
       }
+
+      @media #{$mobile} {
+        width: 300px;
+        height: 427px;
+      }
     }
 
     &:first-child {
@@ -145,7 +150,7 @@
       background: url('../img/index_about-fluid_item-thumb.jpg') no-repeat;
       cursor: pointer;
 
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         display: none;
       }
     }
@@ -153,7 +158,7 @@
       float: right;
       background: #fff;
 
-      @media #{$i7} {
+      @media #{$mobile-i7} {
         float: none;
         margin: 0 auto;
         box-shadow: 3px 5px 5px 0 rgba(0, 0, 0, 0.2);
@@ -179,6 +184,10 @@
       @media #{$i7} {
         padding: 45px 30px 35px 30px;
       }
+
+      @media #{$mobile} {
+        padding: 35px 20px 25px 20px;
+      }
     }
 
     & .item__content {
@@ -193,6 +202,10 @@
 
       @media #{$i7} {
         max-height: 349px;
+      }
+
+      @media #{$mobile} {
+        max-height: 359px;
       }
 
 
@@ -223,6 +236,14 @@
           letter-spacing: .8px;
         }
 
+        @media #{$mobile} {
+          @include font(500, normal, 22px, 28px, 'AvenirNext-Medium');
+          margin-bottom: 44px;
+          display: block;
+          text-align: center;
+          letter-spacing: .5px;
+        }
+
         @media #{$i7} {
 
         }
@@ -244,7 +265,7 @@
             bottom: -5px;
           }
 
-          @media #{$i7} {
+          @media #{$mobile-i7} {
             bottom: -8px;
             left: 50%;
             transform: translateX(-50%);
@@ -264,6 +285,10 @@
         @media #{$i7} {
           max-height: 277px;
         }
+
+        @media #{$mobile} {
+          max-height: 259px;
+        }
       }
 
       & .item-text {
@@ -282,6 +307,11 @@
 
         @media #{$i7} {
           @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          margin-bottom: 25px;
+        }
+
+        @media #{$mobile} {
+          @include font(500, normal, 18px, 26px, 'AvenirNext-Medium');
           margin-bottom: 25px;
         }
 
@@ -360,19 +390,6 @@
     display: block;
   }
 }
-
-.page-home .about {
-  & .CLASS{
-
-  }
-}
-
-.page-home .about {
-  & .CLASS{
-
-  }
-}
-
 
 .page-home .about {
   & .CLASS{
