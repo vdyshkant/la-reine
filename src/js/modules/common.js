@@ -111,6 +111,40 @@ RESET
 
     animatePageComponents();
 
+    setTimeout(function(){
+      var val01 = 0;
+      $(".page-home .footer .footer-content").css({
+          '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+          '-moz-transform': 'translate(0%, ' + val01 + '%)',
+          '-ms-transform': 'translate(0%, ' + val01 + '%)',
+          '-o-transform': 'translate(0%, ' + val01 + '%)',
+          'transform': 'translate(0%, ' + val01 + '%)',
+          'opacity': '1'
+
+      });
+    }, 300);
+    setTimeout(function(){
+      $(".page-home .footer .footer-top").css({
+          'opacity': '1'
+
+      });
+    }, 900);
+    setTimeout(function(){
+      var val01 = 1;
+      $(".page-home .footer .footer-bottom-container__black").css({
+        '-webkit-transform': 'scale(' + val01 + ', 1)',
+        '-moz-transform': 'scale(' + val01 + ', 1)',
+        '-ms-transform': 'scale(' + val01 + ', 1)',
+        '-o-transform': 'scale(' + val01 + ', 1)',
+        'transform': 'scale(' + val01 + ', 1)'
+
+      });
+    }, 1500);
+    setTimeout(function(){
+      var val01 = 1;
+      $(".page-home .footer .footer-bottom-container__inner").animate({ opacity: 1 });
+    }, 2200);
+
 
     function animatePageComponents() {
 
@@ -159,6 +193,8 @@ RESET
 
         });
       }, 600);
+
+
 
 
     }
