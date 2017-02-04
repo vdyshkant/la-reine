@@ -88,6 +88,49 @@
 
 
 .page-home .about-top {
+  & .about-top-logo{
+    // animations:
+    // outline: 2px dashed crimson;
+    // outline-offset: -2px;
+
+    transform: translate(0%, 40%);
+    transition: 600ms ease-out;
+    overflow: hidden;
+        // display: inline-block;
+
+    // eof animations
+  }
+  & .svg_about-top-logo{
+    // ANIMATIONS:
+
+    // opacity: 0;
+    // transform: translate(0%, 100%);
+    // transition: 600ms ease-out;
+
+    // eof ANIMATIONS
+  }
+
+  & .innersvg__main-title{
+    // ANIMATIONS:
+
+    opacity: 0;
+    transform: translate(0%, 100%);
+    transition: 600ms ease-out;
+
+    // eof ANIMATIONS
+  }
+  & .innersvg__subtitle{
+    // ANIMATIONS:
+
+    opacity: 0;
+    transform: translate(0%, 100%);
+    transition: 600ms ease-out;
+
+    // eof ANIMATIONS
+  }
+}
+
+.page-home .about-top {
   & .CLASS{
 
   }

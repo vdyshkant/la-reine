@@ -146,58 +146,11 @@ RESET
     }, 2200);
 
 
-    function animatePageComponents() {
 
 
-      setTimeout(function(){
-        var val01 = 1;
-        $(".product-items .black").css({
-            '-webkit-transform': 'scale(1, ' + val01 + ')',
-            '-moz-transform': 'scale(1, ' + val01 + ')',
-            '-ms-transform': 'scale(1, ' + val01 + ')',
-            '-o-transform': 'scale(1, ' + val01 + ')',
-            'transform': 'scale(1, ' + val01 + ')'
-        });
-      }, 50);
+    animateThird();
 
-      setTimeout(function(){
-        var val01 = 0;
-        $(".page-home .product-items .product-item").css({
-            '-webkit-transform': 'translate(0%, ' + val01 + '%)',
-            '-moz-transform': 'translate(0%, ' + val01 + '%)',
-            '-ms-transform': 'translate(0%, ' + val01 + '%)',
-            '-o-transform': 'translate(0%, ' + val01 + '%)',
-            'transform': 'translate(0%, ' + val01 + '%)'
-
-        });
-      }, 600);
-
-      setTimeout(function(){
-        var val01 = 0;
-        $(".page-home .product-items .product-item__thumb").css({
-            '-webkit-transform': 'translate(0%, ' + val01 + '%)',
-            '-moz-transform': 'translate(0%, ' + val01 + '%)',
-            '-ms-transform': 'translate(0%, ' + val01 + '%)',
-            '-o-transform': 'translate(0%, ' + val01 + '%)',
-            'transform': 'translate(0%, ' + val01 + '%)',
-            'opacity': '1'
-
-        });
-        $(".page-home .product-items .product-item__inner").css({
-            '-webkit-transform': 'translate(-50%, ' + val01 + '%)',
-            '-moz-transform': 'translate(-50%, ' + val01 + '%)',
-            '-ms-transform': 'translate(-50%, ' + val01 + '%)',
-            '-o-transform': 'translate(-50%, ' + val01 + '%)',
-            'transform': 'translate(-50%, ' + val01 + '%)',
-            'opacity': '1'
-
-        });
-      }, 600);
-
-
-
-
-    }
+    animateFluid();
 
     // scaleX: 0
     // left: "+=50"
@@ -207,6 +160,154 @@ RESET
 
   }
 })(jQuery); // eof анимация продукта
+
+
+function animateFluid() {
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .about .container-fluid").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)',
+    });
+  }, 1000);
+
+  // shadow:
+  setTimeout(function(){
+    var shadeColor = 'rgba(0, 0, 0, 0.2)';
+    $(".page-home .about .container-fluid").css({
+        'box-shadow': '3px 5px 5px 0px ' + shadeColor
+    });
+  }, 1600);
+
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .about .container-fluid .content").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)',
+        'opacity': '1'
+
+    });
+  }, 1000);
+}
+
+function animateThird() {
+  // bg animation:
+  setTimeout(function(){
+    var val01 = 1;
+    var essence = $(".page-home .about .about-content__sc");
+
+    essence.css({
+      '-webkit-transform': 'scale(1, ' + val01 + ')',
+      '-moz-transform': 'scale(1, ' + val01 + ')',
+      '-ms-transform': 'scale(1, ' + val01 + ')',
+      '-o-transform': 'scale(1, ' + val01 + ')',
+      'transform': 'scale(1, ' + val01 + ')'
+    });
+  }, 600);
+
+  // logo animation:
+  setTimeout(function(){
+    var val01 = 0;
+    var wrapper = $(".page-home .about .about-top-logo");
+
+    wrapper.css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)'
+    });
+  }, 1000);
+
+  setTimeout(function(){
+    var val01 = 0;
+    var essence = $(".page-home .about .innersvg__main-title");
+
+    essence.css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)',
+        'opacity': '1'
+    });
+  }, 1000);
+  setTimeout(function(){
+    var val01 = 0;
+    var essence = $(".page-home .about .innersvg__subtitle");
+
+    essence.css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)',
+        'opacity': '1'
+    });
+  }, 1300);
+
+
+}
+
+function animatePageComponents() {
+
+
+  setTimeout(function(){
+    var val01 = 1;
+    $(".product-items .black").css({
+        '-webkit-transform': 'scale(1, ' + val01 + ')',
+        '-moz-transform': 'scale(1, ' + val01 + ')',
+        '-ms-transform': 'scale(1, ' + val01 + ')',
+        '-o-transform': 'scale(1, ' + val01 + ')',
+        'transform': 'scale(1, ' + val01 + ')'
+    });
+  }, 50);
+
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)'
+
+    });
+  }, 600);
+
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item__thumb").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)',
+        'opacity': '1'
+
+    });
+    $(".page-home .product-items .product-item__inner").css({
+        '-webkit-transform': 'translate(-50%, ' + val01 + '%)',
+        '-moz-transform': 'translate(-50%, ' + val01 + '%)',
+        '-ms-transform': 'translate(-50%, ' + val01 + '%)',
+        '-o-transform': 'translate(-50%, ' + val01 + '%)',
+        'transform': 'translate(-50%, ' + val01 + '%)',
+        'opacity': '1'
+
+    });
+  }, 600);
+
+
+
+
+} // eof function.
+
 /* eof ^^^ */
 
 
