@@ -39,18 +39,7 @@
   }
 
   & .container {
-    // @media #{$desktop} {
-      padding: 0px 0 50px;
-    // }
-    @media #{$macair} {
-      padding: 0px 0 35px;
-    }
-    @media #{$i7} {
-      padding: 0px 0 15px;
-    }
-    @media #{$mobile} {
-      padding: 0px 0 15px;
-    }
+
   }
 
   & .footer-wrapper {
@@ -72,6 +61,19 @@
     opacity: 0;
     transform: translateY(100%);
     transition: 1200ms ease-out;
+
+    // @media #{$desktop} {
+      padding: 0px 0 50px;
+    // }
+    @media #{$macair} {
+      padding: 0px 0 35px;
+    }
+    @media #{$i7} {
+      padding: 0px 0 15px;
+    }
+    @media #{$mobile} {
+      padding: 0px 0 15px;
+    }
   }
 }
 

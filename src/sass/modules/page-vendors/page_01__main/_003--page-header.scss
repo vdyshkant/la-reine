@@ -1,33 +1,35 @@
 .page-home .page-header {
+  min-height: 100vh;
+  height: 100vh;
   @media #{$desktop} {
     background: #131315 url('../img/index-page-header-bg.jpg') no-repeat center top;
-    min-height: 980px;
-    height: 980px;
+    // min-height: 980px;
+    // height: 980px;
   }
 
   @media #{$macair} {
     background: #131315 url('../img/index-page-header-bg.jpg') no-repeat right top;
     background-size: cover;
-    min-height: 768px;
-    height: 768px;
+    // min-height: 768px;
+    // height: 768px;
   }
 
   @media #{$ipad} {
     background: #131315 url('../img/index-page-header-bg.jpg') no-repeat right top;
     background-size: cover;
-    min-height: 768px;
-    height: 768px;
+    // min-height: 768px;
+    // height: 768px;
   }
 
   @media #{$mobile-i7} {
     background: url('../img/index-page-header-bg--i7.jpg') no-repeat calc(50% + 220px) calc(0% - 20px);
-    min-height: 735px;
-    height: 735px;
+    // min-height: 735px;
+    // height: 735px;
   }
   @media #{$mobile} {
     background: url('../img/index-page-header-bg--i7.jpg') no-repeat calc(50% + 220px) calc(0% - 20px);
-    min-height: 680px;
-    height: 680px;
+    // min-height: 680px;
+    // height: 680px;
   }
   background: url('../img/index-page-header-bg.jpg') no-repeat center top;
   // min-height: 980px;
@@ -101,20 +103,23 @@
 
 .page-home .page-header {
   & .decor{
+    // min-height: 100vh;
+    height: 100vh;
+
     @media #{$desktop} {
-      height: 980px;
+      // min-height: 980px;
     }
     @media #{$macair} {
-      height: 768px;
+      // min-height: 768px;
     }
     @media #{$ipad} {
-      height: 768px;
+      // min-height: 768px;
     }
     @media #{$i7} {
-      height: 735px;
+      // min-height: 735px;
     }
     @media #{$mobile} {
-      height: 680px;
+      // min-height: 680px;
     }
     position: absolute;
     // height: 980px;
@@ -176,7 +181,7 @@
 
 
 .page-home .page-header {
-  & .decor__redline{
+  & .decor__redline-wrap{
     @media #{$desktop} {
       width: 120px;
       height: 650px;
@@ -184,7 +189,7 @@
     @media #{$macair} {
       width: 98px;
       height: 543px;
-      top: 115px;
+      top: 13%;
     }
     @media #{$ipad} {
       width: 86px;
@@ -208,11 +213,18 @@
 
     width: 120px;
     height: 650px;
-    background: #d2192b;
-    // background: rgba(210, 25, 43, 0.4);
-    // background: hsla(354, 79%, 46%, 0.4);
-    opacity: 0.4;
 
+  }
+
+  & .decor .decor__redline-essence {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #d2192b;
+    background: rgba(210, 25, 43, 0.4);
+    background: hsla(354, 79%, 46%, 0.4);
+    // opacity: 0.4;
   }
 }
 
@@ -517,6 +529,54 @@
 
 .page-home .page-header {
   & .page-header-logo--top{
+
+    position: relative;
+
+    // animations:
+
+    transform: translate(0%, 40%);
+    transition: 600ms ease-out;
+    overflow: hidden;
+
+    // eof animations
+
+    @media #{$desktop} {
+    }
+    @media #{$macair} {
+    }
+    @media #{$ipad} {
+    }
+    @media #{$i7} {
+      width: 282px;
+      height: 106px;
+      margin-bottom: 60px;
+    }
+    @media #{$mobile} {
+      width: 282px;
+      height: 106px;
+      margin-bottom: 60px;
+    }
+    width: 695px;
+    height: 246px;
+    margin: 0 auto;
+  }
+
+  & .page-header-logo--top__essence {
+    // ANIMATIONS:
+
+    opacity: 0;
+    transform: translate(0%, 100%);
+    transition: 600ms ease-out;
+
+    // eof ANIMATIONS
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+
     @media #{$desktop} {
       background: url(../img/page-header-logo-grand.png) no-repeat center center;
     }
@@ -529,60 +589,89 @@
     @media #{$i7} {
       background: url(../img/page-header-logo-grand--macair.png) no-repeat center center;
       background-size: cover;
-      width: 282px;
-      height: 106px;
-      margin-bottom: 60px;
     }
     @media #{$mobile} {
       background: url(../img/page-header-logo-grand--macair.png) no-repeat center center;
       background-size: cover;
-      width: 282px;
-      height: 106px;
-      margin-bottom: 60px;
     }
-    width: 695px;
-    height: 246px;
     background: url(../img/page-header-logo-grand--macair.png) no-repeat center center;
-    margin: 0 auto;
   }
 }
 
 
 .page-home .page-header {
   & .page-header-logo--btm{
+
+    position: relative;
+
+    // animations:
+
+    // transform: translate(0%, 40%);
+    transition: 600ms ease-out;
+    overflow: hidden;
+
+    // eof animations
+
     @media #{$desktop} {
-      background: url(../img/page-header-logo-opening.png) no-repeat center center;
       margin-top: -20px;
     }
     @media #{$macair} {
-      background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
       margin-top: -43px;
     }
     @media #{$ipad} {
-      background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
       margin-top: -43px;
     }
     @media #{$mobile-i7} {
-      background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
       background-size: cover;
       width: 230px;
       height: 73px;
 
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
       top: 77px;
     }
     width: 785px;
     height: 232px;
-    background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
     margin: 0 auto;
+  }
+
+  & .page-header-logo--btm__essence {
+
+    // ANIMATIONS:
+
+    opacity: 0;
+    transform: translate(0%, 100%);
+    transition: 600ms ease-out;
+
+    // eof ANIMATIONS
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    @media #{$desktop} {
+      background: url(../img/page-header-logo-opening.png) no-repeat center center;
+    }
+    @media #{$macair} {
+      background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
+    }
+    @media #{$ipad} {
+      background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
+    }
+    @media #{$mobile-i7} {
+      background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
+      transform: translateX(-50%);
+    }
+    background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
   }
 }
 
 
 .page-home .page-header {
   & .page-header-logo--mid{
+
     @media #{$desktop} {
       height: 172px;
       width: 50%;
@@ -612,11 +701,58 @@
     margin: 0 auto;
     position: relative;
   }
+
+  & .logo--mid__wrapper {
+    position: absolute;
+    width: 100%;
+    height: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+
+  & .logo--mid__essence {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    // ANIMATIONS:
+
+    opacity: 0;
+    transform: translate(0%, 100%);
+    transition: 300ms ease-in;
+
+    // eof ANIMATIONS
+  }
+  & .logo--mid__container {
+
+    position: absolute;
+    width: 100%;
+    height: 72px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+
+    // animations:
+    overflow: hidden;
+
+    // eof animations
+  }
 }
 
 
 .page-home .page-header {
   & .svg_page-header_logo--mid{
+
+
 
     display: block;
     margin: 0 auto;
@@ -643,6 +779,7 @@
   }
 
   & #svg_page-header_logo--mid {
+
     & .innersvg {
       fill: #fff;
     }
@@ -693,8 +830,19 @@
     top: 0;
     left: 0;
 
-    &::before,
-    &::after {
+
+
+    & .logo-frames__top-left__top-line,
+    & .logo-frames__top-left__btm-line,
+    & .logo-frames__top-right__top-line,
+    & .logo-frames__top-right__btm-line,
+    & .logo-frames__bottom-left__top-line,
+    & .logo-frames__bottom-left__btm-line,
+    & .logo-frames__bottom-right__top-line,
+    & .logo-frames__bottom-right__btm-line {
+
+      transition: 600ms all ease-out;
+
       @media #{$desktop} {
 
       }
@@ -714,7 +862,12 @@
 
 
   & .logo-frames__top-left{
-    &::before{
+    & .logo-frames__top-left__top-line,
+    & .logo-frames__top-left__btm-line {
+      transform: scale(0, 1);
+    }
+
+    & .logo-frames__top-left__top-line {
       @media #{$desktop} {
 
       }
@@ -724,7 +877,7 @@
       top: 22px;
       left: 0;
     }
-    &::after {
+    & .logo-frames__top-left__btm-line {
       @media #{$mobile-i7} {
         top: 18px;
       }
@@ -733,8 +886,9 @@
     }
   }
   & .logo-frames__top-right{
-    &::before,
-    &::after {
+    & .logo-frames__top-right__top-line,
+    & .logo-frames__top-right__btm-line {
+      display: none;
       @media #{$desktop} {
 
       }
@@ -746,14 +900,14 @@
       height: 100%;
       width: 1px;
     }
-    &::before{
+    & .logo-frames__top-right__top-line {
       // @media #{$desktop} {
 
       // }
       top: 0;
       right: 22px;
     }
-    &::after {
+    & .logo-frames__top-right__btm-line {
       // @media #{$desktop} {
 
       // }
@@ -762,11 +916,12 @@
     }
   }
   & .logo-frames__bottom-left{
-    &::before,
-    &::after {
+    & .logo-frames__bottom-left__top-line,
+    & .logo-frames__bottom-left__btm-line {
+      transform: scale(0, 1);
 
     }
-    &::before{
+    & .logo-frames__bottom-left__top-line {
       @media #{$desktop} {
 
       }
@@ -776,7 +931,7 @@
       bottom: 22px;
       right: 0;
     }
-    &::after {
+    & .logo-frames__bottom-left__btm-line {
       @media #{$desktop} {
 
       }
@@ -788,8 +943,9 @@
     }
   }
   & .logo-frames__bottom-right{ // >> to top
-    &::before,
-    &::after {
+    & .logo-frames__bottom-right__top-line,
+    & .logo-frames__bottom-right__btm-line {
+      display: none;
       @media #{$desktop} {
 
       }
@@ -799,14 +955,14 @@
       height: 100%;
       width: 1px;
     }
-    &::before{
+    & .logo-frames__bottom-right__top-line{
       // @media #{$desktop} {
 
       // }
       top: 0;
       left: 22px;
     }
-    &::after {
+    & .logo-frames__bottom-right__btm-line {
       // @media #{$desktop} {
 
       // }
@@ -826,6 +982,7 @@
 
 .page-home .page-header {
   & .logo-frames__corner{
+    display: none;
     @media #{$desktop} {
 
     }
@@ -846,7 +1003,7 @@
 
 
 .page-home .page-header {
-  & .logo-frames__top-left-corner{
+  & .logo-frames__top-left-corner {
     // @media #{$desktop} {
 
     // }
@@ -860,7 +1017,7 @@
 
 
 .page-home .page-header {
-  & .logo-frames__top-right-corner{
+  & .logo-frames__top-right-corner {
     // @media #{$desktop} {
 
     // }
@@ -885,6 +1042,7 @@
 
 .page-home .page-header {
   & .logo-frames__bottom-right-corner{
+    // display: none;
     right: 0;
     bottom: 0;
     border-right: transparent;

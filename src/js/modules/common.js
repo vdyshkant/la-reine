@@ -145,12 +145,30 @@ RESET
       $(".page-home .footer .footer-bottom-container__inner").animate({ opacity: 1 });
     }, 2200);
 
+    setTimeout(function(){
+      animateSVGLogoLines();
+    }, 0);
 
+    setTimeout(function(){
+      makeLogoHeight()
+    }, 600);
 
+    setTimeout(function(){
+      midSVGLogoAnimate();
+    }, 1000);
 
-    animateThird();
+    setTimeout(function(){
+      pTopGrandOpeningAnimate();
+    }, 1500);
 
-    animateFluid();
+    setTimeout(function(){
+      animateThird();
+    }, 400);
+
+    setTimeout(function(){
+      animateFluid();
+    }, 400);
+
 
     // scaleX: 0
     // left: "+=50"
@@ -161,6 +179,121 @@ RESET
   }
 })(jQuery); // eof анимация продукта
 
+function makeLogoHeight() {
+  // logo wrapper
+  setTimeout(function(){
+    $(".page-header .logo--mid__wrapper").animate( {'height': '100%'} );
+  }, 0);
+}
+
+function midSVGLogoAnimate() {
+
+  // css needed:
+
+
+
+  // eof css needed
+
+  // LOGO:
+    // logo essence
+    setTimeout(function(){
+      var val01 = 0;
+      $(".page-header .logo--mid__essence").css({
+          '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+          '-moz-transform': 'translate(0%, ' + val01 + '%)',
+          '-ms-transform': 'translate(0%, ' + val01 + '%)',
+          '-o-transform': 'translate(0%, ' + val01 + '%)',
+          'transform': 'translate(0%, ' + val01 + '%)',
+          'opacity': '1'
+
+      });
+    }, 0);
+  // eof LOGO
+
+}
+
+function pTopGrandOpeningAnimate() {
+
+  // GRAND:
+    // grand wrapper
+    setTimeout(function(){
+      var val01 = 0;
+      $(".page-header .page-header-logo--top").css({
+          '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+          '-moz-transform': 'translate(0%, ' + val01 + '%)',
+          '-ms-transform': 'translate(0%, ' + val01 + '%)',
+          '-o-transform': 'translate(0%, ' + val01 + '%)',
+          'transform': 'translate(0%, ' + val01 + '%)',
+      });
+    }, 0);
+
+
+    // grand essence
+    setTimeout(function(){
+      var val01 = 0;
+      $(".page-header .page-header-logo--top__essence").css({
+          '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+          '-moz-transform': 'translate(0%, ' + val01 + '%)',
+          '-ms-transform': 'translate(0%, ' + val01 + '%)',
+          '-o-transform': 'translate(0%, ' + val01 + '%)',
+          'transform': 'translate(0%, ' + val01 + '%)',
+          'opacity': '1'
+
+      });
+    }, 0);
+  // eof GRAND
+
+  // OPENING:
+    // opening wrapper
+    setTimeout(function(){
+      var val01 = 0;
+      $(".page-header .page-header-logo--bottom").css({
+          '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+          '-moz-transform': 'translate(0%, ' + val01 + '%)',
+          '-ms-transform': 'translate(0%, ' + val01 + '%)',
+          '-o-transform': 'translate(0%, ' + val01 + '%)',
+          'transform': 'translate(0%, ' + val01 + '%)',
+      });
+    }, 400);
+
+
+    // opening essence
+    setTimeout(function(){
+      var val01 = 0;
+      $(".page-header .page-header-logo--btm__essence").css({
+          '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+          '-moz-transform': 'translate(0%, ' + val01 + '%)',
+          '-ms-transform': 'translate(0%, ' + val01 + '%)',
+          '-o-transform': 'translate(0%, ' + val01 + '%)',
+          'transform': 'translate(0%, ' + val01 + '%)',
+          'opacity': '1'
+
+      });
+    }, 200);
+  // eof OPENING
+
+}
+
+function animateSVGLogoLines() {
+  setTimeout(function(){
+    var val01 = 1;
+    var essence = $(" .logo-frames__top-left__top-line, .logo-frames__top-left__btm-line, .logo-frames__bottom-left__top-line, .logo-frames__bottom-left__btm-line");
+    essence.css({
+      '-webkit-transform': 'scale(1, ' + val01 + ')',
+      '-moz-transform': 'scale(1, ' + val01 + ')',
+      '-ms-transform': 'scale(1, ' + val01 + ')',
+      '-o-transform': 'scale(1, ' + val01 + ')',
+      'transform': 'scale(1, ' + val01 + ')'
+    });
+
+  }, 0);
+  setTimeout(function(){
+    var val01 = 1;
+    var essence2 = $(' .logo-frames__corner, .logo-frames__bottom-right__top-line, .logo-frames__bottom-right__btm-line, .logo-frames__top-right__btm-line, .logo-frames__top-right__top-line ');
+    essence2.fadeIn(300);
+
+  }, 1050);
+}
 
 function animateFluid() {
   setTimeout(function(){
