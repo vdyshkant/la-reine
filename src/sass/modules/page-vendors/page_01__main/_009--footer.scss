@@ -1,5 +1,10 @@
 .page-home .footer {
-  background: #fff;
+  // background: #fff;
+  margin-top: -150px;
+
+  @media #{$mobile-i7} {
+    margin-top: 0px;
+  }
 }
 
 
@@ -56,6 +61,7 @@
 
 .page-home .footer {
   & .footer-content{
+
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.16);
     box-shadow: 0px -2px 10px 0px rgba(0, 0, 0, 0.16);
     opacity: 0;
@@ -79,8 +85,8 @@
 
 
 .page-home .footer {
-  & .CLASS{
-
+  & .footer-content-inner {
+    background: #fff;
   }
 }
 

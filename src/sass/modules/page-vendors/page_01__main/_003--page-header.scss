@@ -22,12 +22,14 @@
   }
 
   @media #{$mobile-i7} {
-    background: url('../img/index-page-header-bg--i7.jpg') no-repeat calc(50% + 220px) calc(0% - 20px);
+    background: url('../img/index-page-header-bg--i7.jpg') no-repeat calc(50% + 220px) calc(0% - 0px);
+    background-size: cover;
     // min-height: 735px;
     // height: 735px;
   }
   @media #{$mobile} {
-    background: url('../img/index-page-header-bg--i7.jpg') no-repeat calc(50% + 220px) calc(0% - 20px);
+    background: url('../img/index-page-header-bg--i7.jpg') no-repeat calc(50% + 220px) calc(0% - 0px);
+    background-size: cover;
     // min-height: 680px;
     // height: 680px;
   }
@@ -225,6 +227,11 @@
     background: rgba(210, 25, 43, 0.4);
     background: hsla(354, 79%, 46%, 0.4);
     // opacity: 0.4;
+
+
+    opacity: 0;
+    transform: translate(0%, -100%);
+    transition: 600ms ease-out;
   }
 }
 
@@ -666,6 +673,7 @@
 
       position: absolute;
       left: 50%;
+      transform: translateX(-50%);
       top: 77px;
     }
     width: 785px;
@@ -673,7 +681,7 @@
     margin: 0 auto;
   }
 
-  & .page-header-logo--btm__essence {
+  & .page-header-logo--btm__inner {
 
     // ANIMATIONS:
 
@@ -682,6 +690,17 @@
     transition: 600ms ease-out;
 
     // eof ANIMATIONS
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  & .page-header-logo--btm__essence {
+
 
     position: absolute;
     width: 100%;
@@ -700,7 +719,8 @@
     }
     @media #{$mobile-i7} {
       background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
-      transform: translateX(-50%);
+      // transform: translateX(-50%);
+      background-size: cover;
     }
     background: url(../img/page-header-logo-opening--macair.png) no-repeat center center;
   }

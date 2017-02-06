@@ -160,22 +160,39 @@ RESET
 
     } // eof 'function animateBorderLines()'
 
+    setTimeout(function(){
+      animateRedLine();
+    }, 1800);
+
+    function animateRedLine() {
+      var val01 = 0;
+      var esc = $('.decor__redline-essence');
+      esc.css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)',
+        'opacity': '1'
+      });
+    }
+
     // page-header logo animations:
       setTimeout(function(){
         animateSVGLogoLines();
-      }, 0);
+      }, 2400); /* 0 */
 
       setTimeout(function(){
         makeLogoHeight();
-      }, 600);
+      }, 3000); /* 600 */
 
       setTimeout(function(){
         midSVGLogoAnimate();
-      }, 1000);
+      }, 3400); /* 1000 */
 
       setTimeout(function(){
         pTopGrandOpeningAnimate();
-      }, 1500);
+      }, 3900); /* 1500 */
     // eof page-header logo animations.
 
 
@@ -218,12 +235,21 @@ function animateSVGLogoLines() {
     });
 
   }, 0);
+
   setTimeout(function(){
-    var val01 = 1;
-    var essence2 = $(' .logo-frames__corner, .logo-frames__bottom-right__top-line, .logo-frames__bottom-right__btm-line, .logo-frames__top-right__btm-line, .logo-frames__top-right__top-line ');
-    essence2.fadeIn(300);
+
+    if ((window.matchMedia("(min-width: 960px)").matches)) {
+        var leftAndRightLines = $('.logo-frames__bottom-right__top-line, .logo-frames__bottom-right__btm-line, .logo-frames__top-right__btm-line, .logo-frames__top-right__top-line ');
+        leftAndRightLines.fadeIn(300);
+    }
+
+    var corners = $('.logo-frames__corner');
+    corners.fadeIn(300);
+
 
   }, 1050);
+
+
 }
 function makeLogoHeight() {
   // logo wrapper
@@ -304,7 +330,7 @@ function pTopGrandOpeningAnimate() {
     // opening essence
     setTimeout(function(){
       var val01 = 0;
-      $(".page-header .page-header-logo--btm__essence").css({
+      $(".page-header .page-header-logo--btm__inner").css({
           '-webkit-transform': 'translate(0%, ' + val01 + '%)',
           '-moz-transform': 'translate(0%, ' + val01 + '%)',
           '-ms-transform': 'translate(0%, ' + val01 + '%)',
@@ -314,6 +340,15 @@ function pTopGrandOpeningAnimate() {
 
       });
     }, 200);
+
+    if ((window.matchMedia("(min-width: 960px)").matches)) {
+
+    }
+
+    if ((window.matchMedia("(max-width: 959px)").matches)) {
+
+    }
+
   // eof OPENING
 
 }
@@ -443,7 +478,7 @@ function animateFluid() {
   // shadow:
   setTimeout(function(){
     var shadeColor = 'rgba(0, 0, 0, 0.2)';
-    $(".page-home .about .container-fluid").css({
+    $(".page-home .about .container-fluid .item").last().css({
         'box-shadow': '3px 5px 5px 0px ' + shadeColor
     });
   }, 1600);
@@ -510,12 +545,27 @@ function animateProductItems() {
     });
   }, 600);
 
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item__title").fadeIn(800)
+  }, 1800);
+
 
 
 
 } // eof function.
 
 /* eof ^^^ */
+
+// custom scroll
+
+(function($){
+    $(window).on("load",function(){
+        $(".red-scroll").mCustomScrollbar();
+    });
+})(jQuery);
+
+// eof custom scroll
 
 
 

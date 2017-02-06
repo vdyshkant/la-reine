@@ -103,7 +103,8 @@
 .page-home .about {
   & .container-fluid{
     position: relative;
-
+    // box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    // padding: 10px;
     margin: 0 auto;
 
 
@@ -111,7 +112,7 @@
 
     transform: translate(0%, -75%);
     transition: 1200ms ease-out;
-    overflow: hidden;
+    // overflow: hidden;
 
     // eof animations
 
@@ -131,7 +132,8 @@
     }
 
     @media #{$mobile-i7} {
-      box-shadow: none;
+      // box-shadow: none;
+      // padding-bottom: 15px;
     }
   }
 }
@@ -139,7 +141,12 @@
 
 .page-home .about {
   & .container-fluid .content{
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.2);
 
+    @media #{$mobile-i7} {
+      box-shadow: none;
+      // padding-bottom: 15px;
+    }
   }
 }
 
@@ -347,6 +354,9 @@
       }
 
       & .item-desc {
+
+        overflow-y: auto;
+
         @media #{$desktop} {
           max-height: 212px;
         }
@@ -479,6 +489,27 @@
 .page-home .about {
   & .container-fluid .item-modal.hovered{
     display: block;
+  }
+}
+
+.page-home .about {
+  & .red-scroll .mCSB_scrollTools {
+    opacity: 1;
+  }
+  & .red-scroll .mCSB_dragger_bar {
+    background-color: #c91f31;
+    width: 9px;
+    margin: 0 auto;
+  }
+  & .red-scroll .mCSB_dragger {
+    min-height: 9px; text-align: center;
+    height: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  & .red-scroll .mCSB_draggerRail {
+    width: 1px;
+    background-color: #9c9c9c;
   }
 }
 

@@ -226,6 +226,7 @@
 
 .page-home .product-items {
   & .product-item__title{
+    display: none;
     @include font(400, normal, 32px, 42px, 'AvenirNext-Regular');
     color: #000000;
     text-transform: uppercase;

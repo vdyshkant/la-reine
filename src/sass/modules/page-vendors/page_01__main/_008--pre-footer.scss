@@ -1,10 +1,12 @@
 .page-home .pre-footer {
-  min-height: 666px;
+  min-height: 816px;
   background: #fff url('../img/index_pre-footer_stuff.png') no-repeat center top;
   @media #{$desktop} {
-
+    min-height: 816px;
+    background: #fff url('../img/index_pre-footer_stuff.png') no-repeat center top;
   }
   @media #{$macair} {
+    min-height: 666px;
     background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat center top;
   }
   @media #{$ipad} {
@@ -13,11 +15,11 @@
   @media #{$i7} {
     background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat calc(50% - 65px) calc(0% + 33px);
     // background-size: 100%;
-    min-height: 500px;
+    min-height: 450px;
   }
   @media #{$mobile} {
     background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat calc(50% - 65px) calc(0% + 33px);
     // background-size: 100%;
-    min-height: 450px;
+    min-height: 400px;
   }
 }
