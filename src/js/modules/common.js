@@ -85,7 +85,7 @@ RESET
 
 
 (function($) {
-  if($('body').is('.page-homeZZZ')){
+  if($('body').is('.page-homeZZZZZ')){
 
     var item = $('.about .container-fluid .content .item').first();
     var itemModal = $('.about .container-fluid .content .item-modal');
@@ -108,6 +108,57 @@ RESET
 
 (function($) {
   if($('body').is('.page-home')){
+
+    animateBorderLines();
+
+    function animateBorderLines(){
+
+
+        setTimeout(function(){
+          var topLines = $('.decor-top__top-line, .decor-top__btm-line');
+          var val01 = 1;
+
+          topLines.css({
+            '-webkit-transform': 'scale(' + val01 + ', 1)',
+            '-moz-transform': 'scale(' + val01 + ', 1)',
+            '-ms-transform': 'scale(' + val01 + ', 1)',
+            '-o-transform': 'scale(' + val01 + ', 1)',
+            'transform': 'scale(' + val01 + ', 1)'
+          });
+        }, 0);
+
+        setTimeout(function(){
+          var leftAndRightLines = $('.decor-right__top-line, .decor-right__btm-line, .decor-left__top-line, .decor-left__btm-line');
+          var val02 = 1;
+
+          leftAndRightLines.css({
+            '-webkit-transform': 'scale(1, ' + val02 + ')',
+            '-moz-transform': 'scale(1, ' + val02 + ')',
+            '-ms-transform': 'scale(1, ' + val02 + ')',
+            '-o-transform': 'scale(1, ' + val02 + ')',
+            'transform': 'scale(1, ' + val02 + ')'
+          });
+        }, 600);
+
+        setTimeout(function(){
+          var bottomLines = $('.decor-bottom__top-line, .decor-bottom__btm-line');
+          var val01 = 1;
+
+          bottomLines.css({
+            '-webkit-transform': 'scale(' + val01 + ', 1)',
+            '-moz-transform': 'scale(' + val01 + ', 1)',
+            '-ms-transform': 'scale(' + val01 + ', 1)',
+            '-o-transform': 'scale(' + val01 + ', 1)',
+            'transform': 'scale(' + val01 + ', 1)'
+          });
+        }, 1200);
+
+        setTimeout(function(){
+          var bottomLines = $('.decor__corner').fadeIn(400);
+        }, 1700);
+
+
+    } // eof 'function animateBorderLines()'
 
     // page-header logo animations:
       setTimeout(function(){
