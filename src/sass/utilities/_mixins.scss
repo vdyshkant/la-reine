@@ -12,8 +12,8 @@
   font-size: calculateRem($size);
 }
 
-@mixin font($style, $wt, $size, $lh, $ff) {
-    font: $style $wt #{$size}/#{$lh} $ff;
+@mixin font($style, $weight, $size, $lh, $ff) {
+    font: $style $weight #{$size}/#{$lh} $ff;
     font-size: calculateRem($size);
 }
 
