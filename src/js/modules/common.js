@@ -334,18 +334,40 @@ function animateFooter() {
 
 function animateAbout() {
   // bg animation:
-  setTimeout(function(){
-    var val01 = 1;
-    var essence = $(".page-home .about .about-content__sc");
 
+  setTimeout(function(){
+    var val01 = 0;
+    var val02 = val01;
+    var essence = $(".page-home .about .about-content__sc");
     essence.css({
-      '-webkit-transform': 'scale(1, ' + val01 + ')',
-      '-moz-transform': 'scale(1, ' + val01 + ')',
-      '-ms-transform': 'scale(1, ' + val01 + ')',
-      '-o-transform': 'scale(1, ' + val01 + ')',
-      'transform': 'scale(1, ' + val01 + ')'
+        '-webkit-transform': 'translate(' + val01 + ', ' + val02 + '%)',
+        '-moz-transform': 'translate(' + val01 + ', ' + val02 + '%)',
+        '-ms-transform': 'translate(' + val01 + ', ' + val02 + '%)',
+        '-o-transform': 'translate(' + val01 + ', ' + val02 + '%)',
+        'transform': 'translate(' + val01 + ', ' + val02 + '%)'
     });
   }, 600);
+
+  setTimeout(function(){
+    var val01 = 0;
+    var val02 = val01;
+    var essence = $(".page-home .about .about-content__sc-inner");
+    essence.css({
+        '-webkit-transform': 'translate(' + val01 + ', ' + val02 + '%)',
+        '-moz-transform': 'translate(' + val01 + ', ' + val02 + '%)',
+        '-ms-transform': 'translate(' + val01 + ', ' + val02 + '%)',
+        '-o-transform': 'translate(' + val01 + ', ' + val02 + '%)',
+        'transform': 'translate(' + val01 + ', ' + val02 + '%)',
+        'opacity': '1'
+    });
+  }, 600);
+
+
+
+
+
+
+
 
   // logo animation:
   setTimeout(function(){
@@ -442,6 +464,56 @@ function animateFluid() {
 function animateProductItems() {
 
 
+  // setTimeout(function(){
+  //   var val01 = 1;
+  //   $(".product-items .black").css({
+  //       '-webkit-transform': 'scale(1, ' + val01 + ')',
+  //       '-moz-transform': 'scale(1, ' + val01 + ')',
+  //       '-ms-transform': 'scale(1, ' + val01 + ')',
+  //       '-o-transform': 'scale(1, ' + val01 + ')',
+  //       'transform': 'scale(1, ' + val01 + ')'
+  //   });
+  // }, 50);
+  //
+  // setTimeout(function(){
+  //   var val01 = 0;
+  //   $(".page-home .product-items .product-item").css({
+  //       '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+  //       '-moz-transform': 'translate(0%, ' + val01 + '%)',
+  //       '-ms-transform': 'translate(0%, ' + val01 + '%)',
+  //       '-o-transform': 'translate(0%, ' + val01 + '%)',
+  //       'transform': 'translate(0%, ' + val01 + '%)'
+  //
+  //   });
+  // }, 600);
+  //
+  // setTimeout(function(){
+  //   var val01 = 0;
+  //   $(".page-home .product-items .product-item__thumb").css({
+  //       '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+  //       '-moz-transform': 'translate(0%, ' + val01 + '%)',
+  //       '-ms-transform': 'translate(0%, ' + val01 + '%)',
+  //       '-o-transform': 'translate(0%, ' + val01 + '%)',
+  //       'transform': 'translate(0%, ' + val01 + '%)',
+  //       'opacity': '1'
+  //
+  //   });
+  //   $(".page-home .product-items .product-item__inner").css({
+  //       '-webkit-transform': 'translate(-50%, ' + val01 + '%)',
+  //       '-moz-transform': 'translate(-50%, ' + val01 + '%)',
+  //       '-ms-transform': 'translate(-50%, ' + val01 + '%)',
+  //       '-o-transform': 'translate(-50%, ' + val01 + '%)',
+  //       'transform': 'translate(-50%, ' + val01 + '%)',
+  //       'opacity': '1'
+  //
+  //   });
+  // }, 600);
+  //
+  // setTimeout(function(){
+  //   var val01 = 0;
+  //   $(".page-home .product-items .product-item__title").fadeIn(800)
+  // }, 1800);
+
   setTimeout(function(){
     var val01 = 1;
     $(".product-items .black").css({
@@ -455,7 +527,7 @@ function animateProductItems() {
 
   setTimeout(function(){
     var val01 = 0;
-    $(".page-home .product-items .product-item").css({
+    $(".page-home .product-items .product-item:eq(0)").css({
         '-webkit-transform': 'translate(0%, ' + val01 + '%)',
         '-moz-transform': 'translate(0%, ' + val01 + '%)',
         '-ms-transform': 'translate(0%, ' + val01 + '%)',
@@ -467,7 +539,7 @@ function animateProductItems() {
 
   setTimeout(function(){
     var val01 = 0;
-    $(".page-home .product-items .product-item__thumb").css({
+    $(".page-home .product-items .product-item:eq(0) .product-item__thumb").css({
         '-webkit-transform': 'translate(0%, ' + val01 + '%)',
         '-moz-transform': 'translate(0%, ' + val01 + '%)',
         '-ms-transform': 'translate(0%, ' + val01 + '%)',
@@ -476,7 +548,7 @@ function animateProductItems() {
         'opacity': '1'
 
     });
-    $(".page-home .product-items .product-item__inner").css({
+    $(".page-home .product-items .product-item:eq(0) .product-item__inner").css({
         '-webkit-transform': 'translate(-50%, ' + val01 + '%)',
         '-moz-transform': 'translate(-50%, ' + val01 + '%)',
         '-ms-transform': 'translate(-50%, ' + val01 + '%)',
@@ -489,8 +561,134 @@ function animateProductItems() {
 
   setTimeout(function(){
     var val01 = 0;
-    $(".page-home .product-items .product-item__title").fadeIn(800)
-  }, 1800);
+    $(".page-home .product-items .product-item:eq(0) .product-item__title").fadeIn(800)
+  }, 1200);
+
+  // 2d.
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item:eq(1)").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)'
+
+    });
+  }, 1800);//+1200
+
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item:eq(1) .product-item__thumb").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)',
+        'opacity': '1'
+
+    });
+    $(".page-home .product-items .product-item:eq(1) .product-item__inner").css({
+        '-webkit-transform': 'translate(-50%, ' + val01 + '%)',
+        '-moz-transform': 'translate(-50%, ' + val01 + '%)',
+        '-ms-transform': 'translate(-50%, ' + val01 + '%)',
+        '-o-transform': 'translate(-50%, ' + val01 + '%)',
+        'transform': 'translate(-50%, ' + val01 + '%)',
+        'opacity': '1'
+
+    });
+  }, 1800);//+1200
+
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item:eq(1) .product-item__title").fadeIn(800)
+  }, 2400);//+1800
+
+  // 3d.
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item:eq(2)").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)'
+
+    });
+  }, 3000);
+
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item:eq(2) .product-item__thumb").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)',
+        'opacity': '1'
+
+    });
+    $(".page-home .product-items .product-item:eq(2) .product-item__inner").css({
+        '-webkit-transform': 'translate(-50%, ' + val01 + '%)',
+        '-moz-transform': 'translate(-50%, ' + val01 + '%)',
+        '-ms-transform': 'translate(-50%, ' + val01 + '%)',
+        '-o-transform': 'translate(-50%, ' + val01 + '%)',
+        'transform': 'translate(-50%, ' + val01 + '%)',
+        'opacity': '1'
+
+    });
+  }, 3000);
+
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item:eq(2) .product-item__title").fadeIn(800)
+  }, 3600);
+
+  // 4th.
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item:eq(3)").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)'
+
+    });
+  }, 4200);
+
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item:eq(3) .product-item__thumb").css({
+        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+        '-moz-transform': 'translate(0%, ' + val01 + '%)',
+        '-ms-transform': 'translate(0%, ' + val01 + '%)',
+        '-o-transform': 'translate(0%, ' + val01 + '%)',
+        'transform': 'translate(0%, ' + val01 + '%)',
+        'opacity': '1'
+
+    });
+    $(".page-home .product-items .product-item:eq(3) .product-item__inner").css({
+        '-webkit-transform': 'translate(-50%, ' + val01 + '%)',
+        '-moz-transform': 'translate(-50%, ' + val01 + '%)',
+        '-ms-transform': 'translate(-50%, ' + val01 + '%)',
+        '-o-transform': 'translate(-50%, ' + val01 + '%)',
+        'transform': 'translate(-50%, ' + val01 + '%)',
+        'opacity': '1'
+
+    });
+  }, 4200);
+
+  setTimeout(function(){
+    var val01 = 0;
+    $(".page-home .product-items .product-item:eq(3) .product-item__title").fadeIn(800)
+  }, 4800);
+
+  // setTimeout(function(){
+  //   var val01 = 0;
+  //   $(".page-home .product-items .product-item__title").fadeIn(800)
+  // }, 1800);
+
 } // eof function.
 
 function animateBorderLines(){
