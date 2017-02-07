@@ -1,6 +1,7 @@
 .page-home .page-header {
   min-height: 100vh;
   height: 100vh;
+  position: relative;
   @media #{$desktop} {
     background: #131315 url('../img/index-page-header-bg.jpg') no-repeat center top;
     // min-height: 980px;
@@ -86,6 +87,51 @@
 
   }
 
+}
+
+
+.page-home .page-header {
+  & .page-header-langs{
+    position: absolute;
+    top: 75px;
+    right: 120px;
+    z-index: 10;
+  }
+}
+
+
+.page-home .page-header {
+  & .page-header-langs__list{
+    @include clearfix;
+  }
+}
+
+
+.page-home .page-header {
+  & .page-header-langs__item{
+    float: left;
+    margin-right: 13px;
+
+    &:last-child {
+      float: right;
+      margin-right: 0;
+    }
+  }
+
+  & .page-header-langs__item-link {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    @include font(normal, 400, 16px, 24px, 'AvenirNext-Regular');
+
+
+  }
+
+  & .page-header-langs__item {
+    & .page-header-langs__item-link.active {
+      @include font(normal, 700, 16px, 24px, 'Avenir-Heavy');
+    }
+  }
 }
 
 

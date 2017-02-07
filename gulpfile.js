@@ -44,18 +44,8 @@ gulp.task('pug', function() {
     // '!src/templates/conf/*.pug', // ignore this file
     // 'src/templates/**/*.pug'   // ignore all files
     'src/templates/pages/index.pug',
-    'src/templates/pages/windsystems.pug',
-    'src/templates/pages/fitments.pug',
-    'src/templates/pages/cottages.pug',
-    'src/templates/pages/glassunit.pug',
-    'src/templates/pages/accessories.pug',
-    'src/templates/pages/404.pug',
-    'src/templates/pages/affair.pug',
-    'src/templates/pages/article.pug',
-    'src/templates/pages/articles.pug',
-    'src/templates/pages/choosingadvices.pug',
-    'src/templates/pages/contacts.pug',
-    'src/templates/pages/doors.pug',
+    'src/templates/pages/rus.pug',
+    'src/templates/pages/ukr.pug',
     'src/templates/pages/i.pug'
   ])     // выборка files from glob
         .pipe(pug( { pretty: true } ))                             // push this^^^ query to pug pluguin
