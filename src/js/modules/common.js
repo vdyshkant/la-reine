@@ -111,71 +111,13 @@ RESET
 
     animateBorderLines();
 
-    function animateBorderLines(){
 
-
-        setTimeout(function(){
-          var topLines = $('.decor-top__top-line, .decor-top__btm-line');
-          var val01 = 1;
-
-          topLines.css({
-            '-webkit-transform': 'scale(' + val01 + ', 1)',
-            '-moz-transform': 'scale(' + val01 + ', 1)',
-            '-ms-transform': 'scale(' + val01 + ', 1)',
-            '-o-transform': 'scale(' + val01 + ', 1)',
-            'transform': 'scale(' + val01 + ', 1)'
-          });
-        }, 0);
-
-        setTimeout(function(){
-          var leftAndRightLines = $('.decor-right__top-line, .decor-right__btm-line, .decor-left__top-line, .decor-left__btm-line');
-          var val02 = 1;
-
-          leftAndRightLines.css({
-            '-webkit-transform': 'scale(1, ' + val02 + ')',
-            '-moz-transform': 'scale(1, ' + val02 + ')',
-            '-ms-transform': 'scale(1, ' + val02 + ')',
-            '-o-transform': 'scale(1, ' + val02 + ')',
-            'transform': 'scale(1, ' + val02 + ')'
-          });
-        }, 600);
-
-        setTimeout(function(){
-          var bottomLines = $('.decor-bottom__top-line, .decor-bottom__btm-line');
-          var val01 = 1;
-
-          bottomLines.css({
-            '-webkit-transform': 'scale(' + val01 + ', 1)',
-            '-moz-transform': 'scale(' + val01 + ', 1)',
-            '-ms-transform': 'scale(' + val01 + ', 1)',
-            '-o-transform': 'scale(' + val01 + ', 1)',
-            'transform': 'scale(' + val01 + ', 1)'
-          });
-        }, 1200);
-
-        setTimeout(function(){
-          var bottomLines = $('.decor__corner').fadeIn(400);
-        }, 1700);
-
-
-    } // eof 'function animateBorderLines()'
 
     setTimeout(function(){
       animateRedLine();
     }, 1800);
 
-    function animateRedLine() {
-      var val01 = 0;
-      var esc = $('.decor__redline-essence');
-      esc.css({
-        '-webkit-transform': 'translate(0%, ' + val01 + '%)',
-        '-moz-transform': 'translate(0%, ' + val01 + '%)',
-        '-ms-transform': 'translate(0%, ' + val01 + '%)',
-        '-o-transform': 'translate(0%, ' + val01 + '%)',
-        'transform': 'translate(0%, ' + val01 + '%)',
-        'opacity': '1'
-      });
-    }
+
 
     // page-header logo animations:
       setTimeout(function(){
@@ -549,11 +491,69 @@ function animateProductItems() {
     var val01 = 0;
     $(".page-home .product-items .product-item__title").fadeIn(800)
   }, 1800);
-
-
-
-
 } // eof function.
+
+function animateBorderLines(){
+
+
+    setTimeout(function(){
+      var topLines = $('.decor-top__top-line, .decor-top__btm-line');
+      var val01 = 1;
+
+      topLines.css({
+        '-webkit-transform': 'scale(' + val01 + ', 1)',
+        '-moz-transform': 'scale(' + val01 + ', 1)',
+        '-ms-transform': 'scale(' + val01 + ', 1)',
+        '-o-transform': 'scale(' + val01 + ', 1)',
+        'transform': 'scale(' + val01 + ', 1)'
+      });
+    }, 0);
+
+    setTimeout(function(){
+      var leftAndRightLines = $('.decor-right__top-line, .decor-right__btm-line, .decor-left__top-line, .decor-left__btm-line');
+      var val02 = 1;
+
+      leftAndRightLines.css({
+        '-webkit-transform': 'scale(1, ' + val02 + ')',
+        '-moz-transform': 'scale(1, ' + val02 + ')',
+        '-ms-transform': 'scale(1, ' + val02 + ')',
+        '-o-transform': 'scale(1, ' + val02 + ')',
+        'transform': 'scale(1, ' + val02 + ')'
+      });
+    }, 600);
+
+    setTimeout(function(){
+      var bottomLines = $('.decor-bottom__top-line, .decor-bottom__btm-line');
+      var val01 = 1;
+
+      bottomLines.css({
+        '-webkit-transform': 'scale(' + val01 + ', 1)',
+        '-moz-transform': 'scale(' + val01 + ', 1)',
+        '-ms-transform': 'scale(' + val01 + ', 1)',
+        '-o-transform': 'scale(' + val01 + ', 1)',
+        'transform': 'scale(' + val01 + ', 1)'
+      });
+    }, 1200);
+
+    setTimeout(function(){
+      var bottomLines = $('.decor__corner').fadeIn(400);
+    }, 1700);
+
+
+} // eof 'function animateBorderLines()'
+
+function animateRedLine() {
+  var val01 = 0;
+  var esc = $('.decor__redline-essence');
+  esc.css({
+    '-webkit-transform': 'translate(0%, ' + val01 + '%)',
+    '-moz-transform': 'translate(0%, ' + val01 + '%)',
+    '-ms-transform': 'translate(0%, ' + val01 + '%)',
+    '-o-transform': 'translate(0%, ' + val01 + '%)',
+    'transform': 'translate(0%, ' + val01 + '%)',
+    'opacity': '1'
+  });
+} // eof function
 
 /* eof ^^^ */
 

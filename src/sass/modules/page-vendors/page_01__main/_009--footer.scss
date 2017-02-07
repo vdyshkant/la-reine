@@ -311,6 +311,8 @@
 
 .page-home .footer {
   & .footer-bottom-container__phone{
+    text-decoration: none;
+    color: #fff;
     @include font(400, normal, 20px, 40px, 'AvenirNext-Regular');
     @media #{$macair} {
       @include font(400, normal, 18px, 35px, 'AvenirNext-Regular');
@@ -321,9 +323,11 @@
     }
     @media #{$i7} {
       @include font(400, normal, 32px, 40px, 'AvenirNext-Regular');
+      color: #000;
     }
     @media #{$mobile} {
       @include font(400, normal, 28px, 36px, 'AvenirNext-Regular');
+      color: #000;
     }
   }
 }
