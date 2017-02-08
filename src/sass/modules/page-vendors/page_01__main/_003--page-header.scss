@@ -3,38 +3,45 @@
   height: 100vh;
   position: relative;
   @media #{$desktop} {
-    background: #131315 url('../img/index-page-header-bg.jpg') no-repeat center top;
+    background-position: center top;
+    background-repeat: no-repeat;
     // min-height: 980px;
     // height: 980px;
   }
 
   @media #{$macair} {
-    background: #131315 url('../img/index-page-header-bg.jpg') no-repeat right top;
+    background-position: right top;
+    background-repeat: no-repeat;
     background-size: cover;
     // min-height: 768px;
     // height: 768px;
   }
 
   @media #{$ipad} {
-    background: #131315 url('../img/index-page-header-bg.jpg') no-repeat right top;
+    background-position: right top;
+    background-repeat: no-repeat;
     background-size: cover;
     // min-height: 768px;
     // height: 768px;
   }
 
   @media #{$mobile-i7} {
-    background: url('../img/index-page-header-bg--i7.jpg') no-repeat calc(50% + 220px) calc(0% - 0px);
+    background: url('../img/index-page-header-bg--i7.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     // min-height: 735px;
     // height: 735px;
   }
   @media #{$mobile} {
-    background: url('../img/index-page-header-bg--i7.jpg') no-repeat calc(50% + 220px) calc(0% - 0px);
-    background-size: cover;
+    // background-position: center bottom;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     // min-height: 680px;
     // height: 680px;
   }
-  background: url('../img/index-page-header-bg.jpg') no-repeat center top;
+  background: url('../img/index-page-header-bg.jpg');
+  background-repeat: no-repeat;
   // min-height: 980px;
   // height: 980px;
 }

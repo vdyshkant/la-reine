@@ -288,7 +288,7 @@
 .page-home .footer {
   & .footer-bottom-container__address{
     @include font(400, normal, 27px, 35px, 'AvenirNext-Regular');
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
 
 
     @media #{$macair} {
@@ -299,11 +299,11 @@
     }
     @media #{$i7} {
       @include font(400, normal, 24px, 32px, 'AvenirNext-Regular');
-      margin-bottom: 0;
+      // margin-bottom: 0;
     }
     @media #{$mobile} {
       @include font(400, normal, 20px, 28px, 'AvenirNext-Regular');
-      margin-bottom: 0;
+      // margin-bottom: 0;
     }
   }
 }

@@ -12,6 +12,7 @@
   & .shell {
     margin: 0 auto;
     max-width: 1920px;
+    min-width: 100%;
   }
 
   & .inner {
@@ -72,6 +73,8 @@
       left: 0;
       right: 0;
       width: 100%;
+      min-width: 100%;
+      max-width: 100%;
       height: 100%;
 
 
@@ -101,6 +104,8 @@
       left: 0;
       right: 0;
       width: 100%;
+      min-width: 100%;
+      max-width: 100%;
       height: 100%;
 
       // ANIMATIONS:
@@ -112,10 +117,12 @@
       // eof ANIMATIONS
 
       //
-      background: url('../img/index-about-fluid-bg.jpg') no-repeat center center;
+      background: url('../img/index-about-fluid-bg.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
 
       @media #{$mobile-i7} {
-        background: url('../img/index-about-fluid-bg.jpg') no-repeat calc(0% - 100px) center;
+        background-position: left center;
         background-size: cover;
       }
     }
@@ -413,7 +420,8 @@
         margin-bottom: 30px;
 
         @media #{$desktop} {
-          @include font(400, normal, 18px, 26px, 'AvenirNext-Regular');
+          // @include font(400, normal, 18px, 26px, 'AvenirNext-Regular');
+          @include font(400, normal, 16px, 26px, 'AvenirNext-Regular');
           margin-bottom: 30px;
         }
 
@@ -428,12 +436,14 @@
         }
 
         @media #{$i7} {
-          @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          // @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          @include font(500, normal, 16px, 28px, 'AvenirNext-Medium');
           margin-bottom: 25px;
         }
 
         @media #{$mobile} {
-          @include font(500, normal, 18px, 26px, 'AvenirNext-Medium');
+          // @include font(500, normal, 18px, 26px, 'AvenirNext-Medium');
+          @include font(500, normal, 16px, 26px, 'AvenirNext-Medium');
           margin-bottom: 25px;
         }
 

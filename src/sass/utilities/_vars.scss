@@ -53,6 +53,8 @@ $break-desktop: 1920px;
 
 $mobile: "only screen and (max-width: "$break-i7 - 1")";
   $mobile-i7: "only screen and (max-width: "$break-ipad - 1")";
+  $mobile-i7-land: "only screen and (max-width: "$break-ipad - 1") and (orientation : landscape)";
+  $mobile-i7-port: "only screen and (max-width: "$break-ipad - 1") and (orientation : portrait)";
 $i7: "only screen and (min-width: "$break-i7") and (max-width: "$break-ipad - 1")";
 $ipad: "only screen and (min-width: "$break-ipad") and (max-width: "$break-macair - 1")";
 $ipad-macair: "only screen and (min-width: "$break-ipad") and (max-width: "$break-desktop - 1")";
