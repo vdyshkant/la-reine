@@ -96,6 +96,26 @@
     top: 75px;
     right: 120px;
     z-index: 10;
+
+    @media #{$desktop} {
+      // min-height: 980px;
+    }
+    @media #{$macair} {
+      top: 70px;
+      right: 105px;
+    }
+    @media #{$ipad} {
+      top: 70px;
+      right: 105px;
+    }
+    @media #{$i7} {
+      top: 45px;
+      right: 55px;
+    }
+    @media #{$mobile} {
+      top: 45px;
+      right: 55px;
+    }
   }
 }
 
@@ -124,12 +144,42 @@
     cursor: pointer;
     @include font(normal, 400, 16px, 24px, 'AvenirNext-Regular');
 
-
+    @media #{$desktop} {
+      // min-height: 980px;
+    }
+    @media #{$macair} {
+      // min-height: 768px;
+    }
+    @media #{$ipad} {
+      // min-height: 768px;
+    }
+    @media #{$i7} {
+      @include font(normal, 400, 12px, 17px, 'AvenirNext-Regular');
+    }
+    @media #{$mobile} {
+      @include font(normal, 400, 12px, 17px, 'AvenirNext-Regular');
+    }
   }
 
   & .page-header-langs__item {
     & .page-header-langs__item-link.active {
       @include font(normal, 700, 16px, 24px, 'Avenir-Heavy');
+
+      @media #{$desktop} {
+        // min-height: 980px;
+      }
+      @media #{$macair} {
+        // min-height: 768px;
+      }
+      @media #{$ipad} {
+        // min-height: 768px;
+      }
+      @media #{$i7} {
+        @include font(normal, 700, 12px, 17px, 'AvenirNext-Regular');
+      }
+      @media #{$mobile} {
+        @include font(normal, 700, 12px, 17px, 'AvenirNext-Regular');
+      }
     }
   }
 }
