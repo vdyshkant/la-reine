@@ -140,6 +140,7 @@
 .page-home .about {
   & .container-fluid{
     position: relative;
+    z-index: 100001;
     // box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.2);
     // padding: 10px;
     margin: 0 auto;
