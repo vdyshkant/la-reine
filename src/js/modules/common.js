@@ -765,49 +765,108 @@ function animateRedLine() {
 
 // eof custom scroll
 
+// 4 products-top
+(function($) {
+ if($('.product').is('.product-top')){
 
-(function($){
-  var wScroll = $(window).scrollTop();
-  function animate (selector, container, startX = 0, endX, startY, endY = 0, startAngle, endAngle, startScale, endScale, transitionDebth) {
-    var mult = transitionDebth || 1 // not used
-      , wHeight = $(window).height
-      , contHeight = $(container).height()
-      , contOffsTop = $(container).offset().top
-      , transitionEndPoint = contHeight * transitionDebth
-      , steps = contHeight
-      , cWidth = $(container).width()
-      , x = startX
-      , y = startY
-      , angle = startAngle || 0
-      , scale = startScale || 1
-      , coef =  null;
+   var wScroll = $(window).scrollTop();
+   function animate (selector, container, startX = 0, endX, startY, endY = 0, startAngle, endAngle, startScale, endScale, transitionDebth) {
+     var mult = transitionDebth || 1 // not used
+       , wHeight = $(window).height
+       , contHeight = $(container).height()
+       , contOffsTop = $(container).offset().top
+       , transitionEndPoint = contHeight * transitionDebth
+       , steps = contHeight
+       , cWidth = $(container).width()
+       , x = startX
+       , y = startY
+       , angle = startAngle || 0
+       , scale = startScale || 1
+       , coef =  null;
 
-    if(
-      wScroll >= contOffsTop &&
-      wScroll <= (contOffsTop + contHeight)
-    ) {
-        coef = ((wScroll - contOffsTop) / contHeight * mult).toFixed(8);
-        x = startX + endX * coef;
-        y = startY + endY * coef;
-        angle = startAngle + endAngle * coef;
-        scale = startScale + endScale * coef;
+     if(
+       wScroll >= contOffsTop &&
+       wScroll <= (contOffsTop + contHeight)
+     ) {
+         coef = ((wScroll - contOffsTop) / contHeight * mult).toFixed(8);
+         x = startX + endX * coef;
+         y = startY + endY * coef;
+         angle = startAngle + endAngle * coef;
+         scale = startScale + endScale * coef;
 
-        $(selector).css({
-          'webkit-transform': 'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
-          'moz-transform':    'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
-          'transform':       'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
-        })
-    }
-  }
+         $(selector).css({
+           'webkit-transform': 'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
+           'moz-transform':    'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
+           'transform':        'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
+         })
+     }
+   }
 
-  $(window).scroll(function(){
-    wScroll = $(this).scrollTop();
-    //   selector, container, startX, endX, startY, endY, startAngle, endAngle, startScale, endScale, transitionDebth
-    animate('.fly-1', '.brills .container', 2, 100, 3, 80, 0, 140, 1, .9, 1.2);
-    animate('.fly-2', '.brills .container', 0, 75, 0, 95, 0, -40, 1, 1, 1.1);
-    animate('.fly-3', '.brills .container', 0, 36, 0, 50, 0, 60, 1, .8, 1.25);
-  })
-})(jQuery);
+   $(window).scroll(function(){
+     wScroll = $(this).scrollTop();
+     //   selector, container, startX, endX, startY, endY, startAngle, endAngle, startScale, endScale, transitionDebth
+     animate('.fly-1', '.brills .brills-container', 2, -100, 3, -80, 0, 440, 1, .8, .2);
+     animate('.fly-2', '.brills .brills-container', 0, -175, 0, 195, 0, -40, 1, 1, 1.1);
+     animate('.fly-3', '.brills .brills-container', 0, -236, 0, 20, 0, 60, 1, .8, .65);
+   })
+
+ }
+})(jQuery); // eof 4 products-top
+
+// 4 products-top
+(function($) {
+ if($('.product').is('.product-items')){
+
+   var wScroll = $(window).scrollTop();
+   function animate (selector, container, startX = 0, endX, startY, endY = 0, startAngle, endAngle, startScale, endScale, transitionDebth) {
+     var mult = transitionDebth || 1 // not used
+       , wHeight = $(window).height
+       , contHeight = $(container).height()
+       , contOffsTop = $(container).offset().top
+       , transitionEndPoint = contHeight * transitionDebth
+       , steps = contHeight
+       , cWidth = $(container).width()
+       , x = startX
+       , y = startY
+       , angle = startAngle || 0
+       , scale = startScale || 1
+       , coef =  null;
+
+     if(
+       wScroll >= contOffsTop &&
+       wScroll <= (contOffsTop + contHeight)
+     ) {
+         coef = ((wScroll - contOffsTop) / contHeight * mult).toFixed(8);
+         x = startX + endX * coef;
+         y = startY + endY * coef;
+         angle = startAngle + endAngle * coef;
+         scale = startScale + endScale * coef;
+
+         $(selector).css({
+           'webkit-transform': 'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
+           'moz-transform':    'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
+           'transform':        'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
+         })
+     }
+   }
+
+   $(window).scroll(function(){
+     wScroll = $(this).scrollTop();
+     //   selector, container, startX, endX, startY, endY, startAngle, endAngle, startScale, endScale, transitionDebth
+     animate('.fly-1', '.brills .brills-container', 2, -100, 3, -80, 0, 440, 1, .8, .2);
+     animate('.fly-2', '.brills .brills-container', 0, -175, 0, 195, 0, -40, 1, 1, 1.1);
+     animate('.fly-3', '.brills .brills-container', 0, -236, 0, 20, 0, 60, 1, .8, .65);
+   })
+
+ }
+})(jQuery); // eof 4 products-top
+/* eof ^^^ */
+
+
+// 4 products-items
+
+
+
 
 
 /* == eof $ MAIN == */
