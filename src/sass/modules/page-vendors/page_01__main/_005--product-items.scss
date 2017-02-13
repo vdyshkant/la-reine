@@ -247,7 +247,6 @@
     @media #{$ipad} {
       @include font(400, normal, 23px, 30px, 'AvenirNext-Regular');
     }
-
     @media #{$mobile-i7} {
       @include font(400, normal, 38px, 49px, 'AvenirNext-Regular');
     }
@@ -300,6 +299,120 @@
 .page-home .product-items {
   & .CLASS{
 
+  }
+}
+
+
+.page-home .product-items .brills-btm{
+  position: absolute;
+  top: -70px;
+
+
+  // outline: 2px dashed red;
+  height: 300vh;
+  width: 100%;
+  // padding-top: 45px;
+
+  @media #{$mobile-i7} {
+    display: none;
+  }
+}
+.page-home .product-items .brills-btm .brills-btm-container{
+  position: relative;
+  height: 400vh;
+  // background-color: #ccc;
+  overflow: hidden;
+}
+
+.page-home .product-items .brills-btm .fly{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  transition: 500ms ease-out;
+
+  &:after{
+    content: '';
+    display: block;
+  }
+}
+
+.page-home .product-items .brills-btm .fly-6{
+  // background-color: transparentize(red, .95);
+  // outline: 2px dashed crimson;
+  // outline-offset: -2px;
+
+  transform-origin: 300px 150px;
+  transform: translate(0%, 0%) rotate(0deg);
+
+
+  & .brill_06 {
+    position: absolute;
+    top: 530px;
+    right: 80px;
+    background-image: url('../img/brill_06.png');
+    background-repeat: no-repeat;
+    width: 103px;
+    height: 272px;
+
+    @media #{$macair} {
+      background-image: url('../img/brill_06--macair.png');
+    }
+    @media #{$ipad} {
+      background-image: url('../img/brill_06--macair.png');
+    }
+  }
+}
+
+.page-home .product-items .brills-btm .fly-7{
+  // background-color: transparentize(blue, .95);
+  // outline: 2px dashed forestgreen;
+  // outline-offset: -2px;
+
+  transform-origin: 200px 200px;
+  transform: translate(0, 0) rotate(0deg);
+
+  & .brill_07 {
+    position: absolute;
+    top: 730px;
+    right: 80px;
+
+    background-image: url('../img/brill_07.png');
+    background-repeat: no-repeat;
+    width: 171px;
+    height: 135px;
+
+    @media #{$macair} {
+      background-image: url('../img/brill_07--macair.png');
+    }
+    @media #{$ipad} {
+      background-image: url('../img/brill_07--macair.png');
+    }
+  }
+}
+
+.page-home .product-items .brills-btm .fly-8{
+  // background-color: transparentize(green, .95);
+
+  transform-origin: 40px 50px;
+  transform: translate(0, 0) rotate(0deg);
+
+  & .brill_08 {
+    position: absolute;
+    top: 880px;
+    right: 350px;
+
+    background-image: url('../img/brill_08.png');
+    background-repeat: no-repeat;
+    width: 63px;
+    height: 76px;
+
+    @media #{$macair} {
+      background-image: url('../img/brill_08--macair.png');
+    }
+    @media #{$ipad} {
+      background-image: url('../img/brill_08--macair.png');
+    }
   }
 }
 
