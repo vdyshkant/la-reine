@@ -426,7 +426,9 @@
         }
 
         @media #{$macair} {
-          @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          // @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          @include font(500, normal, 16px, 28px, 'AvenirNext-Medium');
+
           margin-bottom: 25px;
         }
 
