@@ -766,5 +766,48 @@ function animateRedLine() {
 // eof custom scroll
 
 
+(function($){
+  var wScroll = $(window).scrollTop();
+  function animate (selector, container, startX = 0, endX, startY, endY = 0, startAngle, endAngle, startScale, endScale, transitionDebth) {
+    var mult = transitionDebth || 1 // not used
+      , wHeight = $(window).height
+      , contHeight = $(container).height()
+      , contOffsTop = $(container).offset().top
+      , transitionEndPoint = contHeight * transitionDebth
+      , steps = contHeight
+      , cWidth = $(container).width()
+      , x = startX
+      , y = startY
+      , angle = startAngle || 0
+      , scale = startScale || 1
+      , coef =  null;
+
+    if(
+      wScroll >= contOffsTop &&
+      wScroll <= (contOffsTop + contHeight)
+    ) {
+        coef = ((wScroll - contOffsTop) / contHeight * mult).toFixed(8);
+        x = startX + endX * coef;
+        y = startY + endY * coef;
+        angle = startAngle + endAngle * coef;
+        scale = startScale + endScale * coef;
+
+        $(selector).css({
+          'webkit-transform': 'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
+          'moz-transform':    'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
+          'transform':       'translate('+x+'%, '+y+'%) rotate('+angle+'deg) scale('+scale+')',
+        })
+    }
+  }
+
+  $(window).scroll(function(){
+    wScroll = $(this).scrollTop();
+    //   selector, container, startX, endX, startY, endY, startAngle, endAngle, startScale, endScale, transitionDebth
+    animate('.fly-1', '.brills .container', 2, 100, 3, 80, 0, 140, 1, .9, 1.2);
+    animate('.fly-2', '.brills .container', 0, 75, 0, 95, 0, -40, 1, 1, 1.1);
+    animate('.fly-3', '.brills .container', 0, 36, 0, 50, 0, 60, 1, .8, 1.25);
+  })
+})(jQuery);
+
 
 /* == eof $ MAIN == */

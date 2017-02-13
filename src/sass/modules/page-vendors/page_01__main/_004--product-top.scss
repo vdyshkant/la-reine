@@ -231,6 +231,80 @@
 }
 
 
+.page-home .product-top .brills{
+  position: absolute;
+  outline: 2px dashed red;
+  height: 300vh;
+  width: 100%;
+  padding-top: 45px;
+}
+.page-home .product-top .brills .container{
+  position: relative;
+  height: 125vh;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.page-home .product-top .fly{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+
+  &:after{
+    content: '';
+    display: block;
+  }
+}
+
+.page-home .product-top .fly-1{
+  background-color: transparentize(red, .95);
+
+  transform-origin: 300px 150px;
+  transform: translate(2%, 3%) rotate(0deg);
+
+  &:after{
+    width: 150px;
+    height: 50px;
+    margin-top: 100px;
+    margin-left: 100px;
+    background-color: pink;
+  }
+}
+
+.page-home .product-top .fly-2{
+  background-color: transparentize(blue, .95);
+
+  transform-origin: 200px 200px;
+  transform: translate(0, 0) rotate(0deg);
+
+  &:after{
+    width: 100px;
+    height: 150px;
+    margin-top: 200px;
+    margin-left: 200px;
+    background-color: blue;
+  }
+}
+
+.page-home .product-top .fly-3{
+  background-color: transparentize(green, .95);
+
+  transform-origin: 40px 50px;
+  transform: translate(0, 0) rotate(0deg);
+
+  &:after{
+    width: 100px;
+    height: 150px;
+    margin-top: 50px;
+    margin-left: 40px;
+    background-color: green;
+    transform-origin: 50%;
+    transform: rotate(-30deg);
+  }
+}
+
+
 .page-home .product-top {
   & .CLASS{
 
