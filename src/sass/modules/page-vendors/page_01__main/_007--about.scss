@@ -393,7 +393,9 @@
 
       & .item-desc {
 
+        overflow-x: hidden;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
 
         @media #{$desktop} {
           max-height: 212px;
@@ -434,7 +436,8 @@
         }
 
         @media #{$ipad} {
-          @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          // @include font(500, normal, 20px, 28px, 'AvenirNext-Medium');
+          @include font(500, normal, 16px, 28px, 'AvenirNext-Medium');
           margin-bottom: 25px;
         }
 
