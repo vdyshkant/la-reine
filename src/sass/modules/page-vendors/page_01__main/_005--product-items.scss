@@ -62,7 +62,7 @@
       // max-width: 83.45534407027819%;^^^
     }
     @media #{$ipad} {
-      max-width: 830px;
+      // max-width: 830px;
       // max-width: 83.45534407027819%;^^^
     }
     @media #{$mobile-i7} {
@@ -289,6 +289,9 @@
     // eof ANIMATIONS
 
     & .advantages__img {
+      // display: block;
+      // max-width: 100%;
+      // max-height: 100%;
       width: 100%;
       height: 100%;
     }
