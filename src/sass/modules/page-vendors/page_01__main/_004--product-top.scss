@@ -232,6 +232,9 @@
 
 
 .page-home .product-top .brills{
+  // DISABLE
+  display: none;
+  // eof DISABLE
   position: absolute;
   top: -70px;
 
@@ -420,3 +423,5 @@
 
   }
 }
+
+@import '004.1--parallax'

@@ -1,0 +1,75 @@
+.page-home .product-top {
+  & .parallax-index {
+    // position: absolute;
+    // top: 600px;
+  }
+}
+
+
+.page-home .product-top {
+  & .brills-parallax-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1755px;
+    height: 994px;
+    z-index: 9;
+  }
+  & .brills-parallax-container {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // width: 1755px;
+    // height: 994px;
+  }
+}
+
+
+.page-home .product-top {
+  & .brills-parallax-box {
+    &:nth-child(1) {
+      z-index: 9;
+
+      & .brills-parallax-item {
+        &:nth-child(1){
+          background: url('../img/parallax-brills-left.png');
+          width: 202px;
+          height: 725px;
+          position: relative;
+          z-index: 8;
+        }
+        &:nth-child(2){
+          background: url('../img/parallax-brills-right-bg.png');
+          width: 365px;
+          height: 990px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 8;
+        }
+      }
+    }
+    &:nth-child(2) {
+      z-index: 11;
+
+      & .brills-parallax-item {
+        &:nth-child(1){
+          background: url('../img/parallax-brills-right.png');
+          width: 603px;
+          height: 250px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 11;
+        }
+      }
+    }
+  }
+}
+
+
+.page-home .product-top {
+  & .CLASS {
+
+  }
+}

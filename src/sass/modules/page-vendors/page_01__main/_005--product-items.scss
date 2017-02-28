@@ -113,6 +113,8 @@
 .page-home .product-items {
   & .product-content{
     @include clearfix;
+    position: relative;
+    z-index: 10;
   }
 }
 
@@ -307,6 +309,9 @@
 
 
 .page-home .product-items .brills-btm{
+  // DISABLE
+  display: none;
+  // eof DISABLE
   position: absolute;
   top: -70px;
 
@@ -421,7 +426,7 @@
 
 
 .page-home .product-items {
-  & .CLASS{
+  & .CLASS {
 
   }
 }
