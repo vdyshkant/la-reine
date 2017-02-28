@@ -1,25 +1,182 @@
 .page-home .pre-footer {
   min-height: 816px;
-  background: #fff url('../img/index_pre-footer_stuff.png') no-repeat center top;
+  // background: #fff url('../img/index_pre-footer_stuff.png') no-repeat center top;
+  // opacity: .3;
   @media #{$desktop} {
     min-height: 816px;
-    background: #fff url('../img/index_pre-footer_stuff.png') no-repeat center top;
+    // background: #fff url('../img/index_pre-footer_stuff.png') no-repeat center top;
   }
   @media #{$macair} {
     min-height: 666px;
-    background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat center top;
+    // background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat center top;
   }
   @media #{$ipad} {
-    background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat 50% 50%;
+    // background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat 50% 50%;
   }
   @media #{$i7} {
-    background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat calc(50% - 65px) calc(0% + 33px);
-    // background-size: 100%;
+    // background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat calc(50% - 65px) calc(0% + 33px);
+    background-size: 100%;
     min-height: 450px;
   }
   @media #{$mobile} {
-    background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat calc(50% - 65px) calc(0% + 33px);
+    // background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat calc(50% - 65px) calc(0% + 33px);
     // background-size: 100%;
     min-height: 400px;
   }
+}
+
+.page-home .pre-footer-scene {
+  position: relative;
+}
+
+.page-home .pre-footer-scene .group-1 {
+  position: absolute;
+
+  &:nth-child(1){
+    width: 62px;
+    height: 62px;
+    background: url('../img/pre-f_g1_01.png');
+    top: 545px;//+100
+    left: 95px;
+  }
+  &:nth-child(2){
+    width: 397px;
+    height: 499px;
+    background: url('../img/pre-f_g1_02.png');
+    top: 175px;
+    left: 315px;
+  }
+  &:nth-child(3){
+    width: 181px;
+    height: 129px;
+    background: url('../img/pre-f_g1_03.png');
+    top: 570px;
+    left: 1005px
+  }
+  &:nth-child(4){
+    width: 80px;
+    height: 97px;
+    background: url('../img/pre-f_g1_04.png');
+    top: 325px;
+    right: 176px;
+  }
+}
+
+.page-home .pre-footer-scene .group-2 {
+  position: absolute;
+
+  &:nth-child(1){
+    width: 77px;
+    height: 134px;
+    background: url('../img/pre-f_g2_01.png');
+    top: 355px;//-50
+    left: 305px;
+  }
+  &:nth-child(2){
+    width: 63px;
+    height: 92px;
+    background: url('../img/pre-f_g2_02.png');
+    top: 155px;
+        left: 755px;
+  }
+  &:nth-child(3){
+    width: 127px;
+    height: 165px;
+    background: url('../img/pre-f_g2_03.png');
+    top: 135px;
+    left: 995px;
+  }
+  &:nth-child(4){
+    width: 158px;
+    height: 372px;
+    background: url('../img/pre-f_g2_04.png');
+    top: 380px;
+    right: 465px;
+  }
+  &:nth-child(5){
+    width: 76px;
+    height: 76px;
+    background: url('../img/pre-f_g2_05.png');
+    top: 500px;
+    right: 195px;
+  }
+}
+
+.page-home .pre-footer-scene .group-3 {
+  position: absolute;
+
+  &:nth-child(1){
+    width: 161px;
+    height: 127px;
+    background: url('../img/pre-f_g3_01.png');
+    top: 385px;//+200
+    left: 185px;
+  }
+  &:nth-child(2){
+    width: 63px;
+    height: 119px;
+    background: url('../img/pre-f_g3_02.png');
+    top: 385px;
+    right: 585px;
+  }
+  &:nth-child(3){
+    width: 81px;
+    height: 101px;
+    background: url('../img/pre-f_g3_03.png');
+    top: 535px;
+    right: 355px;
+  }
+  &:nth-child(4){
+    width: 103px;
+    height: 271px;
+    background: url('../img/pre-f_g3_04.png');
+    top: 655px;
+    right: 85px;
+  }
+}
+
+.page-home .pre-footer-scene .group-4 {
+  position: absolute;
+
+  &:nth-child(1){
+    width: 299px;
+    height: 196px;
+    background: url('../img/pre-f_g4_01.png');
+    top: 715px;//+150
+    left: 85px;
+  }
+  &:nth-child(2){
+    width: 91px;
+    height: 79px;
+    background: url('../img/pre-f_g4_02.png');
+    top: 670px;
+    left: 800px;
+  }
+  &:nth-child(3){
+    width: 62px;
+    height: 75px;
+    background: url('../img/pre-f_g4_03.png');
+    top: 270px;
+    right: 400px;
+  }
+  &:nth-child(4){
+    width: 56px;
+    height: 107px;
+    background: url('../img/pre-f_g4_04.png');
+    top: 150px;
+    right: 221px;
+  }
+  &:nth-child(5){
+    width: 171px;
+    height: 135px;
+    background: url('../img/pre-f_g4_05.png');
+    top: 785px;
+    right: 145px;
+  }
+}
+
+
+
+.page-home .pre-footer-scene {
+
 }
