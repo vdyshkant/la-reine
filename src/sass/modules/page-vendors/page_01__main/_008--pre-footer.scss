@@ -11,6 +11,7 @@
     // background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat center top;
   }
   @media #{$ipad} {
+    min-height: 666px;
     // background: #fff url('../img/index_pre-footer_stuff--macair.png') no-repeat 50% 50%;
   }
   @media #{$i7} {
