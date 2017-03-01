@@ -37,6 +37,12 @@
           height: 725px;
           position: relative;
           z-index: 8;
+          @media #{$desktop} {
+
+          }
+          @media #{$ipad-macair} {
+
+          }
         }
         &:nth-child(2){
           background: url('../img/parallax-brills-right-bg.png');

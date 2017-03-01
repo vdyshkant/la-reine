@@ -38,6 +38,15 @@
     background: url('../img/pre-f_g1_01.png');
     top: 545px;//+100
     left: 95px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g1_01--macair.png');
+      width: 45px;
+      height: 45px;
+      top: 450px;//-100
+      left: 40px;
+      left: 4%;
+    }
   }
   &:nth-child(2){
     width: 397px;
@@ -45,13 +54,32 @@
     background: url('../img/pre-f_g1_02.png');
     top: 175px;
     left: 315px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g1_02--macair.png');
+      width: 284px;
+      height: 355px;
+      top: 220px;
+      left: 225px;
+      left: 17%;
+    }
   }
   &:nth-child(3){
     width: 181px;
     height: 129px;
     background: url('../img/pre-f_g1_03.png');
     top: 570px;
-    left: 1005px
+    left: 1005px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g1_03--macair.png');
+      width: 130px;
+      height: 93px;
+      top: 480px;
+      right: 485px;
+      right: 37%;
+      left: auto;
+    }
   }
   &:nth-child(4){
     width: 80px;
@@ -59,6 +87,15 @@
     background: url('../img/pre-f_g1_04.png');
     top: 325px;
     right: 176px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g1_04--macair.png');
+      width: 58px;
+      height: 70px;
+      top: 290px;
+      right: 120px;
+      right: 9%;
+    }
   }
 }
 
@@ -71,13 +108,31 @@
     background: url('../img/pre-f_g2_01.png');
     top: 355px;//-50
     left: 305px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g2_01--macair.png');
+      width: 56px;
+      height: 97px;
+      top: 250px;
+      left: 215px;
+      left: 17%;
+    }
   }
   &:nth-child(2){
     width: 63px;
     height: 92px;
     background: url('../img/pre-f_g2_02.png');
     top: 155px;
-        left: 755px;
+    left: 755px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g2_02--macair.png');
+      width: 46px;
+      height: 65px;
+      top: 120px;
+      left: 525px;
+      left: 40%;
+    }
   }
   &:nth-child(3){
     width: 127px;
@@ -85,6 +140,15 @@
     background: url('../img/pre-f_g2_03.png');
     top: 135px;
     left: 995px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g2_03--macair.png');
+      width: 91px;
+      height: 118px;
+      top: 110px;
+      left: 705px;
+      left: 53%;
+    }
   }
   &:nth-child(4){
     width: 158px;
@@ -92,6 +156,15 @@
     background: url('../img/pre-f_g2_04.png');
     top: 380px;
     right: 465px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g2_04--macair.png');
+      width: 113px;
+      height: 265px;
+      top: 280px;
+      right: 300px;
+      right: 23%;
+    }
   }
   &:nth-child(5){
     width: 76px;
@@ -99,6 +172,15 @@
     background: url('../img/pre-f_g2_05.png');
     top: 500px;
     right: 195px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g2_05--macair.png');
+      width: 55px;
+      height: 54px;
+      top: 360px;
+      right: 110px;
+      right: 9%;
+    }
   }
 }
 
@@ -111,6 +193,15 @@
     background: url('../img/pre-f_g3_01.png');
     top: 385px;//+200
     left: 185px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g3_01--macair.png');
+      width: 115px;
+      height: 92px;
+      top: 405px;
+      left: 85px;
+      left: 6%;
+    }
   }
   &:nth-child(2){
     width: 63px;
@@ -118,6 +209,15 @@
     background: url('../img/pre-f_g3_02.png');
     top: 385px;
     right: 585px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g3_02--macair.png');
+      width: 46px;
+      height: 85px;
+      top: 360px;
+      right: 420px;
+      right: 31%;
+    }
   }
   &:nth-child(3){
     width: 81px;
@@ -125,6 +225,15 @@
     background: url('../img/pre-f_g3_03.png');
     top: 535px;
     right: 355px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g3_03--macair.png');
+      width: 58px;
+      height: 73px;
+      top: 460px;
+      right: 260px;
+      right: 20%;
+    }
   }
   &:nth-child(4){
     width: 103px;
@@ -132,6 +241,15 @@
     background: url('../img/pre-f_g3_04.png');
     top: 655px;
     right: 85px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g3_04--macair.png');
+      width: 73px;
+      height: 194px;
+      top: 545px;
+      right: 70px;
+      right: 6%;
+    }
   }
 }
 
@@ -144,6 +262,14 @@
     background: url('../img/pre-f_g4_01.png');
     top: 715px;//+150
     left: 85px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g4_01--macair.png');
+      width: 214px;
+      height: 141px;
+      top: 550px;
+      left: 4%;
+    }
   }
   &:nth-child(2){
     width: 91px;
@@ -151,6 +277,15 @@
     background: url('../img/pre-f_g4_02.png');
     top: 670px;
     left: 800px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g4_02--macair.png');
+      width: 65px;
+      height: 58px;
+      top: 535px;
+      left: 530px;
+      left: 40%;
+    }
   }
   &:nth-child(3){
     width: 62px;
@@ -158,6 +293,15 @@
     background: url('../img/pre-f_g4_03.png');
     top: 270px;
     right: 400px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g4_03--macair.png');
+      width: 45px;
+      height: 54px;
+      top: 240px;
+      right: 290px;
+      right: 22%;
+    }
   }
   &:nth-child(4){
     width: 56px;
@@ -165,6 +309,15 @@
     background: url('../img/pre-f_g4_04.png');
     top: 150px;
     right: 221px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g4_04--macair.png');
+      width: 41px;
+      height: 78px;
+      top: 160px;
+      right: 160px;
+      right: 12%;
+    }
   }
   &:nth-child(5){
     width: 171px;
@@ -172,6 +325,15 @@
     background: url('../img/pre-f_g4_05.png');
     top: 785px;
     right: 145px;
+
+    @media #{$ipad-macair} {
+      background: url('../img/pre-f_g4_05--macair.png');
+      width: 122px;
+      height: 97px;
+      top: 622px;
+      right: 110px;
+      right: 8%;
+    }
   }
 }
 
