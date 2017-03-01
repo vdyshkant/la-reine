@@ -16,7 +16,7 @@
   }
   @media #{$i7} {
     // background: #fff url('../img/index_pre-footer_stuff--i7.png') no-repeat calc(50% - 65px) calc(0% + 33px);
-    background-size: 100%;
+    // background-size: 100%;
     min-height: 450px;
   }
   @media #{$mobile} {
@@ -30,7 +30,7 @@
   position: relative;
 }
 
-.page-home .pre-footer-scene .group-1 {
+.page-home .pre-footer-scene .group-1 {//+30
   position: absolute;
 
   &:nth-child(1){
@@ -48,6 +48,14 @@
       left: 40px;
       left: 4%;
     }
+    @media #{$mobile-i7} {
+      // display: none;
+      background: url('../img/pre-f_g1_01--mobile.png');
+      width: 35px;
+      height: 35px;
+      top: 295px;
+      left: 73%;
+    }
   }
   &:nth-child(2){
     width: 397px;
@@ -62,6 +70,14 @@
       height: 355px;
       top: 220px;
       left: 225px;
+      left: 17%;
+    }
+    @media #{$mobile-i7} {
+      // display: none;
+      background: url('../img/pre-f_g1_02--mobile.png');
+      width: 215px;
+      height: 272px;
+      top: 205px;
       left: 17%;
     }
   }
@@ -81,6 +97,14 @@
       right: 37%;
       left: auto;
     }
+    @media #{$mobile-i7} {
+      // display: none;
+      background: url('../img/pre-f_g1_03--mobile.png');
+      width: 90px;
+      height: 71px;
+      top: 260px;
+      left: 1%;
+    }
   }
   &:nth-child(4){
     width: 80px;
@@ -96,6 +120,9 @@
       top: 290px;
       right: 120px;
       right: 9%;
+    }
+    @media #{$mobile-i7} {
+      display: none;
     }
   }
 }
@@ -118,6 +145,14 @@
       left: 215px;
       left: 17%;
     }
+    @media #{$mobile-i7} {
+      // display: none;
+      background: url('../img/pre-f_g2_01--mobile.png');
+      width: 50px;
+      height: 86px;
+      top: 5px;
+      left: 55%;
+    }
   }
   &:nth-child(2){
     width: 63px;
@@ -133,6 +168,9 @@
       top: 120px;
       left: 525px;
       left: 40%;
+    }
+    @media #{$mobile-i7} {
+      display: none;
     }
   }
   &:nth-child(3){
@@ -150,6 +188,9 @@
       left: 705px;
       left: 53%;
     }
+    @media #{$mobile-i7} {
+      display: none;
+    }
   }
   &:nth-child(4){
     width: 158px;
@@ -166,6 +207,9 @@
       right: 300px;
       right: 23%;
     }
+    @media #{$mobile-i7} {
+      display: none;
+    }
   }
   &:nth-child(5){
     width: 76px;
@@ -181,6 +225,9 @@
       top: 360px;
       right: 110px;
       right: 9%;
+    }
+    @media #{$mobile-i7} {
+      display: none;
     }
   }
 }
@@ -203,6 +250,9 @@
       left: 85px;
       left: 6%;
     }
+    @media #{$mobile-i7} {
+      display: none;
+    }
   }
   &:nth-child(2){
     width: 63px;
@@ -218,6 +268,9 @@
       top: 360px;
       right: 420px;
       right: 31%;
+    }
+    @media #{$mobile-i7} {
+      display: none;
     }
   }
   &:nth-child(3){
@@ -235,6 +288,9 @@
       right: 260px;
       right: 20%;
     }
+    @media #{$mobile-i7} {
+      display: none;
+    }
   }
   &:nth-child(4){
     width: 103px;
@@ -250,6 +306,14 @@
       top: 545px;
       right: 70px;
       right: 6%;
+    }
+    @media #{$mobile-i7} {
+      // display: none;
+      background: url('../img/pre-f_g3_04--mobile.png');
+      width: 67px;
+      height: 177px;
+      top: 535px;
+      right: 13%;
     }
   }
 }
@@ -271,6 +335,14 @@
       top: 550px;
       left: 4%;
     }
+    @media #{$mobile-i7} {
+      // display: none;
+      background: url('../img/pre-f_g4_01--mobile.png');
+      width: 172px;
+      height: 113px;
+      top: 455px;
+      left: -22%;
+    }
   }
   &:nth-child(2){
     width: 91px;
@@ -286,6 +358,9 @@
       top: 535px;
       left: 530px;
       left: 40%;
+    }
+    @media #{$mobile-i7} {
+      display: none;
     }
   }
   &:nth-child(3){
@@ -303,6 +378,14 @@
       right: 290px;
       right: 22%;
     }
+    @media #{$mobile-i7} {
+      // display: none;
+      background: url('../img/pre-f_g4_03--mobile.png');
+      width: 41px;
+      height: 49px;
+      top: 570px;
+      right: 67%;
+    }
   }
   &:nth-child(4){
     width: 56px;
@@ -319,6 +402,9 @@
       right: 160px;
       right: 12%;
     }
+    @media #{$mobile-i7} {
+      display: none;
+    }
   }
   &:nth-child(5){
     width: 171px;
@@ -334,6 +420,14 @@
       top: 622px;
       right: 110px;
       right: 8%;
+    }
+    @media #{$mobile-i7} {
+      // display: none;
+      background: url('../img/pre-f_g4_05--mobile.png');
+      width: 112px;
+      height: 88px;
+      top: 535px;
+      right: 24%;
     }
   }
 }

@@ -916,8 +916,10 @@ function animateRedLine() {
 
 
 
-// parallax-brills
+// parallax-falling-brills
 (function() {
+  if ((window.matchMedia("(min-width: 960px)").matches)) {
+
     var isIE = navigator.userAgent.indexOf("MSIE ") > 0 || navigator.userAgent.indexOf("Trident") > 0 || navigator.userAgent.indexOf("Edge") > 0,
         wScroll = $(window).scrollTop();
 
@@ -944,5 +946,6 @@ function animateRedLine() {
             parallax('.brills-parallax-box', '.parallax-index', -3.6);
         }
     });
+  }
 })();
 // EOFparallax-brills
