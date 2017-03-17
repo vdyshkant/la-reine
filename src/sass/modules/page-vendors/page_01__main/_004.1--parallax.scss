@@ -14,19 +14,28 @@
   & .brills-parallax-box {
     position: absolute;
     top: 0;
-    margin-right: 20px;
     width: 1755px;
     height: 994px;
     // margin: 0 auto;
     z-index: 9;
-    @media #{$ipad-macair} {
+    @media #{$ipad} {
+      width: 97%;
+      height: 721px;
+    }
+    @media #{$macair} {
       width: 1286px;
       height: 721px;
     }
   }
   & .brills-parallax-container {
     // width: 100%;
-    @media #{$ipad-macair} {
+    width: 1805px; // added 50px to move centered block more left
+    margin: 0 auto;
+    @media #{$ipad} {
+      width: 97%;
+      margin: 0 auto;
+    }
+    @media #{$macair} {
       // won't work:
         // position: absolute;
         // left: 50%;

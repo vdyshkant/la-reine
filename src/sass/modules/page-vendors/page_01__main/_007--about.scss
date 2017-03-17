@@ -280,6 +280,7 @@
   & .container-fluid .item:last-child {
     & .item__container {
 
+      max-height: 427px;
 
       @media #{$desktop} {
         padding: 80px 60px 80px 70px;
@@ -304,25 +305,25 @@
 
     & .item__content {
 
-      @media #{$desktop} {
-        max-height: 305px;
-      }
-
-      @media #{$macair} {
-        max-height: 322px;
-      }
-
-      @media #{$ipad} {
-        max-height: 322px;
-      }
-
-      @media #{$i7} {
-        max-height: 349px;
-      }
-
-      @media #{$mobile} {
-        max-height: 359px;
-      }
+      // @media #{$desktop} {
+      //   max-height: 305px;
+      // }
+      //
+      // @media #{$macair} {
+      //   max-height: 322px;
+      // }
+      //
+      // @media #{$ipad} {
+      //   max-height: 322px;
+      // }
+      //
+      // @media #{$i7} {
+      //   max-height: 349px;
+      // }
+      //
+      // @media #{$mobile} {
+      //   max-height: 359px;
+      // }
 
 
       & .item-title {
@@ -404,6 +405,9 @@
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
 
+        // outline: 2px dashed crimson;
+        // outline-offset: -2px;
+
         @media #{$desktop} {
           max-height: 212px;
         }
@@ -417,7 +421,7 @@
         }
 
         @media #{$i7} {
-          max-height: 277px;
+          max-height: 247px;
         }
 
         @media #{$mobile} {
