@@ -917,35 +917,33 @@ function animateRedLine() {
 
 
 // parallax-falling-brills
-(function() {
-  if ((window.matchMedia("(min-width: 960px)").matches)) {
 
-    var isIE = navigator.userAgent.indexOf("MSIE ") > 0 || navigator.userAgent.indexOf("Trident") > 0 || navigator.userAgent.indexOf("Edge") > 0,
-        wScroll = $(window).scrollTop();
 
-    // parallax effect function
-    function parallax(prlxBg, prlxContainer, factor) {
-        if (isIE) {
-            $(prlxBg).css({
-                'transform': 'translateY(0px)'
-            });
-            return;
-        }
-        if ((wScroll + $(window).height()) >= $(prlxBg).offset().top) {
-            console.log("true!");
-            $(prlxBg).css({
-                'transform': 'translateY(' + (($(prlxContainer).offset().top - wScroll) / $(window).height() * 100) * factor + '%)'
-            });
-        }
-    }
 
+// index rising counter (4 blocks)
+(function($) {
     $(window).scroll(function() {
-        wScroll = $(this).scrollTop();
-
-        if ($('.parallax-index').length > 0) {
-            parallax('.brills-parallax-box', '.parallax-index', -3.6);
-        }
+        $('.product.product-top').each(function() {
+            var imagePos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow + 0) {
+                animateCounter();
+            }
+        });
     });
-  }
-})();
+
+    function animateCounter() {
+      if ($('.parallax-index').length > 0) {
+
+          $( "#falling-brills" ).animate({
+            top: "3000px"
+          }, 3000, 'easeInSine', function() {
+            // Animation complete.
+
+            $("#falling-brills").css( "display", "none" );
+          });
+      }
+    }
+})(jQuery);
+// EOF index rising counter (4 blocks)
 // EOFparallax-brills
