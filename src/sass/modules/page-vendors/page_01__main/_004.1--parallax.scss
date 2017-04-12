@@ -28,7 +28,7 @@
     width: 1755px;
     height: 994px;
     // margin: 0 auto;
-    z-index: 9;
+    z-index: 11; //9
     @media #{$ipad} {
       width: 97%;
       height: 721px;
@@ -60,7 +60,7 @@
 .page-home .product-top {
   & .brills-parallax-box {
     &:nth-child(1) {
-      z-index: 9;
+      z-index: 11; //9
 
       & .brills-parallax-item {
         &:nth-child(1){
@@ -68,7 +68,7 @@
           width: 193px;
           height: 703px;
           position: relative;
-          z-index: 8;
+          z-index: 11; //8
           @media #{$desktop} {
 
           }
@@ -85,7 +85,7 @@
           position: absolute;
           top: 0;
           right: 94px;
-          z-index: 8;
+          z-index: 11; //8
           @media #{$desktop} {
 
           }
@@ -99,7 +99,7 @@
         &:nth-child(3){
           position: absolute;
           top: 0;
-          z-index: 8;
+          z-index: 11; //8
 
           @media #{$desktop} {
             background: url('../img/parallax-brills-centered.png');
