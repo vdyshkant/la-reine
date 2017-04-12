@@ -65,8 +65,8 @@
       & .brills-parallax-item {
         &:nth-child(1){
           background: url('../img/parallax-brills-left.png');
-          width: 202px;
-          height: 725px;
+          width: 193px;
+          height: 703px;
           position: relative;
           z-index: 8;
           @media #{$desktop} {
@@ -74,14 +74,14 @@
           }
           @media #{$ipad-macair} {
             background: url('../img/parallax-brills-left--macair.png');
-            width: 143px;
-            height: 515px;
+            width: 145px;
+            height: 527px;
           }
         }
         &:nth-child(2){
           background: url('../img/parallax-brills-right-bg.png');
-          width: 365px;
-          height: 990px;
+          width: 369px;
+          height: 983px;
           position: absolute;
           top: 0;
           right: 94px;
@@ -91,8 +91,8 @@
           }
           @media #{$ipad-macair} {
             background: url('../img/parallax-brills-right-bg--macair.png');
-            width: 262px;
-            height: 702px;
+            width: 265px;
+            height: 707px;
             right: 34px;
           }
         }
@@ -124,8 +124,8 @@
       & .brills-parallax-item {
         &:nth-child(1){
           background: url('../img/parallax-brills-right.png');
-          width: 603px;
-          height: 250px;
+          width: 454px;
+          height: 188px;
           position: absolute;
           top: 0;
           right: 0;
@@ -135,8 +135,8 @@
           }
           @media #{$ipad-macair} {
             background: url('../img/parallax-brills-right--macair.png');
-            width: 429px;
-            height: 178px;
+            width: 454px;
+            height: 188px;
             right: 234px;
           }
         }

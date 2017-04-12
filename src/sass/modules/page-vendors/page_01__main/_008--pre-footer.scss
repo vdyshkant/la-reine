@@ -212,16 +212,16 @@
     }
   }
   &:nth-child(5){
-    width: 76px;
-    height: 76px;
+    width: 62px;
+    height: 62px;
     background: url('../img/pre-f_g2_05.png');
     top: 500px;
     right: 195px;
 
     @media #{$ipad-macair} {
       background: url('../img/pre-f_g2_05--macair.png');
-      width: 55px;
-      height: 54px;
+      width: 62px;
+      height: 62px;
       top: 360px;
       right: 110px;
       right: 9%;
@@ -322,24 +322,24 @@
   position: absolute;
 
   &:nth-child(1){
-    width: 299px;
-    height: 196px;
-    background: url('../img/pre-f_g4_01.png');
+    width: 160px;
+    height: 130px;
+    background: url('../img/pre-f_g4_01.png') no-repeat;
     top: 715px;//+150
     left: 85px;
 
     @media #{$ipad-macair} {
-      background: url('../img/pre-f_g4_01--macair.png');
-      width: 214px;
-      height: 141px;
+      background: url('../img/pre-f_g4_01--macair.png') no-repeat;
+      width: 160px;
+      height: 130px;
       top: 550px;
       left: 4%;
     }
     @media #{$mobile-i7} {
       // display: none;
-      background: url('../img/pre-f_g4_01--mobile.png');
-      width: 172px;
-      height: 113px;
+      background: url('../img/pre-f_g4_01--mobile.png') no-repeat;
+      width: 144px;
+      height: 116px;
       top: 455px;
       left: -22%;
     }
@@ -365,15 +365,15 @@
   }
   &:nth-child(3){
     width: 62px;
-    height: 75px;
+    height: 62px;
     background: url('../img/pre-f_g4_03.png');
     top: 270px;
     right: 400px;
 
     @media #{$ipad-macair} {
       background: url('../img/pre-f_g4_03--macair.png');
-      width: 45px;
-      height: 54px;
+      width: 62px;
+      height: 62px;
       top: 240px;
       right: 290px;
       right: 22%;
@@ -381,8 +381,8 @@
     @media #{$mobile-i7} {
       // display: none;
       background: url('../img/pre-f_g4_03--mobile.png');
-      width: 41px;
-      height: 49px;
+      width: 62px;
+      height: 62px;
       top: 570px;
       right: 67%;
     }

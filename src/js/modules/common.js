@@ -936,11 +936,11 @@ function animateRedLine() {
       if ($('.parallax-index').length > 0) {
 
           $( "#falling-brills" ).animate({
-            top: "3000px"
+            top: "100px"
           }, 3000, 'easeInSine', function() {
             // Animation complete.
 
-            $("#falling-brills").css( "display", "none" );
+            // $("#falling-brills").css( "display", "none" );
           });
       }
     }
